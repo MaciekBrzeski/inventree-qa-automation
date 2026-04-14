@@ -1,0 +1,11 @@
+DELETE /api/part/category/{id}/
+DELETE /api/part/{id}/
+GET /api/part/
+GET /api/part/category/
+GET /api/part/category/{id}/
+GET /api/part/{id}/
+GET /api/part/{id}/requirements/
+GET /api/part/{id}/serial-numbers/
+PATCH /api/part/{id}/
+POST /api/part/
+POST /api/part/category/

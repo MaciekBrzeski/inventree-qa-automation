@@ -1,0 +1,15 @@
+GET /api/
+GET /api/auth/v1/auth/session/
+GET /api/auth/v1/config/
+GET /api/generic/status/
+GET /api/icons/
+GET /api/news/
+GET /api/notifications/
+GET /api/plugins/
+GET /api/settings/global/
+GET /api/settings/user/
+GET /api/user/me/
+GET /api/user/roles/
+GET /api/user/{id}/
+POST /api/auth/v1/auth/login/
+POST /api/system-internal/observability/end/

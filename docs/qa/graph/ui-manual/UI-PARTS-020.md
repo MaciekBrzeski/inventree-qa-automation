@@ -1,0 +1,34 @@
+---
+title: "Toggle Template attribute on a Part"
+id: UI-PARTS-020
+side: ui
+priority: P1
+tags: [qa, test, manual, ui]
+generated: 2026-04-14T13:54:30.897Z
+---
+
+# UI-PARTS-020 — Toggle Template attribute on a Part
+
+## Preconditions
+
+logged in as admin; category QA-ROOT exists
+
+## Steps
+
+1. Navigate to Parts list<br>2. Create a new part<br>3. Go to Attributes tab<br>4. Check the "Template" checkbox<br>5. Save the part
+
+## Expected
+
+The part should be able to have variants and BOMs created under it
+
+## Tags
+
+attribute, template
+
+## Automated by
+
+_(not automated)_
+
+## Endpoints touched via the automated sibling(s)
+
+_(none traced — case may not yet be automated or automation does not hit /api/part|/api/bom)_

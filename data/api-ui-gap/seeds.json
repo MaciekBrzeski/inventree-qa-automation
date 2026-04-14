@@ -1,0 +1,232 @@
+[
+  {
+    "endpoint": "DELETE /api/bom/substitute/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "DELETE /api/bom/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "DELETE /api/part/category/parameters/{id}/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "DELETE /api/part/internal-price/{id}/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "DELETE /api/part/stocktake/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "DELETE /api/part/stocktake/{id}/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/bom/substitute/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/bom/substitute/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/category/parameters/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/category/parameters/{id}/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/internal-price/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/internal-price/{id}/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/stocktake/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/stocktake/{id}/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/thumbs/",
+    "seed": "/web/part/<pk> → image upload",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "GET /api/part/thumbs/{id}/",
+    "seed": "/web/part/<pk> → image upload",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/bom/substitute/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/category/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/category/parameters/{id}/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/internal-price/{id}/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/stocktake/{id}/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/thumbs/{id}/",
+    "seed": "/web/part/<pk> → image upload",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/{id}/bom-validate/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PATCH /api/part/{id}/pricing/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "POST /api/part/category/parameters/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "POST /api/part/internal-price/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "POST /api/part/stocktake/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "POST /api/part/stocktake/generate/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "POST /api/part/{id}/bom-copy/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/bom/substitute/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/bom/{id}/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/bom/{id}/validate/",
+    "seed": "/web/part/<assembly-pk> → BOM tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/category/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/category/parameters/{id}/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/category/{id}/",
+    "seed": "/web/partcategory/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/internal-price/{id}/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/related/{id}/",
+    "seed": "/web/part/<pk> → Related Parts tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/sale-price/{id}/",
+    "seed": "/web/part/<pk> → Part Pricing tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/stocktake/{id}/",
+    "seed": "/web/part/<pk> → Stock → Stocktake",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/test-template/{id}/",
+    "seed": "/web/part/<pk> → Test templates tab",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/thumbs/{id}/",
+    "seed": "/web/part/<pk> → image upload",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/{id}/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/{id}/bom-validate/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  },
+  {
+    "endpoint": "PUT /api/part/{id}/pricing/",
+    "seed": "/web/part or /web/part/<pk>",
+    "rationale": "heuristic match on path prefix"
+  }
+]

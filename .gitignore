@@ -1,0 +1,33 @@
+node_modules/
+.venv/
+__pycache__/
+*.log
+*.tmp
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Playwright
+automation/*/test-results/
+automation/*/playwright-report/
+automation/*/.auth/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Vector store (regenerable)
+agents/rag/vectors.db
+agents/rag/vectors.db-journal
+
+# UI explorer snapshots (regenerable + huge)
+data/ui-explore/snapshots/
+data/dom-snapshots/
+
+# Per-test recorder output (regenerates on every run)
+data/api-ui-gap/per-test-requests.json
+data/ui-crud-state.json
+
+# Media
+video/*.mp4

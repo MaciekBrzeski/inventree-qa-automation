@@ -1,0 +1,9 @@
+| ID            | Endpoint        | Method | Title         | Preconditions                                    | Payload                                                              | Expected Status | Expected Body                          | Priority | Tags           |
+| ------------- | --------------- | ------ | ------------- | ------------------------------------------------ | -------------------------------------------------------------------- | --------------- | -------------------------------------- | -------- | -------------- |
+| API-PARTS-001 | /api/part/      | GET    | List parts    | logged in as admin                               | —                                                                    | 200             | count > 0<br>parts[0].name is a string | P1       | crud, list     |
+| API-PARTS-002 | /api/part/      | POST   | Create part   | logged in as admin; category QA-ROOT exists      | {"name":"QA Part","IPN":"QAP-001","category":<existing_category_id>} | 201             | name: "QA Part"<br>IPN: "QAP-001"      | P1       | crud, create   |
+| API-PARTS-003 | /api/part/{id}/ | GET    | Retrieve part | logged in as admin; part with IPN QAP-001 exists | —                                                                    | 200             | name: "QA Part"<br>IPN: "QAP-001"      | P1       | crud, retrieve |
+| API-PARTS-004 | /api/part/{id}/ | PATCH  | Update part   | logged in as admin; part with IPN QAP-001 exists | {"name":"Updated QA Part"}                                           | 200             | name: "Updated QA Part"                | P1       | crud, update   |
+| API-PARTS-005 | /api/part/{id}/ | DELETE | Delete part   | logged in as admin; part with IPN QAP-001 exists | —                                                                    | 204             | —                                      | P1       | crud, delete   |
+
+NEED_CONTEXT: field values for `category` and `Initial Stock`

@@ -1,0 +1,641 @@
+{"id":1,"path":"README.md","heading":"README","tokens":19,"sha256":"9934ca2ca8c5064cea55f84ef8b37b9d8659aba54f72dc51a4082c2015d686ee"}
+{"id":2,"path":"README.md","heading":"Start here","tokens":57,"sha256":"bf6b17b3302670c796023e379c6b568412f42f0fcea0fc87426631dcb229e718"}
+{"id":3,"path":"README.md","heading":"Structure","tokens":69,"sha256":"c40ab8d939e51fcd0b77f1e857f00d9dcc6783d2ff082aad99d6f4b85c0dbe65"}
+{"id":4,"path":"inventree/api/delete-api-bom-id.md","heading":"delete-api-bom-id","tokens":21,"sha256":"7fd7c581359d9fa80b553e972042852f1610342ce563b3bd1689883b7c9e19f0"}
+{"id":5,"path":"inventree/api/delete-api-bom-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":6,"path":"inventree/api/delete-api-bom-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":7,"path":"inventree/api/delete-api-bom-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":8,"path":"inventree/api/delete-api-bom-substitute-id.md","heading":"delete-api-bom-substitute-id","tokens":26,"sha256":"99ad85b810f7d2488066c6b0a339b3927bfee0d9c6c4813ddb60e6a7aa90f43a"}
+{"id":9,"path":"inventree/api/delete-api-bom-substitute-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":10,"path":"inventree/api/delete-api-bom-substitute-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":11,"path":"inventree/api/delete-api-bom-substitute-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":12,"path":"inventree/api/delete-api-bom.md","heading":"delete-api-bom","tokens":50,"sha256":"21c1ada6913de1a175a5223381fc7c16d1e84f5f0046b2078a0c8a804154eea1"}
+{"id":13,"path":"inventree/api/delete-api-bom.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":14,"path":"inventree/api/delete-api-bom.md","heading":"Request body","tokens":36,"sha256":"1affbd4bb6eb6062c4b4111b34d2c23c4caa6191d758c7792c477dd3b2ec8414"}
+{"id":15,"path":"inventree/api/delete-api-bom.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":16,"path":"inventree/api/delete-api-part-category-id.md","heading":"delete-api-part-category-id","tokens":19,"sha256":"4ffc95ba4370957c5d98a611581c85b364784ccf82ca9821a06320e723b8e609"}
+{"id":17,"path":"inventree/api/delete-api-part-category-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":18,"path":"inventree/api/delete-api-part-category-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":19,"path":"inventree/api/delete-api-part-category-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":20,"path":"inventree/api/delete-api-part-category-parameters-id.md","heading":"delete-api-part-category-parameters-id","tokens":27,"sha256":"fbc27854d6f81d360712f92b8a255de1e159d440edb3b1c8d54b49597e8b4d44"}
+{"id":21,"path":"inventree/api/delete-api-part-category-parameters-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":22,"path":"inventree/api/delete-api-part-category-parameters-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":23,"path":"inventree/api/delete-api-part-category-parameters-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":24,"path":"inventree/api/delete-api-part-id.md","heading":"delete-api-part-id","tokens":21,"sha256":"c19ef822cdce94f5ddff9b3bdf05081e6132c1b4561fe4278afac5edb0728371"}
+{"id":25,"path":"inventree/api/delete-api-part-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":26,"path":"inventree/api/delete-api-part-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":27,"path":"inventree/api/delete-api-part-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":28,"path":"inventree/api/delete-api-part-internal-price-id.md","heading":"delete-api-part-internal-price-id","tokens":23,"sha256":"09e5dac9fce0f8caece3927a2227fe1b001ec91ce4201014337a3a219a12fa0d"}
+{"id":29,"path":"inventree/api/delete-api-part-internal-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":30,"path":"inventree/api/delete-api-part-internal-price-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":31,"path":"inventree/api/delete-api-part-internal-price-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":32,"path":"inventree/api/delete-api-part-related-id.md","heading":"delete-api-part-related-id","tokens":25,"sha256":"645a1edd4dedd68f0faefe1bfa02df583f42a8fad010b5861a929ee474cce31d"}
+{"id":33,"path":"inventree/api/delete-api-part-related-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":34,"path":"inventree/api/delete-api-part-related-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":35,"path":"inventree/api/delete-api-part-related-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":36,"path":"inventree/api/delete-api-part-sale-price-id.md","heading":"delete-api-part-sale-price-id","tokens":21,"sha256":"f8b00f6c856219f0620c1f2deebdcd341d85d517307e59c461caec592e2fbd85"}
+{"id":37,"path":"inventree/api/delete-api-part-sale-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":38,"path":"inventree/api/delete-api-part-sale-price-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":39,"path":"inventree/api/delete-api-part-sale-price-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":40,"path":"inventree/api/delete-api-part-stocktake-id.md","heading":"delete-api-part-stocktake-id","tokens":38,"sha256":"a1fff1d01216643121e5b85d78ad308616fe479dbb04e8f6e1d4863c71682cb1"}
+{"id":41,"path":"inventree/api/delete-api-part-stocktake-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":42,"path":"inventree/api/delete-api-part-stocktake-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":43,"path":"inventree/api/delete-api-part-stocktake-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":44,"path":"inventree/api/delete-api-part-stocktake.md","heading":"delete-api-part-stocktake","tokens":52,"sha256":"68491aeb2d5a3e490ef9367790f8c0deb3eb032a0103246ae9112d9442e72586"}
+{"id":45,"path":"inventree/api/delete-api-part-stocktake.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":46,"path":"inventree/api/delete-api-part-stocktake.md","heading":"Request body","tokens":36,"sha256":"1affbd4bb6eb6062c4b4111b34d2c23c4caa6191d758c7792c477dd3b2ec8414"}
+{"id":47,"path":"inventree/api/delete-api-part-stocktake.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":48,"path":"inventree/api/delete-api-part-test-template-id.md","heading":"delete-api-part-test-template-id","tokens":22,"sha256":"6f78de02a8850e8d340530aca1d30f96b964fd5136b5232e7a1985e07d61d68e"}
+{"id":49,"path":"inventree/api/delete-api-part-test-template-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":50,"path":"inventree/api/delete-api-part-test-template-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":51,"path":"inventree/api/delete-api-part-test-template-id.md","heading":"Responses","tokens":20,"sha256":"15c1e224a41933ae28a5c6e628bf410486b9c23a8a38b6a58c1ab046a4e6d796"}
+{"id":52,"path":"inventree/api/get-api-bom-id.md","heading":"get-api-bom-id","tokens":20,"sha256":"99c8d6dab30b5af6802c2e776169ddd03dd1f1dfecf78a7c71881b16a02a6f44"}
+{"id":53,"path":"inventree/api/get-api-bom-id.md","heading":"Parameters","tokens":97,"sha256":"f11a602c622dacd487cbb311a6fe89400655ce0524251e7d67334e69986189a8"}
+{"id":54,"path":"inventree/api/get-api-bom-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":55,"path":"inventree/api/get-api-bom-id.md","heading":"Responses","tokens":17,"sha256":"15e2ccda51cf001c670f963609d01e491c9d569644c854408cdbeb92df8f2b5f"}
+{"id":56,"path":"inventree/api/get-api-bom-substitute-id.md","heading":"get-api-bom-substitute-id","tokens":26,"sha256":"d2e9c400ba7ad7cd916eb56efb96fc6548de0e87d3a8e18c47bb59a4242fe5c3"}
+{"id":57,"path":"inventree/api/get-api-bom-substitute-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":58,"path":"inventree/api/get-api-bom-substitute-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":59,"path":"inventree/api/get-api-bom-substitute-id.md","heading":"Responses","tokens":20,"sha256":"107e578a0e4cfaa2d46f1ca3fbb534ff8876473ea8c5ae9dde5ea4278b374878"}
+{"id":60,"path":"inventree/api/get-api-bom-substitute.md","heading":"get-api-bom-substitute","tokens":24,"sha256":"746a1cb9e704664a21c564dc3758cfa47af10b5e64aa97f1a8529f5824aeb1ac"}
+{"id":61,"path":"inventree/api/get-api-bom-substitute.md","heading":"Parameters","tokens":112,"sha256":"b9d95a62b7544a9a86c110521f3ced8e86bed0a718fba0a6b28c8544ada002ee"}
+{"id":62,"path":"inventree/api/get-api-bom-substitute.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":63,"path":"inventree/api/get-api-bom-substitute.md","heading":"Responses","tokens":23,"sha256":"97327428516f111d86448a9549bfa7e7424fe35868fe64cf97fd9a7a38e18e03"}
+{"id":64,"path":"inventree/api/get-api-bom.md","heading":"get-api-bom","tokens":18,"sha256":"2210ee727476706f7b9c9470b4079c9a006d49f41be4c1a643d2788775031feb"}
+{"id":65,"path":"inventree/api/get-api-bom.md","heading":"Parameters","tokens":618,"sha256":"5ae4a49f27ea488f03c56c1ebca31d6a3f6369dfd5eeaafe7d33817ba9cab69f"}
+{"id":66,"path":"inventree/api/get-api-bom.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":67,"path":"inventree/api/get-api-bom.md","heading":"Responses","tokens":21,"sha256":"39d29b44750c9543f8b7d16db878d150ec0161116d63368f94c607d20f549435"}
+{"id":68,"path":"inventree/api/get-api-part-category-id.md","heading":"get-api-part-category-id","tokens":17,"sha256":"3a18003a4a3394b84d5352b2bf90ab5ad94b986aa94ac3fc90ab50263ce0d194"}
+{"id":69,"path":"inventree/api/get-api-part-category-id.md","heading":"Parameters","tokens":37,"sha256":"df00d8701d154c2e8ba20b5877261a5dbd9934b892646adbf548b9f98643824c"}
+{"id":70,"path":"inventree/api/get-api-part-category-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":71,"path":"inventree/api/get-api-part-category-id.md","heading":"Responses","tokens":18,"sha256":"e2ceb9865dbafde7ce4058d99a230ba9227617faa874a837c34db3903e318047"}
+{"id":72,"path":"inventree/api/get-api-part-category-parameters-id.md","heading":"get-api-part-category-parameters-id","tokens":27,"sha256":"874159e0402a54973e779c5e9e3e395bc0e0428a99a0609110afbfd88fa67c9d"}
+{"id":73,"path":"inventree/api/get-api-part-category-parameters-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":74,"path":"inventree/api/get-api-part-category-parameters-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":75,"path":"inventree/api/get-api-part-category-parameters-id.md","heading":"Responses","tokens":22,"sha256":"dd1ac21c90cef63349672b248454d351ac4506e10926b8ff43d3f69ac0c2723b"}
+{"id":76,"path":"inventree/api/get-api-part-category-parameters.md","heading":"get-api-part-category-parameters","tokens":23,"sha256":"64f58da027186dd7a39e4199345a38ab8c2527374545a91d9e799a617fb39a2a"}
+{"id":77,"path":"inventree/api/get-api-part-category-parameters.md","heading":"Parameters","tokens":59,"sha256":"c9b25ddd5b76103451d8de1c6f3aeb467b8640a1955d1ba42036c63d4a10e5ce"}
+{"id":78,"path":"inventree/api/get-api-part-category-parameters.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":79,"path":"inventree/api/get-api-part-category-parameters.md","heading":"Responses","tokens":25,"sha256":"5702d4393828e4ca4b306db1e9e30328271f22e295e589e405290f52fbd80fa6"}
+{"id":80,"path":"inventree/api/get-api-part-category-tree.md","heading":"get-api-part-category-tree","tokens":30,"sha256":"ba98db655545382c53d04667d211b0c93475f9c59ed22e8bfd9fbe69a13ba01f"}
+{"id":81,"path":"inventree/api/get-api-part-category-tree.md","heading":"Parameters","tokens":93,"sha256":"3c46e0105243e3cc230cc4f2162854b5bb047c33416ff66e446be1f00854ae65"}
+{"id":82,"path":"inventree/api/get-api-part-category-tree.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":83,"path":"inventree/api/get-api-part-category-tree.md","heading":"Responses","tokens":22,"sha256":"9e512ff8c9bbccfc21b9853efe55ad40fbd75812adddb200dd38fe6504d86ed0"}
+{"id":84,"path":"inventree/api/get-api-part-category.md","heading":"get-api-part-category","tokens":21,"sha256":"f7d84d4e2e8db8b1b0a143115652685ebb0688816fe3a53f4ab9e8bc89cd74b0"}
+{"id":85,"path":"inventree/api/get-api-part-category.md","heading":"Parameters","tokens":257,"sha256":"01b07c580b68e1d2fa9e04d83728e1890e761657065a6ab447abb4210f4ddadd"}
+{"id":86,"path":"inventree/api/get-api-part-category.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":87,"path":"inventree/api/get-api-part-category.md","heading":"Responses","tokens":21,"sha256":"a5752d8ed76a415763aa720195bb2019b14f484778d0e32ed0842ce716c1be6d"}
+{"id":88,"path":"inventree/api/get-api-part-id-bom-validate.md","heading":"get-api-part-id-bom-validate","tokens":24,"sha256":"2754c1623e8ad339f269dc39596759efb61e2822fb435e6c1884156d7bfb6664"}
+{"id":89,"path":"inventree/api/get-api-part-id-bom-validate.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":90,"path":"inventree/api/get-api-part-id-bom-validate.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":91,"path":"inventree/api/get-api-part-id-bom-validate.md","heading":"Responses","tokens":19,"sha256":"8e4c629b271b43861ca7a8f538cc1337e85d2bd7d036f14c608816d2bf4bdba9"}
+{"id":92,"path":"inventree/api/get-api-part-id-pricing.md","heading":"get-api-part-id-pricing","tokens":19,"sha256":"8142c71ff4829216d49b436e970f91c1e22ea4f79360e9235c41e5779b0f875c"}
+{"id":93,"path":"inventree/api/get-api-part-id-pricing.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":94,"path":"inventree/api/get-api-part-id-pricing.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":95,"path":"inventree/api/get-api-part-id-pricing.md","heading":"Responses","tokens":18,"sha256":"12891fa00dedecaa7539c0be21df5f9ebab3f789a4e1ca6b04ea49b9acd6345c"}
+{"id":96,"path":"inventree/api/get-api-part-id-requirements.md","heading":"get-api-part-id-requirements","tokens":94,"sha256":"6066de67f44d56883f711471309f0f25f2d8d95fbf7ad6f7525ea984f3a22333"}
+{"id":97,"path":"inventree/api/get-api-part-id-requirements.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":98,"path":"inventree/api/get-api-part-id-requirements.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":99,"path":"inventree/api/get-api-part-id-requirements.md","heading":"Responses","tokens":20,"sha256":"cd6a1b4c7f4e9937757092aeb02c58fc5a958e36b408cf99ceda0657c95d94fb"}
+{"id":100,"path":"inventree/api/get-api-part-id-serial-numbers.md","heading":"get-api-part-id-serial-numbers","tokens":31,"sha256":"374f9843f4554f371b497b201d2a1833dea865bea45130f07be4319b815e19bf"}
+{"id":101,"path":"inventree/api/get-api-part-id-serial-numbers.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":102,"path":"inventree/api/get-api-part-id-serial-numbers.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":103,"path":"inventree/api/get-api-part-id-serial-numbers.md","heading":"Responses","tokens":20,"sha256":"e325123e2b0f34ba59caca9130f9b0f0b03fe657668f5cfa6c99e0346cfec2bc"}
+{"id":104,"path":"inventree/api/get-api-part-id.md","heading":"get-api-part-id","tokens":20,"sha256":"3c0e2c12be92361e113b3f276afb8b09ce943c4cb20bab0053c3d211439b833c"}
+{"id":105,"path":"inventree/api/get-api-part-id.md","heading":"Parameters","tokens":118,"sha256":"2b5ec902397875f8ec63d17dd431a0062bbc7137e636b552e7a3a0669b722d89"}
+{"id":106,"path":"inventree/api/get-api-part-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":107,"path":"inventree/api/get-api-part-id.md","heading":"Responses","tokens":17,"sha256":"b56f426b93d3bec8cc16ab59c4498c4c14ac5a101f82532dff076defea89180b"}
+{"id":108,"path":"inventree/api/get-api-part-internal-price-id.md","heading":"get-api-part-internal-price-id","tokens":23,"sha256":"d5e6c1f6eaabc2fb9cd7b2cb3f366009dfc981cc41aaed1cf64f8f2c3f41f2a3"}
+{"id":109,"path":"inventree/api/get-api-part-internal-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":110,"path":"inventree/api/get-api-part-internal-price-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":111,"path":"inventree/api/get-api-part-internal-price-id.md","heading":"Responses","tokens":20,"sha256":"ef090bc75950694c3a355a9270791f75c09c10fa065c2006a6b085fb0fc645aa"}
+{"id":112,"path":"inventree/api/get-api-part-internal-price.md","heading":"get-api-part-internal-price","tokens":22,"sha256":"0f17b30afb23ec2a648609aec6cd25cc8bde46fc368a3111f8a8976ca9858c12"}
+{"id":113,"path":"inventree/api/get-api-part-internal-price.md","heading":"Parameters","tokens":110,"sha256":"927ff696b0e415185f6466e62dee6d03f736cc1dd5aaceea8614f5ef0585b8bf"}
+{"id":114,"path":"inventree/api/get-api-part-internal-price.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":115,"path":"inventree/api/get-api-part-internal-price.md","heading":"Responses","tokens":23,"sha256":"9d95c56abfa0ae04411a137163845c77c2523a43658f5bca8c31a4d0e38486b9"}
+{"id":116,"path":"inventree/api/get-api-part-related-id.md","heading":"get-api-part-related-id","tokens":24,"sha256":"21087e87c66b516f8e50e703ae77f3e42d12362f8ed854f7661663fb41081246"}
+{"id":117,"path":"inventree/api/get-api-part-related-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":118,"path":"inventree/api/get-api-part-related-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":119,"path":"inventree/api/get-api-part-related-id.md","heading":"Responses","tokens":19,"sha256":"75330196bc0c0b23e74364316887be52f3201cb8d633f6c1cdfed71dfcd723bb"}
+{"id":120,"path":"inventree/api/get-api-part-related.md","heading":"get-api-part-related","tokens":22,"sha256":"5bd35158e3be5a6562835a23d74405f39ebfaf681cb4fb64407b20ea3a2f0edd"}
+{"id":121,"path":"inventree/api/get-api-part-related.md","heading":"Parameters","tokens":134,"sha256":"79b6694f2a1d9b6f50262ded280cace0ef6d5157ff25f954832061f8239b7bc0"}
+{"id":122,"path":"inventree/api/get-api-part-related.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":123,"path":"inventree/api/get-api-part-related.md","heading":"Responses","tokens":22,"sha256":"27b4a65fbdfdf4caf900050088435048d4adc5676ccbb086d41f48031a66118b"}
+{"id":124,"path":"inventree/api/get-api-part-sale-price-id.md","heading":"get-api-part-sale-price-id","tokens":21,"sha256":"ed29c42adb28f4fa10435f25060202d0a052d10111d2759f1a531246be087167"}
+{"id":125,"path":"inventree/api/get-api-part-sale-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":126,"path":"inventree/api/get-api-part-sale-price-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":127,"path":"inventree/api/get-api-part-sale-price-id.md","heading":"Responses","tokens":19,"sha256":"0822042aaf302a5a94af46594c0c047607e2134aea07ea94277946c3b95c3116"}
+{"id":128,"path":"inventree/api/get-api-part-sale-price.md","heading":"get-api-part-sale-price","tokens":21,"sha256":"f6dca34f97db8d1cb949c37c09c6c0a7c6abaa86761fdc1a7dd74bb23d8dc546"}
+{"id":129,"path":"inventree/api/get-api-part-sale-price.md","heading":"Parameters","tokens":110,"sha256":"927ff696b0e415185f6466e62dee6d03f736cc1dd5aaceea8614f5ef0585b8bf"}
+{"id":130,"path":"inventree/api/get-api-part-sale-price.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":131,"path":"inventree/api/get-api-part-sale-price.md","heading":"Responses","tokens":22,"sha256":"5980115f81167d51166f9daf2e1a1eba022e514b54e09aa9aac6c803d8718b48"}
+{"id":132,"path":"inventree/api/get-api-part-stocktake-id.md","heading":"get-api-part-stocktake-id","tokens":38,"sha256":"d1b0d11999aa81856fdca17cce8f300c2b313f99a83b953312cd9a56d87ef17e"}
+{"id":133,"path":"inventree/api/get-api-part-stocktake-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":134,"path":"inventree/api/get-api-part-stocktake-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":135,"path":"inventree/api/get-api-part-stocktake-id.md","heading":"Responses","tokens":19,"sha256":"d93e5c1b762ac530888de633af057dca7f05619957dca47af369d414ec7c8173"}
+{"id":136,"path":"inventree/api/get-api-part-stocktake.md","heading":"get-api-part-stocktake","tokens":21,"sha256":"9cfa281766fea737cbd248bbeca4c259ab1ad1eb51cdb49abfa89091b33fb514"}
+{"id":137,"path":"inventree/api/get-api-part-stocktake.md","heading":"Parameters","tokens":109,"sha256":"a42d1f491ab2b77065def61daeabe6960391898d1fc1da78e9cedc812062d227"}
+{"id":138,"path":"inventree/api/get-api-part-stocktake.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":139,"path":"inventree/api/get-api-part-stocktake.md","heading":"Responses","tokens":22,"sha256":"cbcb575bb1e3e72378a37412e192a1f7acae90f9c7b5e128d38c4e0f89b35548"}
+{"id":140,"path":"inventree/api/get-api-part-test-template-id.md","heading":"get-api-part-test-template-id","tokens":21,"sha256":"ab24e3e7a5607b5b5326ea16a8b08183638f399c56f5c13c1980a3db7cdcdc12"}
+{"id":141,"path":"inventree/api/get-api-part-test-template-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":142,"path":"inventree/api/get-api-part-test-template-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":143,"path":"inventree/api/get-api-part-test-template-id.md","heading":"Responses","tokens":20,"sha256":"1f360578081802d8b24793221b73ab38e37102112d6f9f97d0e58818f2fabae1"}
+{"id":144,"path":"inventree/api/get-api-part-test-template.md","heading":"get-api-part-test-template","tokens":22,"sha256":"03e61e093144d9af74a76d4eb7a08bb9bf3442dd0a4e992235f6ff78c2789465"}
+{"id":145,"path":"inventree/api/get-api-part-test-template.md","heading":"Parameters","tokens":217,"sha256":"8743bb0c1d5ee80e2fb89b5d243037e151244b0af52a9b02c8b304b86194f5c3"}
+{"id":146,"path":"inventree/api/get-api-part-test-template.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":147,"path":"inventree/api/get-api-part-test-template.md","heading":"Responses","tokens":23,"sha256":"8c8669363b4d6e12b6402dd94b16866d9ca1c7da4ca113db724cef1b2d82ee19"}
+{"id":148,"path":"inventree/api/get-api-part-thumbs-id.md","heading":"get-api-part-thumbs-id","tokens":19,"sha256":"eb10c4647d2870d726812e0601b31c3fde0bb12f5a48aab6d6d20d65cd1b2111"}
+{"id":149,"path":"inventree/api/get-api-part-thumbs-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":150,"path":"inventree/api/get-api-part-thumbs-id.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":151,"path":"inventree/api/get-api-part-thumbs-id.md","heading":"Responses","tokens":22,"sha256":"08c1f7a15bb232f6f65707007c6aff155313bd7f76931141acb08cdf41d51fb9"}
+{"id":152,"path":"inventree/api/get-api-part-thumbs.md","heading":"get-api-part-thumbs","tokens":24,"sha256":"6c44e1775b8220aca480eb52418752c14570ef53433a2d4281eba81cda16812a"}
+{"id":153,"path":"inventree/api/get-api-part-thumbs.md","heading":"Parameters","tokens":91,"sha256":"4428a69e8a27f36b0ff3cb165fbd212915424ce49785c1ce7b23874a8d40cd0a"}
+{"id":154,"path":"inventree/api/get-api-part-thumbs.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":155,"path":"inventree/api/get-api-part-thumbs.md","heading":"Responses","tokens":21,"sha256":"f0006370c5b24676b6d871e0f43c90f56ff156e3183a220dd47b7d857bdf1d76"}
+{"id":156,"path":"inventree/api/get-api-part.md","heading":"get-api-part","tokens":18,"sha256":"dc93f50491d5f7ef8afcb643625d72f734981e9898080f0b0233a0dee0c78c2c"}
+{"id":157,"path":"inventree/api/get-api-part.md","heading":"Parameters","tokens":889,"sha256":"ab1e3b076d2c5bcd38d429cad3e7a89c8338c2a68e495d9f1feb9bc91648bef4"}
+{"id":158,"path":"inventree/api/get-api-part.md","heading":"Request body","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":159,"path":"inventree/api/get-api-part.md","heading":"Responses","tokens":20,"sha256":"1f1614e19d1c41bbd716fc26801413887bb3eaa5eb10970def7cd43f4dc8db58"}
+{"id":160,"path":"inventree/api/patch-api-bom-id-validate.md","heading":"patch-api-bom-id-validate","tokens":19,"sha256":"9a1aa52add8b16db9f81918ae695947d7d027402a2832f3fa874b8efa3213a33"}
+{"id":161,"path":"inventree/api/patch-api-bom-id-validate.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":162,"path":"inventree/api/patch-api-bom-id-validate.md","heading":"Request body","tokens":45,"sha256":"18f67bee739cca563a153eda1c79292c32eafae9bcda67bd4ad179e7c38afa92"}
+{"id":163,"path":"inventree/api/patch-api-bom-id-validate.md","heading":"Responses","tokens":20,"sha256":"8de9c484ee21ad42bf107f7ef6d4a99c7e32e63fb6b4144d4057b8a5b227fb09"}
+{"id":164,"path":"inventree/api/patch-api-bom-id.md","heading":"patch-api-bom-id","tokens":21,"sha256":"05d9108c628961a0fcc8fd45950bb058ee1c963cc6b1b4e6464df20a1ed0f3b8"}
+{"id":165,"path":"inventree/api/patch-api-bom-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":166,"path":"inventree/api/patch-api-bom-id.md","heading":"Request body","tokens":38,"sha256":"73dbb1d60e8648dae5893a130bdf0b3751a5a7fbff79a1db8f1dc6eb90a6edf1"}
+{"id":167,"path":"inventree/api/patch-api-bom-id.md","heading":"Responses","tokens":17,"sha256":"15e2ccda51cf001c670f963609d01e491c9d569644c854408cdbeb92df8f2b5f"}
+{"id":168,"path":"inventree/api/patch-api-bom-substitute-id.md","heading":"patch-api-bom-substitute-id","tokens":26,"sha256":"22d313111a2fec500819ca6d450d98f307cac0515add2815e19e6c0fbf08c35c"}
+{"id":169,"path":"inventree/api/patch-api-bom-substitute-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":170,"path":"inventree/api/patch-api-bom-substitute-id.md","heading":"Request body","tokens":45,"sha256":"468ae61256ba8448d15e23f678003f7b7aae78ee3ba657932be27a61c2fc0384"}
+{"id":171,"path":"inventree/api/patch-api-bom-substitute-id.md","heading":"Responses","tokens":20,"sha256":"107e578a0e4cfaa2d46f1ca3fbb534ff8876473ea8c5ae9dde5ea4278b374878"}
+{"id":172,"path":"inventree/api/patch-api-part-category-id.md","heading":"patch-api-part-category-id","tokens":18,"sha256":"87d43cb0324a256f43bfa5490212cbbceb16f7385b711947c038c8507b167bc7"}
+{"id":173,"path":"inventree/api/patch-api-part-category-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":174,"path":"inventree/api/patch-api-part-category-id.md","heading":"Request body","tokens":38,"sha256":"f7b8bee21604d7c817f8d4fc037bd84b808dc626fd9659a080471ede7ad64795"}
+{"id":175,"path":"inventree/api/patch-api-part-category-id.md","heading":"Responses","tokens":18,"sha256":"e2ceb9865dbafde7ce4058d99a230ba9227617faa874a837c34db3903e318047"}
+{"id":176,"path":"inventree/api/patch-api-part-category-parameters-id.md","heading":"patch-api-part-category-parameters-id","tokens":27,"sha256":"50f171d8d41ca6baf43c44b62da549bf25be2510aff6d31f0ece1e4f655967f5"}
+{"id":177,"path":"inventree/api/patch-api-part-category-parameters-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":178,"path":"inventree/api/patch-api-part-category-parameters-id.md","heading":"Request body","tokens":51,"sha256":"161d591fa2310420657d22e881b1c7b237ba3fd4ed6c91bbbb4072c55fb013a0"}
+{"id":179,"path":"inventree/api/patch-api-part-category-parameters-id.md","heading":"Responses","tokens":22,"sha256":"dd1ac21c90cef63349672b248454d351ac4506e10926b8ff43d3f69ac0c2723b"}
+{"id":180,"path":"inventree/api/patch-api-part-category.md","heading":"patch-api-part-category","tokens":51,"sha256":"5102937edbc61e7c93e85d96c2939decf4a21cf18806322bb3a2dba1a7becf6e"}
+{"id":181,"path":"inventree/api/patch-api-part-category.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":182,"path":"inventree/api/patch-api-part-category.md","heading":"Request body","tokens":38,"sha256":"f7b8bee21604d7c817f8d4fc037bd84b808dc626fd9659a080471ede7ad64795"}
+{"id":183,"path":"inventree/api/patch-api-part-category.md","heading":"Responses","tokens":18,"sha256":"e2ceb9865dbafde7ce4058d99a230ba9227617faa874a837c34db3903e318047"}
+{"id":184,"path":"inventree/api/patch-api-part-id-bom-validate.md","heading":"patch-api-part-id-bom-validate","tokens":24,"sha256":"aac5cdaeb1f0f3843e5a6cd30f2104a6905764d72e34d5c90b195e3643f00af9"}
+{"id":185,"path":"inventree/api/patch-api-part-id-bom-validate.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":186,"path":"inventree/api/patch-api-part-id-bom-validate.md","heading":"Request body","tokens":44,"sha256":"20036ebbf475fb48fb49faaf1c231f7bed365a19244f7ac26e5401190c4dec77"}
+{"id":187,"path":"inventree/api/patch-api-part-id-bom-validate.md","heading":"Responses","tokens":19,"sha256":"8e4c629b271b43861ca7a8f538cc1337e85d2bd7d036f14c608816d2bf4bdba9"}
+{"id":188,"path":"inventree/api/patch-api-part-id-pricing.md","heading":"patch-api-part-id-pricing","tokens":20,"sha256":"9040fbc41f248cb771b50263c03b0cf6b4ba044d220e364fe7d82963a22f9dc1"}
+{"id":189,"path":"inventree/api/patch-api-part-id-pricing.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":190,"path":"inventree/api/patch-api-part-id-pricing.md","heading":"Request body","tokens":41,"sha256":"19a6d2e2ed5bd469504983ac77f709fb5ad61cd174cd6080f50abd3eec8f6176"}
+{"id":191,"path":"inventree/api/patch-api-part-id-pricing.md","heading":"Responses","tokens":18,"sha256":"12891fa00dedecaa7539c0be21df5f9ebab3f789a4e1ca6b04ea49b9acd6345c"}
+{"id":192,"path":"inventree/api/patch-api-part-id.md","heading":"patch-api-part-id","tokens":20,"sha256":"32763221ac1b621ab65a3a60edeef5cefc671bdd2ab884c3e3c40c088e65d63d"}
+{"id":193,"path":"inventree/api/patch-api-part-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":194,"path":"inventree/api/patch-api-part-id.md","heading":"Request body","tokens":35,"sha256":"2d35b14038472aaae0404e4e1566242af0fb2b76046f0d2deea30737a71192e7"}
+{"id":195,"path":"inventree/api/patch-api-part-id.md","heading":"Responses","tokens":17,"sha256":"b56f426b93d3bec8cc16ab59c4498c4c14ac5a101f82532dff076defea89180b"}
+{"id":196,"path":"inventree/api/patch-api-part-internal-price-id.md","heading":"patch-api-part-internal-price-id","tokens":23,"sha256":"916c212810e890e45789ff25bd2df9c24f0adb3dcfc3176cfea62f5f84f7e6fc"}
+{"id":197,"path":"inventree/api/patch-api-part-internal-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":198,"path":"inventree/api/patch-api-part-internal-price-id.md","heading":"Request body","tokens":45,"sha256":"47c3033475f169c9e8a55a8e788302abfd3e90de36239bc86f1d78e0de75a064"}
+{"id":199,"path":"inventree/api/patch-api-part-internal-price-id.md","heading":"Responses","tokens":20,"sha256":"ef090bc75950694c3a355a9270791f75c09c10fa065c2006a6b085fb0fc645aa"}
+{"id":200,"path":"inventree/api/patch-api-part-related-id.md","heading":"patch-api-part-related-id","tokens":25,"sha256":"7165e3a3db8e691c62ea5ff09f1ac7edf95ff5941a29e60f933ed537ff822aa4"}
+{"id":201,"path":"inventree/api/patch-api-part-related-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":202,"path":"inventree/api/patch-api-part-related-id.md","heading":"Request body","tokens":41,"sha256":"c9e2b1e5108fb694bb639084c9f5d3b2857016225c38818854001c729ce0621b"}
+{"id":203,"path":"inventree/api/patch-api-part-related-id.md","heading":"Responses","tokens":19,"sha256":"75330196bc0c0b23e74364316887be52f3201cb8d633f6c1cdfed71dfcd723bb"}
+{"id":204,"path":"inventree/api/patch-api-part-sale-price-id.md","heading":"patch-api-part-sale-price-id","tokens":21,"sha256":"93cb06ccea2a79f9d0d66e5ecb3a36476840abb97b8f0b1d538d84299268a377"}
+{"id":205,"path":"inventree/api/patch-api-part-sale-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":206,"path":"inventree/api/patch-api-part-sale-price-id.md","heading":"Request body","tokens":42,"sha256":"a2bdad7ed07cf525e66be37fb7ee091d3a1e62e99ec57c598fe583911559bafe"}
+{"id":207,"path":"inventree/api/patch-api-part-sale-price-id.md","heading":"Responses","tokens":19,"sha256":"0822042aaf302a5a94af46594c0c047607e2134aea07ea94277946c3b95c3116"}
+{"id":208,"path":"inventree/api/patch-api-part-stocktake-id.md","heading":"patch-api-part-stocktake-id","tokens":38,"sha256":"95553c6241c1f61cbfc5e6088d2b145c482914cd3a3238c623909366dbe90569"}
+{"id":209,"path":"inventree/api/patch-api-part-stocktake-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":210,"path":"inventree/api/patch-api-part-stocktake-id.md","heading":"Request body","tokens":42,"sha256":"dddc7ce31fd497cbcff5acb021e833f0b3273798d791e1b82cc5e8d8883cb840"}
+{"id":211,"path":"inventree/api/patch-api-part-stocktake-id.md","heading":"Responses","tokens":19,"sha256":"d93e5c1b762ac530888de633af057dca7f05619957dca47af369d414ec7c8173"}
+{"id":212,"path":"inventree/api/patch-api-part-test-template-id.md","heading":"patch-api-part-test-template-id","tokens":21,"sha256":"df869d40b21823c85457187a085534983261f2183b4f6d62742078d07b6b882f"}
+{"id":213,"path":"inventree/api/patch-api-part-test-template-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":214,"path":"inventree/api/patch-api-part-test-template-id.md","heading":"Request body","tokens":44,"sha256":"f8407cae679547d8eff6bb9d382dd131aae2af70c9f64d1541f6cccb68528c15"}
+{"id":215,"path":"inventree/api/patch-api-part-test-template-id.md","heading":"Responses","tokens":20,"sha256":"1f360578081802d8b24793221b73ab38e37102112d6f9f97d0e58818f2fabae1"}
+{"id":216,"path":"inventree/api/patch-api-part-thumbs-id.md","heading":"patch-api-part-thumbs-id","tokens":19,"sha256":"17261bb7dfc573d74f8d6c5f396ada710a6307e2ebfb275a02763c7f195ab5f0"}
+{"id":217,"path":"inventree/api/patch-api-part-thumbs-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":218,"path":"inventree/api/patch-api-part-thumbs-id.md","heading":"Request body","tokens":51,"sha256":"de1d31ae45d65928b7321089c70c426e94568a691fea9b02f3f784d98827a40b"}
+{"id":219,"path":"inventree/api/patch-api-part-thumbs-id.md","heading":"Responses","tokens":22,"sha256":"08c1f7a15bb232f6f65707007c6aff155313bd7f76931141acb08cdf41d51fb9"}
+{"id":220,"path":"inventree/api/patch-api-part.md","heading":"patch-api-part","tokens":49,"sha256":"23b4800ea7bf4e973166a255a759b8a522a3cf943dae5bb1aee14e2e08154a69"}
+{"id":221,"path":"inventree/api/patch-api-part.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":222,"path":"inventree/api/patch-api-part.md","heading":"Request body","tokens":35,"sha256":"2d35b14038472aaae0404e4e1566242af0fb2b76046f0d2deea30737a71192e7"}
+{"id":223,"path":"inventree/api/patch-api-part.md","heading":"Responses","tokens":17,"sha256":"b56f426b93d3bec8cc16ab59c4498c4c14ac5a101f82532dff076defea89180b"}
+{"id":224,"path":"inventree/api/post-api-bom-substitute.md","heading":"post-api-bom-substitute","tokens":24,"sha256":"0548fc79439d9cb97a9efed7fe53f7308a2a221e6864ddd5bedee0f458102ac4"}
+{"id":225,"path":"inventree/api/post-api-bom-substitute.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":226,"path":"inventree/api/post-api-bom-substitute.md","heading":"Request body","tokens":40,"sha256":"860c7a44fb51fca4c2000e87055f4fa2fcf33ddf2ec000a449d4735cd5f96d9b"}
+{"id":227,"path":"inventree/api/post-api-bom-substitute.md","heading":"Responses","tokens":20,"sha256":"d5f8456059e45f729cc7d0a3e7677b552002ecb0470d1ab58bfc1944f4848cba"}
+{"id":228,"path":"inventree/api/post-api-bom.md","heading":"post-api-bom","tokens":37,"sha256":"e90a7e0eee78cdc2eaad2014f4c75761bc5d805599cc42968796e623a28ba4ca"}
+{"id":229,"path":"inventree/api/post-api-bom.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":230,"path":"inventree/api/post-api-bom.md","heading":"Request body","tokens":33,"sha256":"bc7204b3e1a5f74d2c6c92a89fb892a8b94565514d80ef5cb40478330737d550"}
+{"id":231,"path":"inventree/api/post-api-bom.md","heading":"Responses","tokens":17,"sha256":"7f9461621c795591041af6ebb8fe67b53f3325c8324d35d9ff4619bc4eeaf38d"}
+{"id":232,"path":"inventree/api/post-api-part-category-parameters.md","heading":"post-api-part-category-parameters","tokens":45,"sha256":"3d1bc3d911799e6dcfb6a90f6410a41e0f3fe5dc1170c72135719cc9fd56c9f0"}
+{"id":233,"path":"inventree/api/post-api-part-category-parameters.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":234,"path":"inventree/api/post-api-part-category-parameters.md","heading":"Request body","tokens":46,"sha256":"a18a20ef24f98bd9bdab3738e47ba7cd3b13d7c5ae345266f69ee884f917b789"}
+{"id":235,"path":"inventree/api/post-api-part-category-parameters.md","heading":"Responses","tokens":22,"sha256":"a8b2fe3f3030a6fd0a16314ad9d39947026952c107af8a0402375449e2c7558a"}
+{"id":236,"path":"inventree/api/post-api-part-category.md","heading":"post-api-part-category","tokens":44,"sha256":"fe8cf3e56b9aedd8b98a6a073cb28a7b2bf53a4df7335bea4ee5da3f8b743764"}
+{"id":237,"path":"inventree/api/post-api-part-category.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":238,"path":"inventree/api/post-api-part-category.md","heading":"Request body","tokens":33,"sha256":"0408e708cd52ffb88db5a3236b59bb8d8c141be11c09be8a0c087c283a80d04c"}
+{"id":239,"path":"inventree/api/post-api-part-category.md","heading":"Responses","tokens":18,"sha256":"03793e49de149d3c858f9419d6d9fa141135dd13c5fb14c73d9b5b6e9792ea26"}
+{"id":240,"path":"inventree/api/post-api-part-id-bom-copy.md","heading":"post-api-part-id-bom-copy","tokens":18,"sha256":"6d6d282b2d7f319757ff0cd83f42a215720fc44529b514b797c2a9ed8a56691f"}
+{"id":241,"path":"inventree/api/post-api-part-id-bom-copy.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":242,"path":"inventree/api/post-api-part-id-bom-copy.md","heading":"Request body","tokens":36,"sha256":"16a36f721d29da89548ce9d2f934bf47bff3c24405c6bd067e052be58d5bbf3e"}
+{"id":243,"path":"inventree/api/post-api-part-id-bom-copy.md","heading":"Responses","tokens":18,"sha256":"740820ad312fa806cafb50eaa80c544b5279d12f9371cb87e3d9726e9057746b"}
+{"id":244,"path":"inventree/api/post-api-part-internal-price.md","heading":"post-api-part-internal-price","tokens":24,"sha256":"57639ed8a03a19ed78cd2bb9921b6344f11d405bf88e1385885969f5f5c38450"}
+{"id":245,"path":"inventree/api/post-api-part-internal-price.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":246,"path":"inventree/api/post-api-part-internal-price.md","heading":"Request body","tokens":40,"sha256":"ae1a8ba7352904fa506d5988dc9ccc0d8a82c843f1ba2acbda9419b939092ba6"}
+{"id":247,"path":"inventree/api/post-api-part-internal-price.md","heading":"Responses","tokens":20,"sha256":"754086fceebe7c4d748c751f350e8477c42b1d25d774fde3e6a49f6de2bb2a41"}
+{"id":248,"path":"inventree/api/post-api-part-related.md","heading":"post-api-part-related","tokens":22,"sha256":"85225a9123ff968cac030ffc8c51f423b6e1b18d4f164d0ae5400e9b513415b9"}
+{"id":249,"path":"inventree/api/post-api-part-related.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":250,"path":"inventree/api/post-api-part-related.md","heading":"Request body","tokens":36,"sha256":"3ffc732764d0c39ae8e327e33e9750c37bfbaba9ab1ef3b06dc239b142c04fe4"}
+{"id":251,"path":"inventree/api/post-api-part-related.md","heading":"Responses","tokens":19,"sha256":"c0fddbe50a91c18cde341309ffda167b8475f089cca075f3d6ba8de1c219af61"}
+{"id":252,"path":"inventree/api/post-api-part-sale-price.md","heading":"post-api-part-sale-price","tokens":22,"sha256":"bf4ef6e2101c9ac905df0abcf7dfc370825bf8f1ca5e8de6e9a9557e8a629fcc"}
+{"id":253,"path":"inventree/api/post-api-part-sale-price.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":254,"path":"inventree/api/post-api-part-sale-price.md","heading":"Request body","tokens":37,"sha256":"0422bd72f5ef42c70b69fd9d85b9f356e54eb09fb236730cad2b2146f1bb0d91"}
+{"id":255,"path":"inventree/api/post-api-part-sale-price.md","heading":"Responses","tokens":19,"sha256":"4d90d26d12819806285f3665a1aca0fba2f465d14bdcd9997600e15a095a1ff7"}
+{"id":256,"path":"inventree/api/post-api-part-stocktake-generate.md","heading":"post-api-part-stocktake-generate","tokens":22,"sha256":"7534d3c5084be3adcd757baeef9385dd00ce6c2483ff5bb64e84afab3735b8ef"}
+{"id":257,"path":"inventree/api/post-api-part-stocktake-generate.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":258,"path":"inventree/api/post-api-part-stocktake-generate.md","heading":"Request body","tokens":43,"sha256":"cfd54d516cb460d7ad7e534e8ea1c343c41400ead4dfe55c5fac35b1b70113bb"}
+{"id":259,"path":"inventree/api/post-api-part-stocktake-generate.md","heading":"Responses","tokens":21,"sha256":"a5a192529775de781660c71af863eb5e19a9030e2e8512acfcccc3c799fc8eaf"}
+{"id":260,"path":"inventree/api/post-api-part-stocktake.md","heading":"post-api-part-stocktake","tokens":21,"sha256":"03b824869dd1f8e04d08aacdc2535d12dfe25a4bdc8cab44112687f2c2b5904e"}
+{"id":261,"path":"inventree/api/post-api-part-stocktake.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":262,"path":"inventree/api/post-api-part-stocktake.md","heading":"Request body","tokens":37,"sha256":"8312b84d19429f895dc1e3a2140d57f066910b559a74cd402aaff0c6c3455b7a"}
+{"id":263,"path":"inventree/api/post-api-part-stocktake.md","heading":"Responses","tokens":19,"sha256":"46a71c3f54299b45f642519c1659445dfa5709f5ef3ae6240b02c25dde7db86c"}
+{"id":264,"path":"inventree/api/post-api-part-test-template.md","heading":"post-api-part-test-template","tokens":24,"sha256":"161a9d3ae7d3ff2db8cfc22797143a994e87eeda551fd6e6ed05fe2f1a4f69b0"}
+{"id":265,"path":"inventree/api/post-api-part-test-template.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":266,"path":"inventree/api/post-api-part-test-template.md","heading":"Request body","tokens":39,"sha256":"0ed82a9dbe79ec4df29dcb113436a6af381afb56fd7870f9c4f4d80afde8b61d"}
+{"id":267,"path":"inventree/api/post-api-part-test-template.md","heading":"Responses","tokens":20,"sha256":"01eb8ada5112ae30f91e2c6c4ea279008611a8e9409646156a1a7c42d834cb6b"}
+{"id":268,"path":"inventree/api/post-api-part.md","heading":"post-api-part","tokens":26,"sha256":"702194dfed61a820bd625081d25643b9355384cb762884bcef00a3b07a9f921c"}
+{"id":269,"path":"inventree/api/post-api-part.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":270,"path":"inventree/api/post-api-part.md","heading":"Request body","tokens":30,"sha256":"e5ab74df773669ae9023b45e67634b9d0bd8af20560efba0a62f856a69fab5c9"}
+{"id":271,"path":"inventree/api/post-api-part.md","heading":"Responses","tokens":17,"sha256":"b97cc7256ae16a5300e0496a6626c2af4f094b904ac6d96e9125b06ff0a87401"}
+{"id":272,"path":"inventree/api/put-api-bom-id-validate.md","heading":"put-api-bom-id-validate","tokens":18,"sha256":"e327533f068dc3594407070057fc34cd01e8708bd3e7f2d5c28ce351d53a986b"}
+{"id":273,"path":"inventree/api/put-api-bom-id-validate.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":274,"path":"inventree/api/put-api-bom-id-validate.md","heading":"Request body","tokens":40,"sha256":"88698fce53fb9806a8f07cefe32c20ecce9a7f8a22870d37644f1f6b3f41423d"}
+{"id":275,"path":"inventree/api/put-api-bom-id-validate.md","heading":"Responses","tokens":20,"sha256":"8de9c484ee21ad42bf107f7ef6d4a99c7e32e63fb6b4144d4057b8a5b227fb09"}
+{"id":276,"path":"inventree/api/put-api-bom-id.md","heading":"put-api-bom-id","tokens":20,"sha256":"f971f4cf48f6e9c45ad053a19cbf09b294b9fa9cd31bb08c1bc582b854a94469"}
+{"id":277,"path":"inventree/api/put-api-bom-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":278,"path":"inventree/api/put-api-bom-id.md","heading":"Request body","tokens":33,"sha256":"bc7204b3e1a5f74d2c6c92a89fb892a8b94565514d80ef5cb40478330737d550"}
+{"id":279,"path":"inventree/api/put-api-bom-id.md","heading":"Responses","tokens":17,"sha256":"15e2ccda51cf001c670f963609d01e491c9d569644c854408cdbeb92df8f2b5f"}
+{"id":280,"path":"inventree/api/put-api-bom-substitute-id.md","heading":"put-api-bom-substitute-id","tokens":26,"sha256":"aba50bdea98035f21d89d0890e3fb6c38975c104129290b488c121249254a9e4"}
+{"id":281,"path":"inventree/api/put-api-bom-substitute-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":282,"path":"inventree/api/put-api-bom-substitute-id.md","heading":"Request body","tokens":40,"sha256":"860c7a44fb51fca4c2000e87055f4fa2fcf33ddf2ec000a449d4735cd5f96d9b"}
+{"id":283,"path":"inventree/api/put-api-bom-substitute-id.md","heading":"Responses","tokens":20,"sha256":"107e578a0e4cfaa2d46f1ca3fbb534ff8876473ea8c5ae9dde5ea4278b374878"}
+{"id":284,"path":"inventree/api/put-api-part-category-id.md","heading":"put-api-part-category-id","tokens":17,"sha256":"cd70132132b1804845857e5a3a4b24f48a5d153a37a6d0e70890a03edb97465f"}
+{"id":285,"path":"inventree/api/put-api-part-category-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":286,"path":"inventree/api/put-api-part-category-id.md","heading":"Request body","tokens":33,"sha256":"0408e708cd52ffb88db5a3236b59bb8d8c141be11c09be8a0c087c283a80d04c"}
+{"id":287,"path":"inventree/api/put-api-part-category-id.md","heading":"Responses","tokens":18,"sha256":"e2ceb9865dbafde7ce4058d99a230ba9227617faa874a837c34db3903e318047"}
+{"id":288,"path":"inventree/api/put-api-part-category-parameters-id.md","heading":"put-api-part-category-parameters-id","tokens":27,"sha256":"870b82955c09326ab2ef80519d4f2d542700243c3d5cc20500fa60f3939656c1"}
+{"id":289,"path":"inventree/api/put-api-part-category-parameters-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":290,"path":"inventree/api/put-api-part-category-parameters-id.md","heading":"Request body","tokens":46,"sha256":"a18a20ef24f98bd9bdab3738e47ba7cd3b13d7c5ae345266f69ee884f917b789"}
+{"id":291,"path":"inventree/api/put-api-part-category-parameters-id.md","heading":"Responses","tokens":22,"sha256":"dd1ac21c90cef63349672b248454d351ac4506e10926b8ff43d3f69ac0c2723b"}
+{"id":292,"path":"inventree/api/put-api-part-category.md","heading":"put-api-part-category","tokens":30,"sha256":"4e37de90237833a20a0f04093a552b7468db52ed8c1db7b56b75e5b6184c7741"}
+{"id":293,"path":"inventree/api/put-api-part-category.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":294,"path":"inventree/api/put-api-part-category.md","heading":"Request body","tokens":33,"sha256":"0408e708cd52ffb88db5a3236b59bb8d8c141be11c09be8a0c087c283a80d04c"}
+{"id":295,"path":"inventree/api/put-api-part-category.md","heading":"Responses","tokens":18,"sha256":"e2ceb9865dbafde7ce4058d99a230ba9227617faa874a837c34db3903e318047"}
+{"id":296,"path":"inventree/api/put-api-part-id-bom-validate.md","heading":"put-api-part-id-bom-validate","tokens":24,"sha256":"93f7b82a6023934369a233388df84687b171060e4963a99a5a2ac9f0deb17429"}
+{"id":297,"path":"inventree/api/put-api-part-id-bom-validate.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":298,"path":"inventree/api/put-api-part-id-bom-validate.md","heading":"Request body","tokens":38,"sha256":"604545464fa8c3ffadc1a53e6c6f42c7c60fd5dbbf147e080354b5f5064cc333"}
+{"id":299,"path":"inventree/api/put-api-part-id-bom-validate.md","heading":"Responses","tokens":19,"sha256":"8e4c629b271b43861ca7a8f538cc1337e85d2bd7d036f14c608816d2bf4bdba9"}
+{"id":300,"path":"inventree/api/put-api-part-id-pricing.md","heading":"put-api-part-id-pricing","tokens":19,"sha256":"8a8e10efeda67ddd0c0a889f6eb630e29976fc10292d46921c7a43ca990cf82e"}
+{"id":301,"path":"inventree/api/put-api-part-id-pricing.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":302,"path":"inventree/api/put-api-part-id-pricing.md","heading":"Request body","tokens":35,"sha256":"065d9eaa070febbcea9739f99ff954393d2caadb0249e768cfae8935889da6f9"}
+{"id":303,"path":"inventree/api/put-api-part-id-pricing.md","heading":"Responses","tokens":18,"sha256":"12891fa00dedecaa7539c0be21df5f9ebab3f789a4e1ca6b04ea49b9acd6345c"}
+{"id":304,"path":"inventree/api/put-api-part-id.md","heading":"put-api-part-id","tokens":20,"sha256":"4e65e8edde9bbaa1121e6d1c448379f906eb3f3468bc8b5c74fa910db7db0aea"}
+{"id":305,"path":"inventree/api/put-api-part-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":306,"path":"inventree/api/put-api-part-id.md","heading":"Request body","tokens":30,"sha256":"e5ab74df773669ae9023b45e67634b9d0bd8af20560efba0a62f856a69fab5c9"}
+{"id":307,"path":"inventree/api/put-api-part-id.md","heading":"Responses","tokens":17,"sha256":"b56f426b93d3bec8cc16ab59c4498c4c14ac5a101f82532dff076defea89180b"}
+{"id":308,"path":"inventree/api/put-api-part-internal-price-id.md","heading":"put-api-part-internal-price-id","tokens":23,"sha256":"c0a56d1a9c8890aaf59b73b7a99163835d48e0ba3e7dda43ad2fb185a2c72ba7"}
+{"id":309,"path":"inventree/api/put-api-part-internal-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":310,"path":"inventree/api/put-api-part-internal-price-id.md","heading":"Request body","tokens":40,"sha256":"ae1a8ba7352904fa506d5988dc9ccc0d8a82c843f1ba2acbda9419b939092ba6"}
+{"id":311,"path":"inventree/api/put-api-part-internal-price-id.md","heading":"Responses","tokens":20,"sha256":"ef090bc75950694c3a355a9270791f75c09c10fa065c2006a6b085fb0fc645aa"}
+{"id":312,"path":"inventree/api/put-api-part-related-id.md","heading":"put-api-part-related-id","tokens":24,"sha256":"ce80d6dfbf16199dacc92a2678974aaf037a8abafcd76061efe1816d5977e239"}
+{"id":313,"path":"inventree/api/put-api-part-related-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":314,"path":"inventree/api/put-api-part-related-id.md","heading":"Request body","tokens":36,"sha256":"3ffc732764d0c39ae8e327e33e9750c37bfbaba9ab1ef3b06dc239b142c04fe4"}
+{"id":315,"path":"inventree/api/put-api-part-related-id.md","heading":"Responses","tokens":19,"sha256":"75330196bc0c0b23e74364316887be52f3201cb8d633f6c1cdfed71dfcd723bb"}
+{"id":316,"path":"inventree/api/put-api-part-sale-price-id.md","heading":"put-api-part-sale-price-id","tokens":21,"sha256":"38f01056a7fb49db05909312179a9f471d8dd70aa8ad9744529a2af5e0231e8c"}
+{"id":317,"path":"inventree/api/put-api-part-sale-price-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":318,"path":"inventree/api/put-api-part-sale-price-id.md","heading":"Request body","tokens":37,"sha256":"0422bd72f5ef42c70b69fd9d85b9f356e54eb09fb236730cad2b2146f1bb0d91"}
+{"id":319,"path":"inventree/api/put-api-part-sale-price-id.md","heading":"Responses","tokens":19,"sha256":"0822042aaf302a5a94af46594c0c047607e2134aea07ea94277946c3b95c3116"}
+{"id":320,"path":"inventree/api/put-api-part-stocktake-id.md","heading":"put-api-part-stocktake-id","tokens":38,"sha256":"6b3f54dcac542ad45358e79dc9edb332ddacf7e3bdb2191a984812abb651c377"}
+{"id":321,"path":"inventree/api/put-api-part-stocktake-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":322,"path":"inventree/api/put-api-part-stocktake-id.md","heading":"Request body","tokens":37,"sha256":"8312b84d19429f895dc1e3a2140d57f066910b559a74cd402aaff0c6c3455b7a"}
+{"id":323,"path":"inventree/api/put-api-part-stocktake-id.md","heading":"Responses","tokens":19,"sha256":"d93e5c1b762ac530888de633af057dca7f05619957dca47af369d414ec7c8173"}
+{"id":324,"path":"inventree/api/put-api-part-test-template-id.md","heading":"put-api-part-test-template-id","tokens":21,"sha256":"dea3fd956d7e705c24d7bb7c59f0324639b1fd0466666181da207e126363aa19"}
+{"id":325,"path":"inventree/api/put-api-part-test-template-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":326,"path":"inventree/api/put-api-part-test-template-id.md","heading":"Request body","tokens":39,"sha256":"0ed82a9dbe79ec4df29dcb113436a6af381afb56fd7870f9c4f4d80afde8b61d"}
+{"id":327,"path":"inventree/api/put-api-part-test-template-id.md","heading":"Responses","tokens":20,"sha256":"1f360578081802d8b24793221b73ab38e37102112d6f9f97d0e58818f2fabae1"}
+{"id":328,"path":"inventree/api/put-api-part-thumbs-id.md","heading":"put-api-part-thumbs-id","tokens":19,"sha256":"0f24a1c3a6c394d1e7fd95b0af8e6ee77bc2c252f00561b015898b2a5f800289"}
+{"id":329,"path":"inventree/api/put-api-part-thumbs-id.md","heading":"Parameters","tokens":26,"sha256":"b208cd54e127ab38047d75d3d21b175c269ffbada0dad7937eb2da45d742b334"}
+{"id":330,"path":"inventree/api/put-api-part-thumbs-id.md","heading":"Request body","tokens":46,"sha256":"63ba94bd1f2615a0210131ac41157d01646e7989af353b01b40cb027eb12e4c3"}
+{"id":331,"path":"inventree/api/put-api-part-thumbs-id.md","heading":"Responses","tokens":22,"sha256":"08c1f7a15bb232f6f65707007c6aff155313bd7f76931141acb08cdf41d51fb9"}
+{"id":332,"path":"inventree/api/put-api-part.md","heading":"put-api-part","tokens":28,"sha256":"49f6428f597d18189f54c0ed04c46ebbdacf626a89a1b87442c9b0237f5d1c65"}
+{"id":333,"path":"inventree/api/put-api-part.md","heading":"Parameters","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":334,"path":"inventree/api/put-api-part.md","heading":"Request body","tokens":30,"sha256":"e5ab74df773669ae9023b45e67634b9d0bd8af20560efba0a62f856a69fab5c9"}
+{"id":335,"path":"inventree/api/put-api-part.md","heading":"Responses","tokens":17,"sha256":"b56f426b93d3bec8cc16ab59c4498c4c14ac5a101f82532dff076defea89180b"}
+{"id":336,"path":"inventree/parts/create.md","heading":"create","tokens":9,"sha256":"b002910b2105c51155b3a5c146457bdfb1d48e69c15317ff5a1e7507ee32a3a1"}
+{"id":337,"path":"inventree/parts/create.md","heading":"Part Creation[¶](#part-creation \"Permanent link\")","tokens":159,"sha256":"9202f53da4ed43c03e1f173c2ce7af5ac1cfa35ddfb0b6ec1fead8c15ee3a34c"}
+{"id":338,"path":"inventree/parts/create.md","heading":"Create Part Form[¶](#create-part-form \"Permanent link\")","tokens":486,"sha256":"99df2af373f4408b8bed76191a6ac2f1865ce0c3f45c426a0deef4bbc64123e6"}
+{"id":339,"path":"inventree/parts/create.md","heading":"Create Part Form[¶](#create-part-form \"Permanent link\")","tokens":72,"sha256":"d83366bb8378efba541e3f3cf5e7d2c0f2041dfd09ef61c2d893c89c667f7262"}
+{"id":340,"path":"inventree/parts/create.md","heading":"Import from File[¶](#import-from-file \"Permanent link\")","tokens":61,"sha256":"7186cc40861f69d8e5bfe19d01f7f36315cb0d82f65169a9d578c5a324664653"}
+{"id":341,"path":"inventree/parts/create.md","heading":"Import from Supplier[¶](#import-from-supplier \"Permanent link\")","tokens":461,"sha256":"72df79ad93239722724a2a2a149381a0854d443d7e64188a5671d8570e6a024a"}
+{"id":342,"path":"inventree/parts/create.md","heading":"Other Part Creation Methods[¶](#other-part-creation-methods \"Permanent link\")","tokens":67,"sha256":"713ccb005748a3681b9daf4305ad082716599034973cbfd288d246093efab926"}
+{"id":343,"path":"inventree/parts/index.md","heading":"index","tokens":4,"sha256":"7addb7cf3fb3a5d4094c0819c15142d90a393570df8e21c802afc98a21344761"}
+{"id":344,"path":"inventree/parts/index.md","heading":"Part[¶](#part \"Permanent link\")","tokens":58,"sha256":"198e818e876626f6b0a3a32a991ed2bfd16e6146f40f8e589b540bc1d9c36712"}
+{"id":345,"path":"inventree/parts/index.md","heading":"Part Category[¶](#part-category \"Permanent link\")","tokens":254,"sha256":"ef11eb69feae96b349f4c2de2c6cee38eb61455149b3ce61bebfe09535494bcb"}
+{"id":346,"path":"inventree/parts/index.md","heading":"Part Attributes[¶](#part-attributes \"Permanent link\")","tokens":490,"sha256":"005dd5fac4f30327022fbbb7f538cf4106980a730867d4727bd0e81ee2620096"}
+{"id":347,"path":"inventree/parts/index.md","heading":"Part Attributes[¶](#part-attributes \"Permanent link\")","tokens":242,"sha256":"3c993cb330336a6ba0cd91350806d2570c16fbc4ce915dc1763d1b5dab2bea6d"}
+{"id":348,"path":"inventree/parts/index.md","heading":"Locked Parts[¶](#locked-parts \"Permanent link\")","tokens":99,"sha256":"687f90b0fef81dcec3b930f0838f587100a06d273609ccd9e0e3b2443f8481e4"}
+{"id":349,"path":"inventree/parts/index.md","heading":"Active Parts[¶](#active-parts \"Permanent link\")","tokens":66,"sha256":"3540565b9e6ef2f2635c75dd9de3b5695ce23d0c0285cafc99c3cf59437a3731"}
+{"id":350,"path":"inventree/parts/index.md","heading":"Units of Measure[¶](#units-of-measure \"Permanent link\")","tokens":409,"sha256":"0e6904721fc191e006a1cb56d6afe4f245f177700a86f1324c0462c212146b03"}
+{"id":351,"path":"inventree/parts/index.md","heading":"Part Images[¶](#part-images \"Permanent link\")","tokens":495,"sha256":"1ffc804295d69df1a6ba52c1b3388089f744bc6f90237340b7fd972cd4877fcb"}
+{"id":352,"path":"inventree/parts/index.md","heading":"Part Import[¶](#part-import \"Permanent link\")","tokens":113,"sha256":"7d73da99132fa6d2cff0dfd88fdf19cbb5500d47a3208a97b8a3b3a54a377e07"}
+{"id":353,"path":"inventree/parts/notification.md","heading":"notification","tokens":8,"sha256":"675fb23bb2bd733c8881330a444fd525bc35e9dc83fd4c7b376984de7f39a8bf"}
+{"id":354,"path":"inventree/parts/notification.md","heading":"General Notification Details[¶](#general-notification-details \"Permanent link\")","tokens":434,"sha256":"4712a1d31853bae1c881d529e33d50a53e0ddc65517cc64afcbf14a3e658d702"}
+{"id":355,"path":"inventree/parts/notification.md","heading":"Part Notification Events[¶](#part-notification-events \"Permanent link\")","tokens":188,"sha256":"d271229cd673c4fc0a180d6d42284d11149785a999b3db0600564dcf59b57195"}
+{"id":356,"path":"inventree/parts/notification.md","heading":"Subscribing to Notifications[¶](#subscribing-to-notifications \"Permanent link\")","tokens":378,"sha256":"e5605df2b21383192a8325cf0c63df5760a033cb7f53985e352c8c2a25444837"}
+{"id":357,"path":"inventree/parts/pricing.md","heading":"pricing","tokens":5,"sha256":"037b766d96d35fd7e5dd72b1c0233ff2687c6cbf75542404308e6789b8ee6c55"}
+{"id":358,"path":"inventree/parts/pricing.md","heading":"Part Pricing[¶](#part-pricing \"Permanent link\")","tokens":348,"sha256":"e4bab41c05d0773eaff69f6f191af8ad6c7702aa8bcd70c0eb293774365b9150"}
+{"id":359,"path":"inventree/parts/pricing.md","heading":"Pricing Tab[¶](#pricing-tab \"Permanent link\")","tokens":443,"sha256":"49f55e572d5a5fc958034277e02fa69edbe9ab443a58b3a959e8d4439beeded4"}
+{"id":360,"path":"inventree/parts/pricing.md","heading":"Pricing Tab[¶](#pricing-tab \"Permanent link\")","tokens":468,"sha256":"466e9395faf5891c6f53fd03867d055b40f22911e76deccde9d20509e5f7028e"}
+{"id":361,"path":"inventree/parts/pricing.md","heading":"Pricing Tab[¶](#pricing-tab \"Permanent link\")","tokens":449,"sha256":"b0e5d157a61eb6e54d7d969aad5acd64a6194a9b5bd2fdd31bd502def81eeeee"}
+{"id":362,"path":"inventree/parts/pricing.md","heading":"Pricing Tab[¶](#pricing-tab \"Permanent link\")","tokens":357,"sha256":"5cc6eb1275cd446f15ec2983ef67fa92ef7980b84e73c5822a5f2d1bd7a52d75"}
+{"id":363,"path":"inventree/parts/pricing.md","heading":"Pricing Updates[¶](#pricing-updates \"Permanent link\")","tokens":457,"sha256":"46751e4108178bcd95cc2e94fa4ee47f06d9b023ea4ee91c3b68d8f065e2e791"}
+{"id":364,"path":"inventree/parts/pricing.md","heading":"Pricing Updates[¶](#pricing-updates \"Permanent link\")","tokens":64,"sha256":"02d9ec26c90d6c2037bbd1a7c4a17cfd8a48b9f9355d8a619dbba7fe3ee1c104"}
+{"id":365,"path":"inventree/parts/revision.md","heading":"revision","tokens":6,"sha256":"6ea9084c3be280bf91ffc997a4859ed7a3c27a72798648da7f63b1f5ed902604"}
+{"id":366,"path":"inventree/parts/revision.md","heading":"Part Revisions[¶](#part-revisions \"Permanent link\")","tokens":402,"sha256":"081fc68d0d6a277612025c5c5a2c038df1cd6bd638a652d7b34a2f3da7cedcf2"}
+{"id":367,"path":"inventree/parts/revision.md","heading":"Part Revisions[¶](#part-revisions \"Permanent link\")","tokens":201,"sha256":"9f71ad1c6276a5fc4a19b828e293225b78f289a547d819274a0e0b735ad21937"}
+{"id":368,"path":"inventree/parts/revision.md","heading":"Revision Settings[¶](#revision-settings \"Permanent link\")","tokens":72,"sha256":"79492f519cf6bbb5154cf33ead595950025a99f350cf824d4f8d6dbfaabf8cc0"}
+{"id":369,"path":"inventree/parts/revision.md","heading":"Create a Revision[¶](#create-a-revision \"Permanent link\")","tokens":318,"sha256":"81a4db0e8bc9a40c1a94ba96b8ec8a80179995ba2b2f926951c8fd0a7d6def23"}
+{"id":370,"path":"inventree/parts/revision.md","heading":"Revision Navigation[¶](#revision-navigation \"Permanent link\")","tokens":146,"sha256":"775770deff1fbdf70582e04cabefe6c28edabe0826053321b85b3943503605f9"}
+{"id":371,"path":"inventree/parts/stocktake.md","heading":"stocktake","tokens":6,"sha256":"95025227d7d1769ec408da456082c36ba366f8e58e82c7a1dd0c1d1f572c2c33"}
+{"id":372,"path":"inventree/parts/stocktake.md","heading":"Part Stocktake[¶](#part-stocktake \"Permanent link\")","tokens":446,"sha256":"44d176a3f2d5af2e23cbd3cbbdae42e1c11395295949fd1464f24b0ca28b5203"}
+{"id":373,"path":"inventree/parts/stocktake.md","heading":"Part Stocktake[¶](#part-stocktake \"Permanent link\")","tokens":380,"sha256":"490cc7f8a92bcee76390ba064241f59bf10cd7f1ff42acbf22e14f41d10c617f"}
+{"id":374,"path":"inventree/parts/stocktake.md","heading":"Stocktake Reports[¶](#stocktake-reports \"Permanent link\")","tokens":430,"sha256":"253e524632900802dc46ae8ad9a8790076d29e6099cddcb9a9b5a95203fd8f5b"}
+{"id":375,"path":"inventree/parts/stocktake.md","heading":"Stocktake Reports[¶](#stocktake-reports \"Permanent link\")","tokens":118,"sha256":"9fcb276f8d9ac6343c964cec927dee7ec8fa3229a72adc3b6830a5943ae29775"}
+{"id":376,"path":"inventree/parts/stocktake.md","heading":"Stocktake Settings[¶](#stocktake-settings \"Permanent link\")","tokens":456,"sha256":"1007871f73aca5740ece63d0f3b88e88783885b30e47abf508f268ec070996a9"}
+{"id":377,"path":"inventree/parts/template.md","heading":"template","tokens":6,"sha256":"75162e55726537d999bcae5fede0736087167e131e3c6bee3cb18bf038ec3b81"}
+{"id":378,"path":"inventree/parts/template.md","heading":"Part Templates[¶](#part-templates \"Permanent link\")","tokens":482,"sha256":"8d469f7f6bbc74b834dccd94464baec375e95523a8e0ffe98c7b5ae201431d67"}
+{"id":379,"path":"inventree/parts/test.md","heading":"test","tokens":4,"sha256":"d3316f5c3fc03dbb4d1e061763ff4f0aab59b1228ce36e41d6bb3a04e5ffb999"}
+{"id":380,"path":"inventree/parts/test.md","heading":"Part Test Templates[¶](#part-test-templates \"Permanent link\")","tokens":483,"sha256":"49079da521aef334956bf41ac0a026d8ccb6dc1f053c11db0233de73180eca29"}
+{"id":381,"path":"inventree/parts/test.md","heading":"Part Test Templates[¶](#part-test-templates \"Permanent link\")","tokens":384,"sha256":"d09bad537cafad1fa75e96cd77f79e4370b888c5d875f6dd7e1ef3160cd1e0d3"}
+{"id":382,"path":"inventree/parts/trackable.md","heading":"trackable","tokens":6,"sha256":"baa5ae69f6568f21de08f138621e5b9a3e657ade16077f0b596e2afb8c3f5642"}
+{"id":383,"path":"inventree/parts/trackable.md","heading":"Stock Tracking[¶](#stock-tracking \"Permanent link\")","tokens":174,"sha256":"f1fc157ab323de21b904c9771479ad34a6b993234616939a37152d56429a6949"}
+{"id":384,"path":"inventree/parts/trackable.md","heading":"Assign Serial Numbers[¶](#assign-serial-numbers \"Permanent link\")","tokens":209,"sha256":"6e4daca5278c8792b3b4d8b7d39e3fb2d614bd9d702fcdb170121067d2c54be2"}
+{"id":385,"path":"inventree/parts/trackable.md","heading":"Build Orders[¶](#build-orders \"Permanent link\")","tokens":50,"sha256":"1328a1ea37e84516ce612fc99cb45824e04ca36d15541b63270a76e2aaa0d7e6"}
+{"id":386,"path":"inventree/parts/views.md","heading":"views","tokens":7,"sha256":"aed93fb55c18ada3e2b223d704fb61eb61873d3ef4c60ff9409531cfcb3bc82e"}
+{"id":387,"path":"inventree/parts/views.md","heading":"Part Views[¶](#part-views \"Permanent link\")","tokens":103,"sha256":"ca32ee210de41534a426cdbcad161c90ddc7f31438d06520fe81830b67bd1f11"}
+{"id":388,"path":"inventree/parts/views.md","heading":"Part Details[¶](#part-details \"Permanent link\")","tokens":354,"sha256":"54ed491ed4bec78c8d96ed09662f380cc9bc38b73a414e034b22a0e3253a528f"}
+{"id":389,"path":"inventree/parts/views.md","heading":"Part Tabs[¶](#part-tabs \"Permanent link\")","tokens":439,"sha256":"1e0568c0c8ff465b4f9e5298b6b9869d6ab3b40099a0efcc006aa2e50a392e7a"}
+{"id":390,"path":"inventree/parts/views.md","heading":"Part Tabs[¶](#part-tabs \"Permanent link\")","tokens":487,"sha256":"fe30e778bd64761cbdea1b7e911da263cd27c9cd35596c02762bdabe676a532e"}
+{"id":391,"path":"inventree/parts/views.md","heading":"Part Tabs[¶](#part-tabs \"Permanent link\")","tokens":362,"sha256":"7112d7601721a193e5368d57a0a0872126baaf5b525adb095d1ed209ea2c45ad"}
+{"id":392,"path":"inventree/parts/virtual.md","heading":"virtual","tokens":8,"sha256":"3cf6daac72aa4358d44267559dc7474a933341c648247b7560c7a840b8c7a1e7"}
+{"id":393,"path":"inventree/parts/virtual.md","heading":"Virtual Parts[¶](#virtual-parts \"Permanent link\")","tokens":500,"sha256":"020a5cb547bf904dd20dbcebc0c264f964a12b5ff97e910690dc092f9b703380"}
+{"id":394,"path":"inventree/parts/virtual.md","heading":"Virtual Parts[¶](#virtual-parts \"Permanent link\")","tokens":4,"sha256":"874e4820d6d5033acabbd1e616dedbeb8059e9ec2d6665e6f625e896b7c6e19a"}
+{"id":395,"path":"inventree/ui/categories.md","heading":"categories","tokens":53,"sha256":"6f08740719929b5f2e1fcce9316f78b31f07d73492f612f2821db458464fd26a"}
+{"id":396,"path":"inventree/ui/categories.md","heading":"aria-labels","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":397,"path":"inventree/ui/categories.md","heading":"Visible button text","tokens":7,"sha256":"06d0988c5a6dacbed1ef8eeaedc8e1beb5f631e9f196d4da9f459e1bf23d162c"}
+{"id":398,"path":"inventree/ui/categories.md","heading":"Roles present","tokens":4,"sha256":"48f450b00aa8b8515a806cacd0713a9779cb88a69c6c5aa0542aa9226e26f44d"}
+{"id":399,"path":"inventree/ui/categories.md","heading":"Input placeholders","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":400,"path":"inventree/ui/categories.md","heading":"Headings","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":401,"path":"inventree/ui/categories.md","heading":"Internal /web links","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":402,"path":"inventree/ui/categories.md","heading":"Locator recipes (ready for Playwright)","tokens":26,"sha256":"84c4b92d673b23da287d7ef97fb3b7cc2433ff777b79093581b267d7cbd03271"}
+{"id":403,"path":"inventree/ui/login.md","heading":"login","tokens":45,"sha256":"924aa3b8df9ff88f721072491cd5e48b33aa9ddcbce85ae1c043dc098cbb077a"}
+{"id":404,"path":"inventree/ui/login.md","heading":"aria-labels","tokens":21,"sha256":"603831afbe3eb57e1a58e78fb3cd908d1baf23c34720623b117c701f504155ce"}
+{"id":405,"path":"inventree/ui/login.md","heading":"Visible button text","tokens":13,"sha256":"2c804ffbe0657cd73ad6f1acb37cdac7d6b692beb4296f248aa4c2cebb398f99"}
+{"id":406,"path":"inventree/ui/login.md","heading":"Roles present","tokens":4,"sha256":"48f450b00aa8b8515a806cacd0713a9779cb88a69c6c5aa0542aa9226e26f44d"}
+{"id":407,"path":"inventree/ui/login.md","heading":"Input placeholders","tokens":9,"sha256":"37e8005a4ec7eb3060dcb14988e7a88aec381be12c1a0d7c7d21d7237ef804ce"}
+{"id":408,"path":"inventree/ui/login.md","heading":"Headings","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":409,"path":"inventree/ui/login.md","heading":"Internal /web links","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":410,"path":"inventree/ui/login.md","heading":"Locator recipes (ready for Playwright)","tokens":119,"sha256":"a9ae1b6f1ba256bbb28df65640854d0c211ed62264671bb6f28b6001211fe774"}
+{"id":411,"path":"inventree/ui/part-detail.md","heading":"part-detail","tokens":64,"sha256":"5b6ede621334d786ed32ed2c1c684978576cd05b09c834ad804c24e3a96d6abf"}
+{"id":412,"path":"inventree/ui/part-detail.md","heading":"aria-labels","tokens":207,"sha256":"15a6a5692f14ef267cc1901dd2400ae6fbd7687ebf21d0d8cb7b9f1a017921e8"}
+{"id":413,"path":"inventree/ui/part-detail.md","heading":"Visible button text","tokens":70,"sha256":"feff1f5c1ce0290f0dc37883c955a7f6677d7e4804571952d1a3e72774b7b94b"}
+{"id":414,"path":"inventree/ui/part-detail.md","heading":"Roles present","tokens":14,"sha256":"dd7df4dcc014d6d72f172907da73583b10e2f32058e7f1838c7beb79fa24db62"}
+{"id":415,"path":"inventree/ui/part-detail.md","heading":"Input placeholders","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":416,"path":"inventree/ui/part-detail.md","heading":"Headings","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":417,"path":"inventree/ui/part-detail.md","heading":"Internal /web links","tokens":10,"sha256":"ecfa93163a5c20e896cbb74201d294f8b97ca48128c8161f63c7dad5ab9a82ba"}
+{"id":418,"path":"inventree/ui/part-detail.md","heading":"Locator recipes (ready for Playwright)","tokens":748,"sha256":"b795e6521f73d28d6da32380deb31cee7897055afd18798f3b7732c178e71949"}
+{"id":419,"path":"inventree/ui/parts-list.md","heading":"parts-list","tokens":57,"sha256":"1cd27d2c2fbdb4debad570585bb555434c296899024c28d36cfe80eaecb52651"}
+{"id":420,"path":"inventree/ui/parts-list.md","heading":"aria-labels","tokens":89,"sha256":"50f4f15352db5b68535a46c2e78c368b5b706e11d98fe4031e63a9e1c66b0bbf"}
+{"id":421,"path":"inventree/ui/parts-list.md","heading":"Visible button text","tokens":32,"sha256":"23ee052c31a7ae832a03c89883603ccb973b58886bca6060bc30c2a6a88ffe5b"}
+{"id":422,"path":"inventree/ui/parts-list.md","heading":"Roles present","tokens":14,"sha256":"dd7df4dcc014d6d72f172907da73583b10e2f32058e7f1838c7beb79fa24db62"}
+{"id":423,"path":"inventree/ui/parts-list.md","heading":"Input placeholders","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":424,"path":"inventree/ui/parts-list.md","heading":"Headings","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":425,"path":"inventree/ui/parts-list.md","heading":"Internal /web links","tokens":4,"sha256":"a9fe806919efe0c2e23600a69a01c750e403e0303d3862e5136e046b829cae82"}
+{"id":426,"path":"inventree/ui/parts-list.md","heading":"Locator recipes (ready for Playwright)","tokens":403,"sha256":"e4b426da9f59233d0a0cb5c24ec56bef1ff88868ed29d51a2d02282c3f154e01"}
+{"id":427,"path":"inventree/ui/shell.md","heading":"shell","tokens":54,"sha256":"9aaa0f2765c1de348ba5434564a38ee678ce92a2feb8f7625e67afdc940dae94"}
+{"id":428,"path":"inventree/ui/shell.md","heading":"aria-labels","tokens":31,"sha256":"3d667767299dca58bc0d31ae788886a4ca3afd18383255d2419cb4123f21025b"}
+{"id":429,"path":"inventree/ui/shell.md","heading":"Visible button text","tokens":22,"sha256":"3aee1634eba94fdb890ffb6db3ce4e2e2139f196efc9c9802c3aaf31526f98a5"}
+{"id":430,"path":"inventree/ui/shell.md","heading":"Roles present","tokens":8,"sha256":"acb0c3988ee5df6c849793cace8fc29f20d4a541c8c17abf0e2642372a356bdb"}
+{"id":431,"path":"inventree/ui/shell.md","heading":"Input placeholders","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":432,"path":"inventree/ui/shell.md","heading":"Headings","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":433,"path":"inventree/ui/shell.md","heading":"Internal /web links","tokens":2,"sha256":"011cad1a21833236a91854b53f08fbafe84da61572af6b0ad0ce3bbcbf08e4a0"}
+{"id":434,"path":"inventree/ui/shell.md","heading":"Locator recipes (ready for Playwright)","tokens":209,"sha256":"1af0b1f19c72615b62c5299f6c24b809e4678a07be9b4fb7cfed2ac2b64dc4f3"}
+{"id":435,"path":"qa/best-practices.md","heading":"best-practices","tokens":95,"sha256":"e88d9d37075911051836d24287c6ec07bfc0e667c34b34a996d1986339aa7dce"}
+{"id":436,"path":"qa/best-practices.md","heading":"1. Playwright Page Object Model (POM)","tokens":481,"sha256":"1e090d3e868fc0afbc49f67426e8ef89369a8665949303f33e385ff8a279a123"}
+{"id":437,"path":"qa/best-practices.md","heading":"2. Playwright API testing","tokens":374,"sha256":"593b7380cb6f43e5eb1f334bca0a80c7793e2f05d0546c699cca06cb8ea739e2"}
+{"id":438,"path":"qa/best-practices.md","heading":"3. Test case authoring & traceability","tokens":263,"sha256":"ca710ed3281677ec5382b0633b287a2280d53d169141219cef016b9e9ca7969c"}
+{"id":439,"path":"qa/best-practices.md","heading":"4. LLM-generated tests — grounding rules","tokens":447,"sha256":"6b0f33562a4e8a1f406db876e61edada65a4c11f226e27fd073a47facd66af91"}
+{"id":440,"path":"qa/best-practices.md","heading":"4. LLM-generated tests — grounding rules","tokens":114,"sha256":"64854d2598dfacfad7d0840cac442251abe37be3262fc330d08ccbca2c5db33e"}
+{"id":441,"path":"qa/best-practices.md","heading":"5. InvenTree Parts domain — cheatsheet","tokens":500,"sha256":"02f88a254724bb29ad0ad1df0800088f76aba39d7bd931e2a6d116ea8c7b5d84"}
+{"id":442,"path":"qa/best-practices.md","heading":"6. Repository conventions","tokens":120,"sha256":"4cce1ec41a71f722f2bda028e0baf87ab94d4156d84263bcfc038647688f90b6"}
+{"id":443,"path":"qa/best-practices.md","heading":"Sources","tokens":329,"sha256":"7acf786ee2b43fc22d1213d6be79e29a8cfe05b8227cedb392b65d63274aa1e6"}
+{"id":444,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"INV-PARTS-001-delete-active-part","tokens":18,"sha256":"31ed24358ed751847b732cc804302270b1ee758d7b76b56e38fb97e2bd7563d1"}
+{"id":445,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Summary","tokens":155,"sha256":"0e9f8e4272c106e0464e50063315d4006ad232df8e222ee6c857ef0c95d5296d"}
+{"id":446,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Environment","tokens":88,"sha256":"8293e0263ef207cd005fad2b193f1c581e207582d6bc6c59e373c4765505b4a5"}
+{"id":447,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Steps to reproduce","tokens":158,"sha256":"9df8a92ecebf8ed2e25724635eda1a31ff6b67c00594371b1963e6835f0b24ad"}
+{"id":448,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Workaround","tokens":101,"sha256":"0d0f6444d701f0d63cb316d1baa7782bcbb167efe1c383dce9beea35fde2227e"}
+{"id":449,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Impact","tokens":196,"sha256":"3cd4dabbec51722c723ad47fdd3ba4606112ded98c93711cb21cf09e3d9bc38e"}
+{"id":450,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Proposed fixes (in order of preference)","tokens":138,"sha256":"77627b98846d38e11cd53fa0ae74315c31f05ed6d9a69a2844dbc3690ab084a3"}
+{"id":451,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Evidence","tokens":119,"sha256":"fff4a82c683ba60def81441931fa38d1f4f81f5943ee5ddf45a4b90ecee49941"}
+{"id":452,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Related","tokens":42,"sha256":"59540df592e357fdb50d181fa88fcd8e102b4daffeb27b2156109b1e132aecda"}
+{"id":453,"path":"qa/bugs/INV-PARTS-001-delete-active-part.md","heading":"Timeline","tokens":36,"sha256":"7dd1a497581b0650c6abd95be8ae1943d1a506596521adedc40ff1fd4fa69137"}
+{"id":454,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"INV-PARTS-002-openapi-required-drift","tokens":20,"sha256":"38f59244d66d8b8128aef635ab1138c9f197157d4741488680cd3d25512a4114"}
+{"id":455,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Summary","tokens":213,"sha256":"22ebd3014764ad7d6de2407e205be0519783013c41a9375b3c7468d9095a14d7"}
+{"id":456,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Environment","tokens":73,"sha256":"f340803701809acf3f42bd24c8a22a5b0988a40dc0f8482b934fc97e62c94051"}
+{"id":457,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Steps to reproduce","tokens":176,"sha256":"96167b3d8d0e0a0e9abf1b3394eb9512d1a0a18923e7655e28e8ddb78c3028ec"}
+{"id":458,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Impact","tokens":175,"sha256":"278b7af2f32c12860ef5187bc5cced1ec4dbed7855fae4f043e180b8cd60f134"}
+{"id":459,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Proposed fixes (in order of preference)","tokens":181,"sha256":"d7c1c5c5390cd1a587c2c58752ee089bcc9cfdf1d6eb718d3ab84c1a8ac54e8d"}
+{"id":460,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Workaround applied in this repo","tokens":84,"sha256":"c7ba6279a723782118001923860482cb4d884a192c203aac9ab4bd50c1d2bb6a"}
+{"id":461,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Evidence","tokens":98,"sha256":"8dc465f5584e71e838a258b0101de691c04a34a61af8c2ca785f9c1026e9fe2a"}
+{"id":462,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Related","tokens":87,"sha256":"561320d9c61d1979bd7152d9b7dfc4ca41a792f0353c397c0e6ee49c8b2c36a4"}
+{"id":463,"path":"qa/bugs/INV-PARTS-002-openapi-required-drift.md","heading":"Timeline","tokens":33,"sha256":"f25b941e3883844cb5d070a3d1f6b6379431dc3f5d44551d554569b2aa5dc9e5"}
+{"id":464,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"INV-PARTS-003-category-not-required","tokens":18,"sha256":"9c5d6013eacaad480c8d018177ec1bc13a243c1958d7da5100a58dbfa013f2e5"}
+{"id":465,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Summary","tokens":143,"sha256":"2517ff1d4adf48d9f149af01000b3057bf757ced3b2e4368a70334e6db4d07b3"}
+{"id":466,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Environment","tokens":28,"sha256":"eec878ce32bf59dfe7f3d3c32c66aaaae555bb48501b4436a4b38366f2fe92cd"}
+{"id":467,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Steps to reproduce","tokens":168,"sha256":"ef6c88189a6c21115f4878563a4ffcdfa2e48ec1815fb3ddfd6d6214282325a7"}
+{"id":468,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Impact","tokens":237,"sha256":"4a1202ce013c6c04dc9ffe45be9661be76fefdaa290ae819b598e9b4912cb594"}
+{"id":469,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Proposed fixes (in order of preference)","tokens":173,"sha256":"8b7ded5025b1a36df0f8b902ebbbc02c33323fddb33b403e124b44f5942945bc"}
+{"id":470,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Workaround applied in this repo","tokens":68,"sha256":"c1bffd73237f41c4833ee30f1ffe8fa336246d2a8263dab27a4b48a75280d6df"}
+{"id":471,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Evidence","tokens":75,"sha256":"b7fd82a49661b795c1ee0e8c440791cda68c25585161dafccca50af5bbb64f2a"}
+{"id":472,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Related","tokens":122,"sha256":"34dd880ea223d1f20b8a2c17e9faff2f19101f9ffad600aaa3eea6d1001462a6"}
+{"id":473,"path":"qa/bugs/INV-PARTS-003-category-not-required.md","heading":"Timeline","tokens":33,"sha256":"ecbd0836cd62d1633dee4d462fe6e10eec78e24f408d3688061568f4e0e49e7c"}
+{"id":474,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"INV-PARTS-004-put-is-bulk-update","tokens":18,"sha256":"f6fa4c8dd464f447db72ba7fc9bbcb55ca4c96fbca29f2bcf3f6b020d602d09f"}
+{"id":475,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Summary","tokens":204,"sha256":"c420a3fa5bd7063795e12b831f0a8d1fff3c9455f2f0990e098020d7413680ca"}
+{"id":476,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Environment","tokens":28,"sha256":"0ede528a5b68cb56b87e83c2f805d17f37cbf65da16fdd2065301ed2fe8f92f0"}
+{"id":477,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Steps to reproduce","tokens":102,"sha256":"74ed3a509f9948602ea946fda89930cbf17b384415d8dadd605210daab27f584"}
+{"id":478,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Impact","tokens":212,"sha256":"959aeccf1df6172ab7c747252c836549d06d74e73b6eb41e3b55ae7e39521e0c"}
+{"id":479,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Proposed fixes (in order of preference)","tokens":136,"sha256":"a187f5ed28d228ed0967dcb254fca0b339d9aeda2677e1f7329944792c205efc"}
+{"id":480,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Workaround applied in this repo","tokens":105,"sha256":"4e7380ec30ad87d9b8480c7ad1dcfe6fa959698366bcd69033918002abb2761a"}
+{"id":481,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Evidence","tokens":79,"sha256":"61fc7b52f47fc7ebea82caa58f20787c742992a63c6a14d969e1275061d570a1"}
+{"id":482,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Related","tokens":79,"sha256":"2e344384832e153d96bd97d5262db0c81353e35c7a6178023a505487508037d6"}
+{"id":483,"path":"qa/bugs/INV-PARTS-004-put-is-bulk-update.md","heading":"Timeline","tokens":39,"sha256":"5dfed60f2a11e0d99ff3c1aa8d07257098e0c6d73781182a3401062816059485"}
+{"id":484,"path":"qa/design-notes.md","heading":"design-notes","tokens":26,"sha256":"9c47d9ca8c4b3f1dbf0337b722b80265d4d1208f9e19e81ee4ffbf0c54b28b85"}
+{"id":485,"path":"qa/design-notes.md","heading":"2026-04-13","tokens":500,"sha256":"296d730436b56586f7311a81a71ec8eeee8b1722d90853949d39bc2408981b8a"}
+{"id":486,"path":"qa/design-notes.md","heading":"2026-04-13","tokens":410,"sha256":"bb5f3230f4caecd2f316c50a0463f5427c972350059c9b83ef89799dc5b59210"}
+{"id":487,"path":"qa/design-notes.md","heading":"2026-04-13","tokens":498,"sha256":"a9dcac6192f0aab740ed96298fe458238293abc752264557ee7677b6cb7d49bb"}
+{"id":488,"path":"qa/implementation-plan.md","heading":"implementation-plan","tokens":141,"sha256":"f9312e0200973670bf1f4258346efc5f40802ebb72150d5f86c24a7754a3c5e6"}
+{"id":489,"path":"qa/implementation-plan.md","heading":"Legend","tokens":72,"sha256":"99c35987ba467a1386dc6c6af8d3c6066ba36dc1c0cc01b0f2618feb1b2fba1c"}
+{"id":490,"path":"qa/implementation-plan.md","heading":"Phase 0 — Infrastructure Bootstrap","tokens":447,"sha256":"3e35c3d1048040d47485790490022be4c52ca94e8f3b83cf3806cc2efdbe5a5a"}
+{"id":491,"path":"qa/implementation-plan.md","heading":"Phase 0 — Infrastructure Bootstrap","tokens":337,"sha256":"db213aa1ca1dd2320d33e77bcdfef8689f1bc294429c66341fee8368852e9e2d"}
+{"id":492,"path":"qa/implementation-plan.md","heading":"Phase 0 — Infrastructure Bootstrap","tokens":324,"sha256":"b549f030257fcee04c830d3c8caf08333aeded08deb38c3a144249786f00e4bb"}
+{"id":493,"path":"qa/implementation-plan.md","heading":"Phase 0 — Infrastructure Bootstrap","tokens":352,"sha256":"256a6746ba55f46cbad34bf71f4f2939bb35c5c636804c390e1c29e2064d05d2"}
+{"id":494,"path":"qa/implementation-plan.md","heading":"Phase 1 — RAG Pipeline + UI Test Case Generation","tokens":496,"sha256":"a80d8dafc4ef5ada54a6434a0c43d609d79dc824080edc20e105959e63676486"}
+{"id":495,"path":"qa/implementation-plan.md","heading":"Phase 1 — RAG Pipeline + UI Test Case Generation","tokens":438,"sha256":"cb0cf15706e906ff60beeb25b4dbef2a47c65b23369a8ce07fcd67d077f4f5a2"}
+{"id":496,"path":"qa/implementation-plan.md","heading":"Phase 1 — RAG Pipeline + UI Test Case Generation","tokens":456,"sha256":"f991378c545a51d37dc0d7b1d47ebe17332664e78a6ace0ee4fef035cc0ba1f3"}
+{"id":497,"path":"qa/implementation-plan.md","heading":"Phase 1 — RAG Pipeline + UI Test Case Generation","tokens":146,"sha256":"763be7eb22cc87ae8b4daaf650975270bced1fd988d3075593f81282207ca928"}
+{"id":498,"path":"qa/implementation-plan.md","heading":"Phase 2 — API Tests","tokens":356,"sha256":"f4efbe1ce3c973f34f4c56213b48402dc0e867285225c87ed607eee1f7b445e4"}
+{"id":499,"path":"qa/implementation-plan.md","heading":"Phase 2 — API Tests","tokens":402,"sha256":"f6b2883be22b5f251dfd0704ca23ef0a15932b8ac166f94d8f401b9860b8f70b"}
+{"id":500,"path":"qa/implementation-plan.md","heading":"Phase 3 — UI Automation","tokens":387,"sha256":"f9e9a784d5ff5353f9a2e82c8b7434f1da602ae56737c3789ef3b6935b0dd53d"}
+{"id":501,"path":"qa/implementation-plan.md","heading":"Phase 3 — UI Automation","tokens":341,"sha256":"37ea2ea12d7e70739502fdf8a690c597f935853553cfd8a85d499eb91e23bf1e"}
+{"id":502,"path":"qa/implementation-plan.md","heading":"Phase 4 — Packaging","tokens":408,"sha256":"3f8798d6b5d398cb2eeb0ca16bc9f2d55ce06dd413aa15f76a8a56d3aeac443f"}
+{"id":503,"path":"qa/implementation-plan.md","heading":"Phase 4 — Packaging","tokens":95,"sha256":"9bc8c029bf62832278ecb1194becd1c9b1383234d354cbdd0d755dac4042b022"}
+{"id":504,"path":"qa/implementation-plan.md","heading":"Critical path order","tokens":108,"sha256":"cac21d6d1e0eac2c0ea6fbd408c1eadfe956e9daf19c12ce678f6cd3248f5b67"}
+{"id":505,"path":"qa/implementation-plan.md","heading":"Session resume checklist","tokens":186,"sha256":"8a3984a9abace05d6d5cbb4d1356919a70dd775cf368f4beef88830c45e1c366"}
+{"id":506,"path":"qa/implementation-plan.md","heading":"Open decisions deferred to implementation time","tokens":99,"sha256":"d2748090f8465c7f42931a7bac5a6facc35dbd412045b37beff89c4b1beb5625"}
+{"id":507,"path":"qa/phase1-ui-attributes.md","heading":"phase1-ui-attributes","tokens":1631,"sha256":"3dced50806cda8f1ff1c86320d9aa93909446d4f843fa07a08e75695d25cad6a"}
+{"id":508,"path":"qa/phase1-ui-attributes.md","heading":"phase1-ui-attributes","tokens":29,"sha256":"5bf9fd15a56c961c577d5d48b519352012c297ecc35174e310dbe61b939a4fb0"}
+{"id":509,"path":"qa/phase1-ui-categories.md","heading":"phase1-ui-categories","tokens":1242,"sha256":"bf4e9e885d702297b9e022130f0f28779aaf3d302252c490f28fc79c4d2bf8c2"}
+{"id":510,"path":"qa/phase1-ui-creation.md","heading":"phase1-ui-creation","tokens":1158,"sha256":"6f8332a5a95ed0930cf18dddbd7b1f9b7c0b72e889b87b62141addfabbb44d7f"}
+{"id":511,"path":"qa/phase1-ui-negative.md","heading":"phase1-ui-negative","tokens":918,"sha256":"3c628bfe79809d1734f66a5e8468b827b5c5aa044ba6b6cf41b04588037ce4d7"}
+{"id":512,"path":"qa/phase1-ui-parameters.md","heading":"phase1-ui-parameters","tokens":982,"sha256":"6152b388e73afe5444af2f5348002c38247c2b00aa861fbbe9508067bb420794"}
+{"id":513,"path":"qa/phase1-ui-revisions.md","heading":"phase1-ui-revisions","tokens":1081,"sha256":"458dc744c9e460e925e5ecb11ff29afd6e3be4badc3b43796feaedbe2de9800a"}
+{"id":514,"path":"qa/phase1-ui-tabs.md","heading":"phase1-ui-tabs","tokens":530,"sha256":"9e5b3b4e0422da69d42d5de351478067464f29e3382896c97ac8da6afc726a63"}
+{"id":515,"path":"qa/phase1-ui-tabs.md","heading":"phase1-ui-tabs","tokens":120,"sha256":"c481cdbfbcb68f01940d03af4adcabc7de260978abb48de6e036b380a22ec8f7"}
+{"id":516,"path":"qa/phase1-ui-templates.md","heading":"phase1-ui-templates","tokens":1022,"sha256":"de95777ecf165f3bbdefa33d7aba1d14af5fc70ea2e57fd1c0f2ad5fef0768ab"}
+{"id":517,"path":"qa/phase1-ui-units.md","heading":"phase1-ui-units","tokens":459,"sha256":"3db825d81eb5068cdfbfe093e87fae955dee937190e385e9540b1dee30e69e65"}
+{"id":518,"path":"qa/phase1-ui-units.md","heading":"phase1-ui-units","tokens":57,"sha256":"a7f8546971ace0612d57cb82f3ff7be11ce68d72e68883b212465b53aeb389df"}
+{"id":519,"path":"qa/phase2-api-bom.md","heading":"phase2-api-bom","tokens":1061,"sha256":"bf98c5922a6b7b3474a25ee9647c42ea839adfecf1889191db97c4a147ebe8b7"}
+{"id":520,"path":"qa/phase2-api-category.md","heading":"phase2-api-category","tokens":1445,"sha256":"e10acb00b653db5a7ece635c8a8b0351f274c32970c7962b309d6538ca2ec403"}
+{"id":521,"path":"qa/phase2-api-category.md","heading":"phase2-api-category","tokens":36,"sha256":"30c86ae255ade19a2f4cc14ecf296fc6e2ac8e9c82f6e4c0f478f1cd1a5e73ea"}
+{"id":522,"path":"qa/phase2-api-crud.md","heading":"phase2-api-crud","tokens":280,"sha256":"68936bf54761e5cfa646e0fcc12f440e1b202a558a3957f9cda85e10efe85bb8"}
+{"id":523,"path":"qa/phase2-api-negative.md","heading":"phase2-api-negative","tokens":791,"sha256":"e9a7f5d62fd8663804fb7dbe4310a254bb0abcb72f92bd79e464f0fe691968cf"}
+{"id":524,"path":"qa/phase2-api-negative.md","heading":"phase2-api-negative","tokens":19,"sha256":"bc9416dda3f04d28d3cb70c0ce1d87233211031b9f6a63c18b63e855cb933674"}
+{"id":525,"path":"qa/phase2-api-query.md","heading":"phase2-api-query","tokens":949,"sha256":"ffd2d525318fecc04aeb97670d6a5a4df045ed26b7e0db0730ca439894a0fa4a"}
+{"id":526,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:14:15.825Z — smoke / smoke-retrieval","tokens":412,"sha256":"b82a146b529bdc3e08bb4a3f6ea12a573aa14f50e33b19cadcd9631e3e2ac858"}
+{"id":527,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:14:15.825Z — smoke / smoke-retrieval","tokens":119,"sha256":"ec61cd1223b161fbbac543aec45c3717e037853992db96235efe1a2e0cf60f7b"}
+{"id":528,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:23:31.281Z — phase1 / phase1-ui-creation","tokens":438,"sha256":"80d57634fadc12ec92648aa8bc1964a4b4e6853b1439590771855cca73d76722"}
+{"id":529,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:23:31.281Z — phase1 / phase1-ui-creation","tokens":134,"sha256":"cd800ec6339936c96ade4b057cfa17123751948c1d34e6bf95de2cafe20d83b6"}
+{"id":530,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:23:31.281Z — phase1 / phase1-ui-creation","tokens":762,"sha256":"e0212879ec29bb2a202aa9863b1259aedf15051ce87c3b12459fcda4dd546ebb"}
+{"id":531,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:23:31.281Z — phase1 / phase1-ui-creation","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":532,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:46:49.138Z — phase1 / phase1-ui-tabs","tokens":489,"sha256":"4373846165c5ae64e8355acc4cd5345a1cb61be0692a393ec847b955a8ed5fd6"}
+{"id":533,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:48:50.465Z — phase1 / phase1-ui-categories","tokens":468,"sha256":"74b40ab612a1dd84add9a64535b935122d599b12936f759511e54efa69dc95f7"}
+{"id":534,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:52:00.721Z — phase1 / phase1-ui-attributes","tokens":424,"sha256":"c1634bfb2da434d1a9e1329f54408471e5c76509b32728381164cfbf5f1c2363"}
+{"id":535,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:52:00.721Z — phase1 / phase1-ui-attributes","tokens":140,"sha256":"c98d85e5de498e71018ca99f82db433ccd7d32b27a654e5eb0a8f51492433e0d"}
+{"id":536,"path":"qa/prompts-journal.md","heading":"2026-04-13T19:54:43.819Z — phase1 / phase1-ui-units","tokens":474,"sha256":"ea797326140aef31e9f99a814da7d923376159d3f8bfdbde7b4c295d69b55931"}
+{"id":537,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:05:35.520Z — phase1 / phase1-ui-tabs","tokens":449,"sha256":"5c43d5b3d0b85f5e2b07b39584a0adcf89956d3a3e2ef9a8a1acbdb75aaecc1c"}
+{"id":538,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:05:35.520Z — phase1 / phase1-ui-tabs","tokens":96,"sha256":"c105cc4f2eb7fb25536f3ab9ccefcdbf5256b9e61a336e2d93fe2749380d8189"}
+{"id":539,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:05:35.520Z — phase1 / phase1-ui-tabs","tokens":534,"sha256":"53cdc346b27cf52e69c7f91fb8096c6c47dc28ea704ace78a137f38d13e1df75"}
+{"id":540,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:05:35.520Z — phase1 / phase1-ui-tabs","tokens":122,"sha256":"616f31f16bacc864105fbb38138d19175475feeff0bcd09f34132eafb241c040"}
+{"id":541,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:07:43.105Z — phase1 / phase1-ui-categories","tokens":500,"sha256":"98e69da48e5918f48351939e4fabb6c8a0d78ba50491d81a2f39e0fed3781e1c"}
+{"id":542,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:07:43.105Z — phase1 / phase1-ui-categories","tokens":707,"sha256":"1f1ec7aeb204d3a3c021eca3ae7b1e97a9ef277a0bbb506662cd121d6e1dcae6"}
+{"id":543,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:07:43.105Z — phase1 / phase1-ui-categories","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":544,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:39:49.304Z — phase1 / phase1-ui-units","tokens":482,"sha256":"f089d1671ec135592ede4ed914c0a0de5d6c0a9db498647fded60b2a1f64ea04"}
+{"id":545,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:39:49.304Z — phase1 / phase1-ui-units","tokens":464,"sha256":"1743e24fa10c8b04a1152db84c52a3baa7fbb25ef3416e65cd78b34bcd8e378b"}
+{"id":546,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:39:49.304Z — phase1 / phase1-ui-units","tokens":60,"sha256":"cfad1e35b4fe86d670ba75f79f4e4e849c9509cb93cf85b9a2f769e62926720a"}
+{"id":547,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:40:55.049Z — phase1 / phase1-ui-parameters","tokens":486,"sha256":"fec4e6ccf356e45dbd3baea54bf186e9150c58e56cb08d92a91af75eb29ca0c7"}
+{"id":548,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:40:55.049Z — phase1 / phase1-ui-parameters","tokens":46,"sha256":"9a051e9b65f4445fd3f2f6b180a395a95d09564b5f7ac7709154f12901bb64ed"}
+{"id":549,"path":"qa/prompts-journal.md","heading":"2026-04-13T20:59:47.602Z — speed / speed-smoke","tokens":263,"sha256":"68e7a5cac16793b861efc94c1277dbf37009efb8e021d545a36b91b115416656"}
+{"id":550,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:00:51.571Z — phase1 / phase1-ui-attributes","tokens":467,"sha256":"41aa5de3212c45eb6ab6e53b84236de14a6eaf766d37f734b2068d14be031825"}
+{"id":551,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:00:51.571Z — phase1 / phase1-ui-attributes","tokens":121,"sha256":"6fffd370b05b2165224fe5cb3aac305cd197d2293fbc45028b94aed89a188d93"}
+{"id":552,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:00:51.571Z — phase1 / phase1-ui-attributes","tokens":1119,"sha256":"39100f59bf7b0d78d9d768068dd627fc8e711fede0bb64ec6b486669a74507df"}
+{"id":553,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:00:51.571Z — phase1 / phase1-ui-attributes","tokens":31,"sha256":"6a11aea77502a8de380df468f6bbccd566425df278782d2fa368c104491c2b2a"}
+{"id":554,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:04.557Z — phase1 / phase1-ui-parameters","tokens":486,"sha256":"cb370d9cdba41edf2ccff359bf951d89f61bbd3667da12a6565ccae0220f8a2d"}
+{"id":555,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:04.557Z — phase1 / phase1-ui-parameters","tokens":987,"sha256":"1875bcabf1719dc478f8b2d6ba21dc1408a6cacc75dcf0d7f07a0c693da09d95"}
+{"id":556,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:04.557Z — phase1 / phase1-ui-parameters","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":557,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:17.750Z — phase1 / phase1-ui-templates","tokens":481,"sha256":"27e7c957104026612942fccb9161bee705e2942ed703d17f7d58ee86280826ec"}
+{"id":558,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:17.750Z — phase1 / phase1-ui-templates","tokens":1027,"sha256":"06b1b8e2f19639cc9f1d0b24ef8b1d024d88fc07ff4f29915703d4d244da2e28"}
+{"id":559,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:17.750Z — phase1 / phase1-ui-templates","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":560,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:31.494Z — phase1 / phase1-ui-revisions","tokens":493,"sha256":"8614190f34d3159aa15cd5c611b8c82a4e6eb08a53ea97e64744613f361d3896"}
+{"id":561,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:31.494Z — phase1 / phase1-ui-revisions","tokens":1086,"sha256":"e648e185db2f4b3c5cf9143e214974eb03f544e18fe0c46c5dce2e2231489878"}
+{"id":562,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:31.494Z — phase1 / phase1-ui-revisions","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":563,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:43.777Z — phase1 / phase1-ui-negative","tokens":411,"sha256":"d1629e092553f29b0c50f4379bd6f2dde7da68674d2d2fa2c7818f53c01f39d0"}
+{"id":564,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:43.777Z — phase1 / phase1-ui-negative","tokens":96,"sha256":"c8c4bd71a4fadf6935a7710139beceb05a961adc7deb50a0206f311e720b11a7"}
+{"id":565,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:43.777Z — phase1 / phase1-ui-negative","tokens":923,"sha256":"3cc5c5e93be972160c05964a7ab8024cafde9c04f3243c0aa3a8b7f34fca8ba0"}
+{"id":566,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:01:43.777Z — phase1 / phase1-ui-negative","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":567,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:30.118Z — phase2 / phase2-api-crud","tokens":485,"sha256":"8373723300d17b3e6276413fcee3a2eb95c0c8c7af2c8a0805b3098f0ff559a6"}
+{"id":568,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:30.118Z — phase2 / phase2-api-crud","tokens":218,"sha256":"be042214b5accfa50d829f195fcc1f2b08c5bb58a0144a30d68a10f6ef5561d2"}
+{"id":569,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:30.118Z — phase2 / phase2-api-crud","tokens":839,"sha256":"4a310a91df50c8dea1b4adc31371b5a8cefda9132895f2b01102c1497b483028"}
+{"id":570,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:30.118Z — phase2 / phase2-api-crud","tokens":19,"sha256":"f9960d1df31e894184e2bb78fe59e57848652fe2b7a2a7b006f94fecb4d7486a"}
+{"id":571,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:44.207Z — phase2 / phase2-api-query","tokens":463,"sha256":"2eb6b063cedf89560a5849b675049c9205c0aedba5861dd920df31ee58b4067b"}
+{"id":572,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:44.207Z — phase2 / phase2-api-query","tokens":198,"sha256":"925e38ff77a58f10dffc27673f34739af0cca2038128ec2f81809fc6e1810e0d"}
+{"id":573,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:44.207Z — phase2 / phase2-api-query","tokens":954,"sha256":"2baebd3c2bb4e216f770015950f2e61920e0e0be5c7f424fa3c918a5377624b2"}
+{"id":574,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:44.207Z — phase2 / phase2-api-query","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":575,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:59.167Z — phase2 / phase2-api-category","tokens":491,"sha256":"bb17a85985db807de6e0d453a199e653585c5024e0f6d18cdcbdcdc1187d02e0"}
+{"id":576,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:59.167Z — phase2 / phase2-api-category","tokens":181,"sha256":"5f364123b6ef68ee81cdc293fae34952e24ff2408ef6eec5fd781cc2d643906e"}
+{"id":577,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:59.167Z — phase2 / phase2-api-category","tokens":844,"sha256":"1613333f9bf660dde05e430df4b31a58076ad0c442bcaf221544d986c95cfb43"}
+{"id":578,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:17:59.167Z — phase2 / phase2-api-category","tokens":38,"sha256":"6deb2c2fa80496f7e45d987dd676b78d964da8916587d4176759c3df52e06616"}
+{"id":579,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:15.999Z — phase2 / phase2-api-bom","tokens":466,"sha256":"6c32dcab0b15d33b197231db5e47e17752d52b205de3d1395cbc9567888f507e"}
+{"id":580,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:15.999Z — phase2 / phase2-api-bom","tokens":188,"sha256":"bba1257dec6a0b7099c2e72b29a1f49a9f0eea0695e5d5365a4adc7ce8cc2dc5"}
+{"id":581,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:15.999Z — phase2 / phase2-api-bom","tokens":1066,"sha256":"1ef85652e28b4270a52b31a35c6d5f2e34055cbb5bc7c12cbe241ff21fbcc527"}
+{"id":582,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:15.999Z — phase2 / phase2-api-bom","tokens":1,"sha256":"cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b"}
+{"id":583,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:31.676Z — phase2 / phase2-api-negative","tokens":487,"sha256":"c2f91dc3c151282895f458cffd79d0cd000c627502bf4982f41d846ba1756d6d"}
+{"id":584,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:31.676Z — phase2 / phase2-api-negative","tokens":176,"sha256":"d31aa6d1151bebef3bdeed2e2dca72e38330263825d7aef560548fe70158f667"}
+{"id":585,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:31.676Z — phase2 / phase2-api-negative","tokens":795,"sha256":"47bd2da2c445c7acc865302e3942b77a673da67954832ff0eb1a2ca0f141d25c"}
+{"id":586,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:18:31.676Z — phase2 / phase2-api-negative","tokens":21,"sha256":"b9410cfcf01b403eba018332ecef23982c76b8da31042a9483785906080a1176"}
+{"id":587,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:20:32.243Z — phase2 / phase2-api-crud","tokens":485,"sha256":"d5c7cd657f6dcba5eb8449930097c1c649c9a05479a39c2f749ca2c7896dd89c"}
+{"id":588,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:20:32.243Z — phase2 / phase2-api-crud","tokens":486,"sha256":"3e34e94aa5ef0fb3e15c1e1a43f1753adc193fbaae9cc74cffc80b329882ff1e"}
+{"id":589,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:20:32.243Z — phase2 / phase2-api-crud","tokens":18,"sha256":"a5b77d0c432f39bebc5329924a244711ba2b00c09ecf2d21492d0d4925d5d3f2"}
+{"id":590,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:34.585Z — phase2 / phase2-spec-crud","tokens":429,"sha256":"8d081403c29578b5efd4f1a4f6dc943515e46317384399686cc0bd3e1cb69a0c"}
+{"id":591,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:34.585Z — phase2 / phase2-spec-crud","tokens":481,"sha256":"d9839627b6a0375de6be8403d4db16ea3e214b7157a851e252055c89b972e8ad"}
+{"id":592,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:34.585Z — phase2 / phase2-spec-crud","tokens":479,"sha256":"c8e4568c01db1e045b3551480133e1cd06c45e9d83f36a67b3ccc51df54d1993"}
+{"id":593,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:34.585Z — phase2 / phase2-spec-crud","tokens":94,"sha256":"ee5d9fc39d6d97587531e6777aeebf7cbe648b9bc1f25a7c6a41af04b43535da"}
+{"id":594,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:53.952Z — phase2 / phase2-spec-category","tokens":376,"sha256":"24160b60d29222ca44848d3ba8c0acad41270bee3191617778191b0a1ae82c19"}
+{"id":595,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:53.952Z — phase2 / phase2-spec-category","tokens":438,"sha256":"756f6559222d724518543348e4475b0c7ead47f644fe1106b2042541c7dc5afc"}
+{"id":596,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:53.952Z — phase2 / phase2-spec-category","tokens":463,"sha256":"140f65489d9f5c3510e63c692159f74507b33519ed0cc9c281f4030097f7bae8"}
+{"id":597,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:53.952Z — phase2 / phase2-spec-category","tokens":428,"sha256":"1a3068269d9229e0835d75091069716dc298967d5e88b880e41b16bf6bb2cefa"}
+{"id":598,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:26:53.952Z — phase2 / phase2-spec-category","tokens":445,"sha256":"e172d45879ea3725e1e0efbda4c467b8587a5acac883af99afc0ba8fa2da946a"}
+{"id":599,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:05.134Z — phase2 / phase2-spec-query","tokens":359,"sha256":"ad8c76b1ba1f50864e9fcb25c1fb2a9ce0dd2d4a8e4a0180b72541cae32694e9"}
+{"id":600,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:05.134Z — phase2 / phase2-spec-query","tokens":498,"sha256":"baf062fe7aa6e816e903b1de5002639370241585965a80969534c892afed922b"}
+{"id":601,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:05.134Z — phase2 / phase2-spec-query","tokens":470,"sha256":"00cc07afc24d1b0e872daeffab4e6467ca55e72cec36c6e59708d2e13608290a"}
+{"id":602,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:05.134Z — phase2 / phase2-spec-query","tokens":415,"sha256":"a6e58c9b9a339216e0cff143499e7cb42573c6d9171297d53e045db573a78e56"}
+{"id":603,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:16.927Z — phase2 / phase2-spec-bom","tokens":333,"sha256":"f6246137093950137a3ec9db69df7d7d2365cd1855b6c91f56c70097eccb804a"}
+{"id":604,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:16.927Z — phase2 / phase2-spec-bom","tokens":464,"sha256":"a58e277baf3458da118150762da0a3cc3063e24e5711e82ee4614f5059a5ea51"}
+{"id":605,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:16.927Z — phase2 / phase2-spec-bom","tokens":425,"sha256":"bee038c1dab7337190f9cfab8430acb346cb40ad3b7351008ed58b8574482d8a"}
+{"id":606,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:16.927Z — phase2 / phase2-spec-bom","tokens":155,"sha256":"00e77fa8bc958c90cdf2436107b95bc20681c1d81a0353e61678682cede2a6ef"}
+{"id":607,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:22.093Z — phase2 / phase2-spec-negative","tokens":360,"sha256":"50b833f4de6b7fd567481254bb8a6a6cdd237a76874317e64a839b31f8d0ba0a"}
+{"id":608,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:22.093Z — phase2 / phase2-spec-negative","tokens":500,"sha256":"718e8351d01a006411ce931b325d776bcf8aa6e28e4ac03651e9705733021c20"}
+{"id":609,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:42:22.093Z — phase2 / phase2-spec-negative","tokens":123,"sha256":"20272044e1dea8cfeb7697a36c964a103de585da3a26497facdb131c3989d832"}
+{"id":610,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:20.909Z — phase2 / phase2-spec-query-v2","tokens":334,"sha256":"bfea28368ae8c9401d93517942f0cab7b8c2b5e4d10633261316ef6daff0874e"}
+{"id":611,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:20.909Z — phase2 / phase2-spec-query-v2","tokens":465,"sha256":"76bf1b54f0115e81f2c06c931ac4ad60222ce78b6056f41fea50b4ce5d7a9d9b"}
+{"id":612,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:20.909Z — phase2 / phase2-spec-query-v2","tokens":493,"sha256":"46389ef1c1116d23227440badce38bbe7ee295c447c9799156c65d19d08d246f"}
+{"id":613,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:20.909Z — phase2 / phase2-spec-query-v2","tokens":486,"sha256":"72de08d9a719878b8e7aab91f056ce9775f1bff71a3026fde2a593855e565ddc"}
+{"id":614,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:20.909Z — phase2 / phase2-spec-query-v2","tokens":359,"sha256":"f6cb15af61cc61426e06872015dbc5a661c91f1635b9634ca6f6043891f29b2d"}
+{"id":615,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:37.943Z — phase2 / phase2-spec-bom-v2","tokens":487,"sha256":"3dd24c08a3521efaa49e33157eef0154db9100ec05acb692c37801f5dfde3bcc"}
+{"id":616,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:37.943Z — phase2 / phase2-spec-bom-v2","tokens":252,"sha256":"04c1e0b661dc580ae1ba0cd48d057aba203d692ddb5e383e1d3a68f79b00d3f9"}
+{"id":617,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:37.943Z — phase2 / phase2-spec-bom-v2","tokens":425,"sha256":"634702fbf7e0a5b9a69025e55cd8bfe461e2e40123a12db4f4c01c9fc443b9d8"}
+{"id":618,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:37.943Z — phase2 / phase2-spec-bom-v2","tokens":500,"sha256":"14ff609c8ecffe39519ddae1efd7ccd6c6066eed425a31b9c0439b6ac4801870"}
+{"id":619,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:37.943Z — phase2 / phase2-spec-bom-v2","tokens":161,"sha256":"4fc88f903f002cbfd62f21ef72d406b84dbe78e41f8937db3a83956ded4ad1e2"}
+{"id":620,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:43.328Z — phase2 / phase2-spec-negative-v2","tokens":348,"sha256":"e1957998efc429c59a979dce84f09b56a90c2ab0f4bda103cb2e6f6d1f634d95"}
+{"id":621,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:43.328Z — phase2 / phase2-spec-negative-v2","tokens":497,"sha256":"f730fd9df519fd2b3338c056c04a50f07d8c6b7dd64e5bda2f755fd45e91fdbe"}
+{"id":622,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:45:43.328Z — phase2 / phase2-spec-negative-v2","tokens":130,"sha256":"6ed7817256d84bd482e67c72800ca772e48f3d3c667b0484d0a27bc2c69e981c"}
+{"id":623,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:46:00.972Z — phase2 / phase2-spec-negative-v3","tokens":473,"sha256":"ee224e396c23187beb9f7aa7cdacc395b07af11c7fcc16b04246ce1380ba439b"}
+{"id":624,"path":"qa/prompts-journal.md","heading":"2026-04-13T21:46:00.972Z — phase2 / phase2-spec-negative-v3","tokens":400,"sha256":"2517194baa139f8bb6ca352a8eea25c07674d128e16fd0a238b1b6518383ffff"}
+{"id":625,"path":"qa/selector-inventory.md","heading":"selector-inventory","tokens":112,"sha256":"4dda4dedc84fe959ba929a1794239a284daf60781ae98c4926bdcdd73732aa73"}
+{"id":626,"path":"qa/selector-inventory.md","heading":"Login page (`/web/` unauthenticated)","tokens":162,"sha256":"04fc5f04313c3da3f77c98a5d9c645065003249d60c9832184bed4f85ebaae28"}
+{"id":627,"path":"qa/selector-inventory.md","heading":"Global navigation (present on every authenticated page)","tokens":180,"sha256":"62f1606abd74eb09a4e3656dbf6f08b3f65e0f7ab0a427ddf9f48721d121efd1"}
+{"id":628,"path":"qa/selector-inventory.md","heading":"Parts list page (`/web/part`)","tokens":145,"sha256":"cbc38f7ace82cbfa0f1e25e1d46958df0394e915c9601e14b181e625bce5a900"}
+{"id":629,"path":"qa/selector-inventory.md","heading":"Part detail page (`/web/part/<pk>`)","tokens":200,"sha256":"b22fecbf08af69d3f96a67c06ddf28f3957f5eeb5fde15419b2226e79bb0566b"}
+{"id":630,"path":"qa/selector-inventory.md","heading":"Part category page (`/web/partcategory`)","tokens":53,"sha256":"ddbc464d623d25b09bf6d07002a46f9be45c0c408acd995cc0dd5775d68e8e87"}
+{"id":631,"path":"qa/selector-inventory.md","heading":"Reusable Mantine patterns","tokens":168,"sha256":"eb0783f50d3c71ac971e890cf0fb13f86af4123bed523ad83c2d467aab93cd25"}
+{"id":632,"path":"qa/selector-inventory.md","heading":"Re-capturing the inventory","tokens":44,"sha256":"e544815757efbb72480b28ca2c6f73416e4bfcfa19ff213287bd9ffd8f3a1159"}
+{"id":633,"path":"setup/inventree-docker.md","heading":"inventree-docker","tokens":47,"sha256":"aa62bc16c135b1fd37f7ad9a8c46888440a1323c14093059e5823ea9f98e0c97"}
+{"id":634,"path":"setup/inventree-docker.md","heading":"Files","tokens":47,"sha256":"2589b218d801ed9ae1f3f0ad1bc714170e6bcf82a47d931c7a50df10ba9e82ec"}
+{"id":635,"path":"setup/inventree-docker.md","heading":"Bootstrap","tokens":39,"sha256":"5dd3616dd98a095491cdac0d6b0d9cff69c35fd2ab4965d8fdbb269b6bdea0b3"}
+{"id":636,"path":"setup/inventree-docker.md","heading":"Access","tokens":27,"sha256":"b91f5ec1bb5451fcea3234c9dc4b89465c5723537c6cec3619eb38c50fab4b97"}
+{"id":637,"path":"setup/inventree-docker.md","heading":"DB","tokens":33,"sha256":"51c2cf4cc14d88507ed02b4b18115492117cf1452c8b25661f300668c45737a3"}
+{"id":638,"path":"setup/inventree-docker.md","heading":"Common ops","tokens":50,"sha256":"8c5d34d3e110687a72736a4ae838b465dd0893dd118b068d829be565bca93afd"}
+{"id":639,"path":"setup/obsidian.md","heading":"obsidian","tokens":41,"sha256":"ad62afb385a50755e51dd90650523547fc42f58921e64b20e1e93de45b8b4fbb"}
+{"id":640,"path":"setup/obsidian.md","heading":"Install","tokens":29,"sha256":"197ec1551170e872645e8960738f5472657d392b3298ecba1da30b05805853a5"}
+{"id":641,"path":"setup/obsidian.md","heading":"Open vault","tokens":62,"sha256":"12c95f47c828c9df7e3ba1a5ed0372c7ced9bb9ee2e3b47e337a2771e48f1abf"}

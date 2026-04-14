@@ -1,0 +1,19 @@
+```markdown
+| ID | Endpoint | Method | Title | Preconditions | Payload | Expected Status | Expected Body | Priority | Tags |
+|----|----------|--------|-------|---------------|---------|-----------------|---------------|----------|------|
+| API-PARTS-016 | /api/part/?category=5&active=true | GET | List parts by category and active status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and active=true | P1 | query, filter, category |
+| API-PARTS-017 | /api/part/?search=test | GET | Search for parts by name/IPN/description | logged in as admin | — | 200 | results contain parts matching search term 'test' | P1 | query, filter, search |
+| API-PARTS-018 | /api/part/?limit=5&offset=10 | GET | Paginate part list with limit and offset | logged in as admin | — | 200 | results contain parts from index 10 to 14 | P1 | query, filter, pagination |
+| API-PARTS-019 | /api/part/?ordering=name | GET | Order parts by name | logged in as admin | — | 200 | results ordered by part name | P1 | query, filter, ordering |
+| API-PARTS-020 | /api/part/?category=5&active=false | GET | List parts by category and inactive status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and active=false | P1 | query, filter, category |
+| API-PARTS-021 | /api/part/?category=5&assembly=true | GET | List parts by category and assembly status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and assembly=true | P1 | query, filter, category |
+| API-PARTS-022 | /api/part/?category=5&component=true | GET | List parts by category and component status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and component=true | P1 | query, filter, category |
+| API-PARTS-023 | /api/part/?category=5&purchaseable=true | GET | List parts by category and purchaseable status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and purchaseable=true | P1 | query, filter, category |
+| API-PARTS-024 | /api/part/?category=5&salable=true | GET | List parts by category and salable status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and salable=true | P1 | query, filter, category |
+| API-PARTS-025 | /api/part/?category=5&virtual=true | GET | List parts by category and virtual status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and virtual=true | P1 | query, filter, category |
+| API-PARTS-026 | /api/part/?category=5&trackable=true | GET | List parts by category and trackable status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and trackable=true | P1 | query, filter, category |
+| API-PARTS-027 | /api/part/?category=5&in_stock=true | GET | List parts by category and in-stock status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and in_stock=true | P1 | query, filter, category |
+| API-PARTS-028 | /api/part/?category=5&template=true | GET | List parts by category and template status | logged in as admin; category 5 exists | — | 200 | results contain only parts where category=5 and template=true | P1 | query, filter, category |
+| API-PARTS-029 | /api/part/?category=5&ordering=-name | GET | Order parts by name in descending order | logged in as admin; category 5 exists | — | 200 | results ordered by part name in reverse | P1 | query, filter, ordering |
+| API-PARTS-030 | /api/part/?category=5&limit=0 | GET | Paginate part list with limit=0 (should return an error) | logged in as admin; category 5 exists | — | 400 | invalid limit parameter | P3 | query, filter, pagination |
+```
