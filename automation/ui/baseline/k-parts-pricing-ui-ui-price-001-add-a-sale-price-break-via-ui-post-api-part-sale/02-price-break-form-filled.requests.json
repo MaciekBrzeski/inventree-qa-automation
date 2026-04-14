@@ -1,0 +1,10 @@
+[
+  {
+    "method": "OPTIONS",
+    "url": "/api/part/sale-price/"
+  },
+  {
+    "method": "GET",
+    "url": "/api/part/<PK>/?salable=true"
+  }
+]

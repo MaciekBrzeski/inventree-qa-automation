@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/sale-price/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # GET /api/part/sale-price/
@@ -23,14 +23,14 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-PRICE-001 add a sale price break via UI → POST /api/part/sale-price/
-- UI-PRICE-002 edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/
-- UI-PRICE-003 delete a sale price break via row-action-menu Delete → DELETE /api/part/sale-price/{id}/
-- UI-TAB-004 pricing tab → GET /api/part/{id}/pricing/
+- [[UI-PRICE-001]] — add a sale price break via UI → POST /api/part/sale-price/
+- [[UI-PRICE-002]] — edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/
+- [[UI-PRICE-003]] — delete a sale price break via row-action-menu Delete → DELETE /api/part/sale-price/{id}/
+- [[UI-TAB-004]] — pricing tab → GET /api/part/{id}/pricing/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PRICE-006 GET /api/part/sale-price/ list returns 200
+- [[API-PARTS-PRICE-006]] — GET /api/part/sale-price/ list returns 200
 
 ## Links
 

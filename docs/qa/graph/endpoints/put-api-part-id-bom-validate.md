@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/{id}/bom-validate/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T13:54:30.889Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PUT /api/part/{id}/bom-validate/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-009 PUT /api/part/{id}/bom-validate/ marks full BOM as validated
+- [[API-PARTS-PUT-009]] — PUT /api/part/{id}/bom-validate/ marks full BOM as validated
 
 ## Links
 

@@ -1,7 +1,7 @@
 ---
 title: "UI paths — analysis and reusable navigation tree"
 tags: [qa, ui-paths, index]
-generated: 2026-04-14T13:54:31.095Z
+generated: 2026-04-14T15:01:45.051Z
 ---
 
 # UI paths — analysis and reusable navigation tree

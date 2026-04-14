@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/category/parameters/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # POST /api/part/category/parameters/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-CP-002 POST /api/part/category/parameters/ creates a category parameter
+- [[API-PARTS-CP-002]] — POST /api/part/category/parameters/ creates a category parameter
 
 ## Links
 

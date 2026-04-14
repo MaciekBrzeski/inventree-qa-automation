@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts
 case-ids: [PARTS-CROSS-FULL-004]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # UI-PARTS-CROSS-FULL-004 verify the part appears in the QA-ROOT category view
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`
+- Spec file: [`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/z1-cross-flow-full-ui.spec.ts)
 - Case IDs: [[PARTS-CROSS-FULL-004]]
 
 ## Endpoints exercised
@@ -22,20 +22,20 @@ generated: 2026-04-14T13:54:30.894Z
 
 ## Paired tests on the other side
 
-- API-PARTS-001 list parts
-- API-PARTS-006 list with limit
-- API-PARTS-007 list with offset
-- API-PARTS-008 filter by category
-- API-PARTS-009 filter by assembly=true returns the seeded assembly
-- API-PARTS-010 search by name substring
-- API-PARTS-011 ordering by name asc
-- API-PARTS-012 filter by active=false returns the seeded inactive part
-- API-PARTS-020 retrieve a category
-- API-PARTS-025 DELETE /api/part/category/{id}/ removes the child category
-- API-PARTS-048 GET /api/part/ with no Authorization returns 401
-- API-PARTS-049 GET /api/part/ with invalid token returns 401
-- API-PARTS-051 GET /api/part/category/999999999/ returns 404
-- API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
-- API-PARTS-THUMB-002 GET /api/part/thumbs/{id}/ retrieves a thumbnail by part id
-- API-SMOKE-002 authed list parts returns 200 + array-ish
-- API-SMOKE-004 schema validator runs against real part list
+- [[API-PARTS-001]] — list parts
+- [[API-PARTS-006]] — list with limit
+- [[API-PARTS-007]] — list with offset
+- [[API-PARTS-008]] — filter by category
+- [[API-PARTS-009]] — filter by assembly=true returns the seeded assembly
+- [[API-PARTS-010]] — search by name substring
+- [[API-PARTS-011]] — ordering by name asc
+- [[API-PARTS-012]] — filter by active=false returns the seeded inactive part
+- [[API-PARTS-020]] — retrieve a category
+- [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
+- [[API-PARTS-048]] — GET /api/part/ with no Authorization returns 401
+- [[API-PARTS-049]] — GET /api/part/ with invalid token returns 401
+- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
+- [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
+- [[API-PARTS-THUMB-002]] — GET /api/part/thumbs/{id}/ retrieves a thumbnail by part id
+- [[API-SMOKE-002]] — authed list parts returns 200 + array-ish
+- [[API-SMOKE-004]] — schema validator runs against real part list

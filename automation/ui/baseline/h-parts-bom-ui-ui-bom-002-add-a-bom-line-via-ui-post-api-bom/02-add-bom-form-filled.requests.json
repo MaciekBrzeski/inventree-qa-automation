@@ -1,0 +1,14 @@
+[
+  {
+    "method": "OPTIONS",
+    "url": "/api/bom/"
+  },
+  {
+    "method": "GET",
+    "url": "/api/part/?active=true&component=true&search=&offset=0&limit=10"
+  },
+  {
+    "method": "GET",
+    "url": "/api/part/?active=true&component=true&search=<V>&offset=0&limit=10"
+  }
+]

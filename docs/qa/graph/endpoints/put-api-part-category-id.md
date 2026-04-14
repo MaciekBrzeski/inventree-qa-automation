@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/category/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # PUT /api/part/category/{id}/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
+- [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
 
 ## Links
 

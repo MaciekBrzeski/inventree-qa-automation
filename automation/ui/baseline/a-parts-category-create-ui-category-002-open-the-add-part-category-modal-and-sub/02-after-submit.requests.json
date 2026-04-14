@@ -1,0 +1,10 @@
+[
+  {
+    "method": "POST",
+    "url": "/api/part/category/"
+  },
+  {
+    "method": "GET",
+    "url": "/api/part/category/98/?path_detail=true"
+  }
+]

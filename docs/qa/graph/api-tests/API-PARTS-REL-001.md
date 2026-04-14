@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-related.spec.ts
 case-ids: [API-PARTS-REL-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-REL-001 POST /api/part/related/ creates a related link
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-related.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-related.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-related.spec.ts)
 - Case IDs: [[API-PARTS-REL-001]]
 
 ## Endpoints exercised
@@ -21,4 +21,4 @@ generated: 2026-04-14T13:54:30.896Z
 
 ## Paired tests on the other side
 
-- UI-REL-001 create a related-parts link via action-button-add-related-part → POST /api/part/related/
+- [[UI-REL-001]] — create a related-parts link via action-button-add-related-part → POST /api/part/related/

@@ -4,7 +4,7 @@ id: UI-PARTS-058
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T13:54:30.898Z
+generated: 2026-04-14T15:01:44.848Z
 ---
 
 # UI-PARTS-058 — Create a variant part and attempt to create a revision

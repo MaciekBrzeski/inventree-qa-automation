@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/{id}/bom-validate/"
 paired: api-only
 tags: [qa, endpoint, inventree, patch, api-only]
-generated: 2026-04-14T13:54:30.889Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PATCH /api/part/{id}/bom-validate/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BV-002 PATCH /api/part/{id}/bom-validate/ marks BOM as validated
+- [[API-PARTS-BV-002]] — PATCH /api/part/{id}/bom-validate/ marks BOM as validated
 
 ## Links
 

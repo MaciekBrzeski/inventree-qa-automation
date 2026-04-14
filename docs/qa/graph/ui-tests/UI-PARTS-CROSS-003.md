@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/cross-flow.spec.ts
 case-ids: [UI-PARTS-CROSS-003]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.892Z
+generated: 2026-04-14T15:01:44.841Z
 ---
 
 # UI-PARTS-CROSS-003 navigation to Parts list shows the web shell
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/cross-flow.spec.ts`
+- Spec file: [`submission/automation/ui/tests/cross-flow.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/cross-flow.spec.ts)
 - Case IDs: [[UI-PARTS-CROSS-003]]
 
 ## Endpoints exercised

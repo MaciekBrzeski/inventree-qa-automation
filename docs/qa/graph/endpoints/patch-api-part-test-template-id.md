@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/test-template/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, patch, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # PATCH /api/part/test-template/{id}/
@@ -23,11 +23,11 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-TT-004 edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
+- [[UI-TT-004]] — edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-TT-004 PATCH /api/part/test-template/{id}/ updates description
+- [[API-PARTS-TT-004]] — PATCH /api/part/test-template/{id}/ updates description
 
 ## Links
 

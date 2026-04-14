@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/g-parts-recipes.spec.ts
 case-ids: [UI-RECIPE-006]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.892Z
+generated: 2026-04-14T15:01:44.842Z
 ---
 
 # UI-RECIPE-006 deleteCategoryViaUi → DELETE /api/part/category/{id}/
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/g-parts-recipes.spec.ts`
+- Spec file: [`submission/automation/ui/tests/g-parts-recipes.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/g-parts-recipes.spec.ts)
 - Case IDs: [[UI-RECIPE-006]]
 
 ## Endpoints exercised
@@ -22,7 +22,7 @@ generated: 2026-04-14T13:54:30.892Z
 
 ## Paired tests on the other side
 
-- API-PARTS-020 retrieve a category
-- API-PARTS-025 DELETE /api/part/category/{id}/ removes the child category
-- API-PARTS-051 GET /api/part/category/999999999/ returns 404
-- API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
+- [[API-PARTS-020]] — retrieve a category
+- [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
+- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
+- [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category

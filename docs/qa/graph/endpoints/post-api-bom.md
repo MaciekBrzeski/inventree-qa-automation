@@ -4,7 +4,7 @@ method: POST
 path: "/api/bom/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T13:54:30.885Z
+generated: 2026-04-14T15:01:44.838Z
 ---
 
 # POST /api/bom/
@@ -23,13 +23,13 @@ generated: 2026-04-14T13:54:30.885Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-BOM-002 add a BOM line via UI → POST /api/bom/
+- [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BOM-003 create BOM line
-- API-PARTS-PUT-007 PUT /api/bom/{id}/ replaces a BOM line
-- API-PARTS-PUT-008 PUT /api/bom/{id}/validate/ validates a BOM line
+- [[API-PARTS-BOM-003]] — create BOM line
+- [[API-PARTS-PUT-007]] — PUT /api/bom/{id}/ replaces a BOM line
+- [[API-PARTS-PUT-008]] — PUT /api/bom/{id}/validate/ validates a BOM line
 
 ## Links
 

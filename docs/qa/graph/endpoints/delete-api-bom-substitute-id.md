@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/bom/substitute/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, delete, api-only]
-generated: 2026-04-14T13:54:30.889Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # DELETE /api/bom/substitute/{id}/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-SUB-006 DELETE /api/bom/substitute/{id}/ removes it
+- [[API-PARTS-SUB-006]] — DELETE /api/bom/substitute/{id}/ removes it
 
 ## Links
 

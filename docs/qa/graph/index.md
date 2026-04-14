@@ -1,7 +1,7 @@
 ---
 title: "Test graph — UI ⇄ API endpoint coverage"
 tags: [qa, graph, coverage, index]
-generated: 2026-04-14T13:54:30.901Z
+generated: 2026-04-14T15:01:44.850Z
 ---
 
 # Test graph — UI ⇄ API coverage

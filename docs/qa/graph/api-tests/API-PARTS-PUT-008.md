@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-008]
 endpoints-hit: 3
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-PUT-008 PUT /api/bom/{id}/validate/ validates a BOM line
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-puts.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-puts.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-puts.spec.ts)
 - Case IDs: [[API-PARTS-PUT-008]]
 
 ## Endpoints exercised
@@ -23,4 +23,4 @@ generated: 2026-04-14T13:54:30.896Z
 
 ## Paired tests on the other side
 
-- UI-BOM-002 add a BOM line via UI → POST /api/bom/
+- [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/

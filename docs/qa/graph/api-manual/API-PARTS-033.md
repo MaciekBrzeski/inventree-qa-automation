@@ -4,7 +4,7 @@ id: API-PARTS-033
 side: api
 priority: P3
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.900Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-033 — Retrieve category parameter templates

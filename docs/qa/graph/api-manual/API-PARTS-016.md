@@ -4,7 +4,7 @@ id: API-PARTS-016
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.900Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-016 — List parts by category and trackable status

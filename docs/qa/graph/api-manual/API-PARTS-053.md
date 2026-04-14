@@ -4,7 +4,7 @@ id: API-PARTS-053
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.901Z
+generated: 2026-04-14T15:01:44.850Z
 ---
 
 # API-PARTS-053 — Attempt to delete a non-existent part
@@ -27,7 +27,7 @@ not-found
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-negative.spec.ts` — API-PARTS-053 POST /api/part/ with name only actually succeeds
+- [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts) — API-PARTS-053 POST /api/part/ with name only actually succeeds
 
 ## Endpoints touched via the automated sibling(s)
 

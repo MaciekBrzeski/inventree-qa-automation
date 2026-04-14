@@ -2,7 +2,7 @@
 title: "Coverage — Smoke & navigation"
 area: smoke-and-nav
 tags: [qa, coverage, area]
-generated: 2026-04-14T13:54:31.284Z
+generated: 2026-04-14T15:01:45.259Z
 ---
 
 # Smoke & navigation

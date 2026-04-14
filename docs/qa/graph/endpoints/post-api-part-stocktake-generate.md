@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/stocktake/generate/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # POST /api/part/stocktake/generate/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-STK-GEN-001 POST /api/part/stocktake/generate/ triggers generation
+- [[API-PARTS-STK-GEN-001]] — POST /api/part/stocktake/generate/ triggers generation
 
 ## Links
 

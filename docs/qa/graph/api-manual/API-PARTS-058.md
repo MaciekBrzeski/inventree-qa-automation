@@ -4,7 +4,7 @@ id: API-PARTS-058
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.901Z
+generated: 2026-04-14T15:01:44.850Z
 ---
 
 # API-PARTS-058 — Attempt to update a non-existent BOM line

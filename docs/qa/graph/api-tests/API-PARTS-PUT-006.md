@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-006]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-PUT-006 PUT /api/part/test-template/{id}/ replaces a test template
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-puts.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-puts.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-puts.spec.ts)
 - Case IDs: [[API-PARTS-PUT-006]]
 
 ## Endpoints exercised
@@ -24,6 +24,6 @@ generated: 2026-04-14T13:54:30.896Z
 
 ## Paired tests on the other side
 
-- UI-TT-001 add a test template via action-button-add-test-template → POST /api/part/test-template/
-- UI-TT-003 delete a test template via row-action-menu → DELETE /api/part/test-template/{id}/
-- UI-TT-004 edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
+- [[UI-TT-001]] — add a test template via action-button-add-test-template → POST /api/part/test-template/
+- [[UI-TT-003]] — delete a test template via row-action-menu → DELETE /api/part/test-template/{id}/
+- [[UI-TT-004]] — edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/

@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/i-parts-test-template-ui.spec.ts
 case-ids: [UI-TT-002]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.893Z
+generated: 2026-04-14T15:01:44.843Z
 ---
 
 # UI-TT-002 the added template appears in the panel via GET /api/part/test-template/
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`
+- Spec file: [`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/i-parts-test-template-ui.spec.ts)
 - Case IDs: [[UI-TT-002]]
 
 ## Endpoints exercised
@@ -24,9 +24,9 @@ generated: 2026-04-14T13:54:30.893Z
 
 ## Paired tests on the other side
 
-- API-PARTS-003 retrieve part
-- API-PARTS-050 GET /api/part/999999999/ returns 404
-- API-PARTS-PUT-001 PUT /api/part/{id}/ replaces the part
-- API-PARTS-READS-001 GET /api/part/{id}/requirements/ returns 200
-- API-PARTS-READS-002 GET /api/part/{id}/serial-numbers/ returns 200
-- API-PARTS-TT-001 GET /api/part/test-template/ lists templates
+- [[API-PARTS-003]] — retrieve part
+- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
+- [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
+- [[API-PARTS-READS-001]] — GET /api/part/{id}/requirements/ returns 200
+- [[API-PARTS-READS-002]] — GET /api/part/{id}/serial-numbers/ returns 200
+- [[API-PARTS-TT-001]] — GET /api/part/test-template/ lists templates

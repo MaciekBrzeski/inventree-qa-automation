@@ -31,3 +31,9 @@ data/ui-crud-state.json
 
 # Media
 video/*.mp4
+
+# Checkpoint comparison artefacts — only baselines are committed.
+# `.actual.*` files are written by compare mode when a diff is detected.
+automation/ui/baseline/**/*.actual.png
+automation/ui/baseline/**/*.actual.html
+automation/ui/baseline/**/*.actual.requests.json

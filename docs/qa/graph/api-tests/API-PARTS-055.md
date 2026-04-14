@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-negative.spec.ts
 case-ids: [API-PARTS-055]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.895Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-055 DELETE /api/part/999999999/ returns 404
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-negative.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts)
 - Case IDs: [[API-PARTS-055]]
 
 ## Endpoints exercised
@@ -21,5 +21,5 @@ generated: 2026-04-14T13:54:30.895Z
 
 ## Paired tests on the other side
 
-- UI-DELETE-001 delete the UI-created part via the page action menu
-- UI-RECIPE-007 deleteInactivePartViaUi → DELETE /api/part/{id}/
+- [[UI-DELETE-001]] — delete the UI-created part via the page action menu
+- [[UI-RECIPE-007]] — deleteInactivePartViaUi → DELETE /api/part/{id}/

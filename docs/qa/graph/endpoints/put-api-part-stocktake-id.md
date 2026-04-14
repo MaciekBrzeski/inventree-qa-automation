@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/stocktake/{id}/"
 paired: unpaired
 tags: [qa, endpoint, inventree, put, unpaired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # PUT /api/part/stocktake/{id}/

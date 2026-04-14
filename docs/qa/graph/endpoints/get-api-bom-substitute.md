@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/substitute/"
 paired: api-only
 tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T13:54:30.887Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # GET /api/bom/substitute/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-SUB-001 GET /api/bom/substitute/ lists substitutes
+- [[API-PARTS-SUB-001]] — GET /api/bom/substitute/ lists substitutes
 
 ## Links
 

@@ -4,7 +4,7 @@ id: API-PARTS-019
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.900Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-019 — Order parts by name in descending order
@@ -27,7 +27,7 @@ query, filter, ordering
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-category.spec.ts` — API-PARTS-019 create category under QA-ROOT
+- [`submission/automation/api/tests/parts-category.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-category.spec.ts) — API-PARTS-019 create category under QA-ROOT
 
 ## Endpoints touched via the automated sibling(s)
 

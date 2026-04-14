@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/k-parts-pricing-ui.spec.ts
 case-ids: [UI-PRICE-002]
 endpoints-hit: 7
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.893Z
+generated: 2026-04-14T15:01:44.843Z
 ---
 
 # UI-PRICE-002 edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`
+- Spec file: [`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/k-parts-pricing-ui.spec.ts)
 - Case IDs: [[UI-PRICE-002]]
 
 ## Endpoints exercised
@@ -27,13 +27,13 @@ generated: 2026-04-14T13:54:30.893Z
 
 ## Paired tests on the other side
 
-- API-PARTS-003 retrieve part
-- API-PARTS-050 GET /api/part/999999999/ returns 404
-- API-PARTS-PRICE-006 GET /api/part/sale-price/ list returns 200
-- API-PARTS-PRICE-008 GET /api/part/sale-price/{id}/ retrieves the sale price break
-- API-PARTS-PRICE-009 PATCH /api/part/sale-price/{id}/ updates the quantity
-- API-PARTS-PUT-001 PUT /api/part/{id}/ replaces the part
-- API-PARTS-PUT-005 PUT /api/part/sale-price/{id}/ replaces a sale price break
-- API-PARTS-READS-001 GET /api/part/{id}/requirements/ returns 200
-- API-PARTS-READS-002 GET /api/part/{id}/serial-numbers/ returns 200
-- API-PARTS-READS-003 GET /api/part/{id}/pricing/ returns 200
+- [[API-PARTS-003]] — retrieve part
+- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
+- [[API-PARTS-PRICE-006]] — GET /api/part/sale-price/ list returns 200
+- [[API-PARTS-PRICE-008]] — GET /api/part/sale-price/{id}/ retrieves the sale price break
+- [[API-PARTS-PRICE-009]] — PATCH /api/part/sale-price/{id}/ updates the quantity
+- [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
+- [[API-PARTS-PUT-005]] — PUT /api/part/sale-price/{id}/ replaces a sale price break
+- [[API-PARTS-READS-001]] — GET /api/part/{id}/requirements/ returns 200
+- [[API-PARTS-READS-002]] — GET /api/part/{id}/serial-numbers/ returns 200
+- [[API-PARTS-READS-003]] — GET /api/part/{id}/pricing/ returns 200

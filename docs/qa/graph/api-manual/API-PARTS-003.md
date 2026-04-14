@@ -4,7 +4,7 @@ id: API-PARTS-003
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.899Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-003 — Retrieve part
@@ -27,7 +27,7 @@ crud, retrieve
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-crud.spec.ts` — API-PARTS-003 retrieve part
+- [`submission/automation/api/tests/parts-crud.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-crud.spec.ts) — API-PARTS-003 retrieve part
 
 ## Endpoints touched via the automated sibling(s)
 

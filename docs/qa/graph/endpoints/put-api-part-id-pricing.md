@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/{id}/pricing/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T13:54:30.889Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PUT /api/part/{id}/pricing/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-010 PUT /api/part/{id}/pricing/ triggers pricing recalc
+- [[API-PARTS-PUT-010]] — PUT /api/part/{id}/pricing/ triggers pricing recalc
 
 ## Links
 

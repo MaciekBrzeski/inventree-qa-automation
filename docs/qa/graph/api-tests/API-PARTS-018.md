@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-category.spec.ts
 case-ids: [API-PARTS-018]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.895Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # API-PARTS-018 list categories
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-category.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-category.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-category.spec.ts)
 - Case IDs: [[API-PARTS-018]]
 
 ## Endpoints exercised
@@ -21,6 +21,6 @@ generated: 2026-04-14T13:54:30.895Z
 
 ## Paired tests on the other side
 
-- UI-CATEGORY-001 navigate to the subcategories panel
-- UI-CATEGORY-002 open the Add Part Category modal and submit a new category
-- UI-RECIPE-001 createCategoryViaUi → POST /api/part/category/
+- [[UI-CATEGORY-001]] — navigate to the subcategories panel
+- [[UI-CATEGORY-002]] — open the Add Part Category modal and submit a new category
+- [[UI-RECIPE-001]] — createCategoryViaUi → POST /api/part/category/

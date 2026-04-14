@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-related.spec.ts
 case-ids: [API-PARTS-REL-005]
 endpoints-hit: 2
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-REL-005 DELETE /api/part/related/{id}/ removes the link
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-related.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-related.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-related.spec.ts)
 - Case IDs: [[API-PARTS-REL-005]]
 
 ## Endpoints exercised
@@ -22,5 +22,5 @@ generated: 2026-04-14T13:54:30.896Z
 
 ## Paired tests on the other side
 
-- UI-REL-002 delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/
-- UI-REL-003 edit the related-parts note via row-action-menu Edit → PATCH /api/part/related/{id}/
+- [[UI-REL-002]] — delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/
+- [[UI-REL-003]] — edit the related-parts note via row-action-menu Edit → PATCH /api/part/related/{id}/

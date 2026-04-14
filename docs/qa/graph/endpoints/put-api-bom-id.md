@@ -4,7 +4,7 @@ method: PUT
 path: "/api/bom/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T13:54:30.886Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PUT /api/bom/{id}/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-007 PUT /api/bom/{id}/ replaces a BOM line
+- [[API-PARTS-PUT-007]] — PUT /api/bom/{id}/ replaces a BOM line
 
 ## Links
 

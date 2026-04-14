@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T13:54:30.886Z
+generated: 2026-04-14T15:01:44.838Z
 ---
 
 # GET /api/bom/{id}/
@@ -23,12 +23,12 @@ generated: 2026-04-14T13:54:30.886Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-BOM-005 edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
+- [[UI-BOM-005]] — edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BOM-005 retrieve BOM line
-- API-PARTS-PUT-007 PUT /api/bom/{id}/ replaces a BOM line
+- [[API-PARTS-BOM-005]] — retrieve BOM line
+- [[API-PARTS-PUT-007]] — PUT /api/bom/{id}/ replaces a BOM line
 
 ## Links
 

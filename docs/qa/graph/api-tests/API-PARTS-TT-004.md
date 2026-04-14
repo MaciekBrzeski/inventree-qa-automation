@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-test-template.spec.ts
 case-ids: [API-PARTS-TT-004]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.897Z
+generated: 2026-04-14T15:01:44.847Z
 ---
 
 # API-PARTS-TT-004 PATCH /api/part/test-template/{id}/ updates description
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-test-template.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-test-template.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-test-template.spec.ts)
 - Case IDs: [[API-PARTS-TT-004]]
 
 ## Endpoints exercised
@@ -21,4 +21,4 @@ generated: 2026-04-14T13:54:30.897Z
 
 ## Paired tests on the other side
 
-- UI-TT-004 edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
+- [[UI-TT-004]] — edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/

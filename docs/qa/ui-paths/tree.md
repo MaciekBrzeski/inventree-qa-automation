@@ -1,7 +1,7 @@
 ---
 title: "UI path tree — all automated UI tests"
 tags: [qa, ui-paths, tree, coverage]
-generated: 2026-04-14T13:54:31.094Z
+generated: 2026-04-14T15:01:45.050Z
 ---
 
 # UI path tree

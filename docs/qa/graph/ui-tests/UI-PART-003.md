@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/b-parts-create.spec.ts
 case-ids: [UI-PART-003]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.891Z
+generated: 2026-04-14T15:01:44.841Z
 ---
 
 # UI-PART-003 created part is searchable via API
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/b-parts-create.spec.ts`
+- Spec file: [`submission/automation/ui/tests/b-parts-create.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/b-parts-create.spec.ts)
 - Case IDs: [[UI-PART-003]]
 
 ## Endpoints exercised

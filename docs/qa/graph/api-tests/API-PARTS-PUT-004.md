@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-004]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.846Z
 ---
 
 # API-PARTS-PUT-004 PUT /api/part/internal-price/{id}/ replaces an internal price break
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-puts.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-puts.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-puts.spec.ts)
 - Case IDs: [[API-PARTS-PUT-004]]
 
 ## Endpoints exercised

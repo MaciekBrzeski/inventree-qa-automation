@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/parts-login-negative.spec.ts
 case-ids: [UI-LOGIN-NEG-001]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.843Z
 ---
 
 # UI-LOGIN-NEG-001 wrong password does not authenticate
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/parts-login-negative.spec.ts`
+- Spec file: [`submission/automation/ui/tests/parts-login-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/parts-login-negative.spec.ts)
 - Case IDs: [[UI-LOGIN-NEG-001]]
 
 ## Endpoints exercised

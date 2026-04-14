@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/internal-price/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # PUT /api/part/internal-price/{id}/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-004 PUT /api/part/internal-price/{id}/ replaces an internal price break
+- [[API-PARTS-PUT-004]] — PUT /api/part/internal-price/{id}/ replaces an internal price break
 
 ## Links
 

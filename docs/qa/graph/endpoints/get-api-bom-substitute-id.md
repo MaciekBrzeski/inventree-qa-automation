@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/substitute/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T13:54:30.888Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # GET /api/bom/substitute/{id}/
@@ -27,8 +27,8 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-SUB-003 GET /api/bom/substitute/{id}/ retrieves it
-- API-PARTS-SUB-005 PUT /api/bom/substitute/{id}/ replaces the substitute
+- [[API-PARTS-SUB-003]] — GET /api/bom/substitute/{id}/ retrieves it
+- [[API-PARTS-SUB-005]] — PUT /api/bom/substitute/{id}/ replaces the substitute
 
 ## Links
 

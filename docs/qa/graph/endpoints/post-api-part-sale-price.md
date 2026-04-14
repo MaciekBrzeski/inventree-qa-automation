@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/sale-price/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # POST /api/part/sale-price/
@@ -23,12 +23,12 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-PRICE-001 add a sale price break via UI → POST /api/part/sale-price/
+- [[UI-PRICE-001]] — add a sale price break via UI → POST /api/part/sale-price/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PRICE-007 POST /api/part/sale-price/ creates a sale price break
-- API-PARTS-PUT-005 PUT /api/part/sale-price/{id}/ replaces a sale price break
+- [[API-PARTS-PRICE-007]] — POST /api/part/sale-price/ creates a sale price break
+- [[API-PARTS-PUT-005]] — PUT /api/part/sale-price/{id}/ replaces a sale price break
 
 ## Links
 

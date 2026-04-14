@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/category/"
 paired: api-only
 tags: [qa, endpoint, inventree, patch, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PATCH /api/part/category/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BULK-002 PATCH /api/part/category/ rejects non-list
+- [[API-PARTS-BULK-002]] — PATCH /api/part/category/ rejects non-list
 
 ## Links
 

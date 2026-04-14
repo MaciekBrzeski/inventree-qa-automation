@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/thumbs/{id}/"
 paired: unpaired
 tags: [qa, endpoint, inventree, patch, unpaired]
-generated: 2026-04-14T13:54:30.891Z
+generated: 2026-04-14T15:01:44.841Z
 ---
 
 # PATCH /api/part/thumbs/{id}/

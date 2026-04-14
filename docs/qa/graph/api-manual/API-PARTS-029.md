@@ -4,7 +4,7 @@ id: API-PARTS-029
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.900Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-029 — Create a category with duplicate name at the same level

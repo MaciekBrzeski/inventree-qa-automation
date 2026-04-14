@@ -3,6 +3,7 @@ import type { APIRequestContext } from '@playwright/test';
 import { createAuthedContext, createPart, type CreatedPart } from '../helpers/api';
 import { fillRelatedField, fillNumberField, fillTextField, submitButton } from '../helpers/mantine';
 import { waitForShell, waitLoadersGone } from '../paths/primitives';
+import { captureCheckpoint } from '../helpers/checkpoint';
 
 let api: APIRequestContext | undefined;
 let assembly: CreatedPart | undefined;
@@ -56,6 +57,7 @@ test.describe.serial('UI-BOM bill of materials panel flows', () => {
     await waitForShell(page);
     await waitLoadersGone(page);
     await page.waitForTimeout(800);
+    await captureCheckpoint(page, 'bom-panel-empty');
 
     // Open the Add menu and click "Add BOM Item".
     await page.getByLabel('action-menu-add-bom-items').click();
@@ -66,6 +68,7 @@ test.describe.serial('UI-BOM bill of materials panel flows', () => {
     await fillRelatedField(page, 'sub_part', searchFragment);
     await fillNumberField(page, 'quantity', 3);
     await fillTextField(page, 'reference', 'R1');
+    await captureCheckpoint(page, 'add-bom-form-filled');
 
     // Submit and capture the POST /api/bom/
     const [response] = await Promise.all([
@@ -76,6 +79,8 @@ test.describe.serial('UI-BOM bill of materials panel flows', () => {
       submitButton(page).click(),
     ]);
     expect([200, 201]).toContain(response.status());
+    await page.waitForTimeout(1000);
+    await captureCheckpoint(page, 'after-bom-add');
   });
 
   test('UI-BOM-003 trigger Validate BOM via UI → /api/part/{id}/bom-validate/ or /api/bom/{id}/validate/', async ({

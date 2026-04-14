@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-bom-validate.spec.ts
 case-ids: [API-PARTS-BV-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # API-PARTS-BV-003 PATCH /api/bom/{id}/validate/ marks the row as validated
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-bom-validate.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-bom-validate.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-bom-validate.spec.ts)
 - Case IDs: [[API-PARTS-BV-003]]
 
 ## Endpoints exercised
@@ -21,4 +21,4 @@ generated: 2026-04-14T13:54:30.894Z
 
 ## Paired tests on the other side
 
-- UI-BOM-006 click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
+- [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/

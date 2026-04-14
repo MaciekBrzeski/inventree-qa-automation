@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/part/related/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, delete, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # DELETE /api/part/related/{id}/
@@ -23,12 +23,12 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-REL-002 delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/
+- [[UI-REL-002]] — delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-003 PUT /api/part/related/{id}/ replaces a related link
-- API-PARTS-REL-005 DELETE /api/part/related/{id}/ removes the link
+- [[API-PARTS-PUT-003]] — PUT /api/part/related/{id}/ replaces a related link
+- [[API-PARTS-REL-005]] — DELETE /api/part/related/{id}/ removes the link
 
 ## Links
 

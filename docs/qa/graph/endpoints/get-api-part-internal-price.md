@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/internal-price/"
 paired: api-only
 tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # GET /api/part/internal-price/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PRICE-001 GET /api/part/internal-price/ list returns 200
+- [[API-PARTS-PRICE-001]] — GET /api/part/internal-price/ list returns 200
 
 ## Links
 

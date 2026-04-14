@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-stocktake.spec.ts
 case-ids: [API-PARTS-STK-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.896Z
+generated: 2026-04-14T15:01:44.847Z
 ---
 
 # API-PARTS-STK-003 GET /api/part/stocktake/{id}/ retrieves the entry
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-stocktake.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-stocktake.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-stocktake.spec.ts)
 - Case IDs: [[API-PARTS-STK-003]]
 
 ## Endpoints exercised

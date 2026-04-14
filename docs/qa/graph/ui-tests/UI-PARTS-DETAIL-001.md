@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/parts-detail-actions.spec.ts
 case-ids: [UI-PARTS-DETAIL-001]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.893Z
+generated: 2026-04-14T15:01:44.843Z
 ---
 
 # UI-PARTS-DETAIL-001 detail page document title contains the part IPN
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/parts-detail-actions.spec.ts`
+- Spec file: [`submission/automation/ui/tests/parts-detail-actions.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/parts-detail-actions.spec.ts)
 - Case IDs: [[UI-PARTS-DETAIL-001]]
 
 ## Endpoints exercised
@@ -24,12 +24,12 @@ generated: 2026-04-14T13:54:30.893Z
 
 ## Paired tests on the other side
 
-- API-PARTS-003 retrieve part
-- API-PARTS-020 retrieve a category
-- API-PARTS-025 DELETE /api/part/category/{id}/ removes the child category
-- API-PARTS-050 GET /api/part/999999999/ returns 404
-- API-PARTS-051 GET /api/part/category/999999999/ returns 404
-- API-PARTS-PUT-001 PUT /api/part/{id}/ replaces the part
-- API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
-- API-PARTS-READS-001 GET /api/part/{id}/requirements/ returns 200
-- API-PARTS-READS-002 GET /api/part/{id}/serial-numbers/ returns 200
+- [[API-PARTS-003]] — retrieve part
+- [[API-PARTS-020]] — retrieve a category
+- [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
+- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
+- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
+- [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
+- [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
+- [[API-PARTS-READS-001]] — GET /api/part/{id}/requirements/ returns 200
+- [[API-PARTS-READS-002]] — GET /api/part/{id}/serial-numbers/ returns 200

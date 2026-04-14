@@ -1,30 +1,30 @@
 ---
 title: "UI paths by endpoint"
 tags: [qa, ui-paths, endpoint-recipes]
-generated: 2026-04-14T13:54:31.094Z
+generated: 2026-04-14T15:01:45.050Z
 ---
 
 # UI paths by endpoint
 
 Reverse index: for each API endpoint captured by the recorder, the UI tests + exact step sequence that reach it. A recipe appearing under multiple tests = a reusable path. A recipe appearing once = the only known way to hit that endpoint via UI.
 
-## `DELETE /api/bom/`
+## [[../graph/endpoints/delete-api-bom|DELETE /api/bom/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
 
-## `DELETE /api/part/category/{id}/`
+## [[../graph/endpoints/delete-api-part-category-id|DELETE /api/part/category/{id}/]]
 
 Reached by 2 UI test(s):
 
-- **UI-RECIPE-006** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-DELETE-002** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-006|UI-RECIPE-006]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-002|UI-DELETE-002]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/category/{var}/details
   click label:action-menu-category-actions
@@ -33,11 +33,11 @@ Reached by 2 UI test(s):
   click role:button:"Delete"
   ```
 
-## `DELETE /api/part/related/{id}/`
+## [[../graph/endpoints/delete-api-part-related-id|DELETE /api/part/related/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-REL-002** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-002|UI-REL-002]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -46,11 +46,11 @@ Reached by 1 UI test(s):
   click role:button:"Delete"
   ```
 
-## `DELETE /api/part/sale-price/{id}/`
+## [[../graph/endpoints/delete-api-part-sale-price-id|DELETE /api/part/sale-price/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
@@ -58,11 +58,11 @@ Reached by 1 UI test(s):
   click role:button:"Delete"
   ```
 
-## `DELETE /api/part/test-template/{id}/`
+## [[../graph/endpoints/delete-api-part-test-template-id|DELETE /api/part/test-template/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-TT-003** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-003|UI-TT-003]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
@@ -71,12 +71,12 @@ Reached by 1 UI test(s):
   click role:button:"Delete"
   ```
 
-## `DELETE /api/part/{id}/`
+## [[../graph/endpoints/delete-api-part-id|DELETE /api/part/{id}/]]
 
 Reached by 2 UI test(s):
 
-- **UI-RECIPE-007** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-DELETE-001** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-001|UI-DELETE-001]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
@@ -84,44 +84,44 @@ Reached by 2 UI test(s):
   click role:button:"Delete"
   ```
 
-## `GET /api/bom/`
+## [[../graph/endpoints/get-api-bom|GET /api/bom/]]
 
 Reached by 9 UI test(s):
 
-- **UI-EXTRA-004** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-TAB-002** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-BOM-001** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-002|UI-TAB-002]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-001|UI-BOM-001]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-003** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-003|UI-BOM-003]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-button-validate-bom
   click role:button:"Submit"
   ```
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -129,7 +129,7 @@ Reached by 9 UI test(s):
   click role:button:"Submit"
   click role:button:"OK"
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -137,141 +137,141 @@ Reached by 9 UI test(s):
   click role:button:"Add Substitute"
   ```
 
-## `GET /api/bom/{id}/`
+## [[../graph/endpoints/get-api-bom-id|GET /api/bom/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `GET /api/part/`
+## [[../graph/endpoints/get-api-part|GET /api/part/]]
 
 Reached by 8 UI test(s):
 
-- **UI-PART-001** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-001|UI-PART-001]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/category/{var}/parts
   ```
-- **UI-PART-002** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-002|UI-PART-002]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/category/{var}/parts
   click label:action-menu-add-parts
   click role:button:"Submit"
   ```
-- **UI-RECIPE-002** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-002|UI-RECIPE-002]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
   click role:button:"Add Substitute"
   ```
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
-- **PARTS-CROSS-FULL-001** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
-- **PARTS-CROSS-FULL-004** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-001|PARTS-CROSS-FULL-001]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-004|PARTS-CROSS-FULL-004]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
 
-## `GET /api/part/category/`
+## [[../graph/endpoints/get-api-part-category|GET /api/part/category/]]
 
 Reached by 3 UI test(s):
 
-- **UI-CATEGORY-001** (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
+- [[../graph/ui-tests/UI-CATEGORY-001|UI-CATEGORY-001]] (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
   ```
   goto /web/part/category/index/subcategories
   ```
-- **UI-CATEGORY-002** (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
+- [[../graph/ui-tests/UI-CATEGORY-002|UI-CATEGORY-002]] (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
   ```
   goto /web/part/category/index/subcategories
   click role:button:"Submit"
   ```
-- **UI-RECIPE-001** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-001|UI-RECIPE-001]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
-## `GET /api/part/category/tree/`
+## [[../graph/endpoints/get-api-part-category-tree|GET /api/part/category/tree/]]
 
 Reached by 1 UI test(s):
 
-- **UI-EXTRA-002** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-002|UI-EXTRA-002]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part
   click label:nav-breadcrumb-action
   ```
 
-## `GET /api/part/category/{id}/`
+## [[../graph/endpoints/get-api-part-category-id|GET /api/part/category/{id}/]]
 
 Reached by 31 UI test(s):
 
-- **UI-CATEGORY-002** (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
+- [[../graph/ui-tests/UI-CATEGORY-002|UI-CATEGORY-002]] (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
   ```
   goto /web/part/category/index/subcategories
   click role:button:"Submit"
   ```
-- **UI-PART-001** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-001|UI-PART-001]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/category/{var}/parts
   ```
-- **UI-PART-002** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-002|UI-PART-002]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/category/{var}/parts
   click label:action-menu-add-parts
   click role:button:"Submit"
   ```
-- **UI-PART-004** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-004|UI-PART-004]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click label:action-menu-part-actions-edit
   click role:button:"Submit"
   ```
-- **UI-PARTS-CROSS-001** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-PARTS-CROSS-002** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-EXTRA-003** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-001|UI-PARTS-CROSS-001]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-002|UI-PARTS-CROSS-002]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-003|UI-EXTRA-003]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/category/{var}/details
   click label:action-menu-category-actions
   click label:action-menu-category-actions-edit
   click role:button:"Submit"
   ```
-- **UI-ATTR-001** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-002** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-003** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-004** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-005** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-006** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-007** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-008** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-RECIPE-002** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-003** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-004** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-005** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-006** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-007** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-PARTS-DETAIL-001** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-002** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-003** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-004** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-005** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-SMOKE-003** (`submission/automation/ui/tests/smoke.spec.ts`)
-- **UI-DELETE-001** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-001|UI-ATTR-001]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-002|UI-ATTR-002]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-003|UI-ATTR-003]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-004|UI-ATTR-004]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-005|UI-ATTR-005]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-006|UI-ATTR-006]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-007|UI-ATTR-007]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-008|UI-ATTR-008]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-002|UI-RECIPE-002]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-005|UI-RECIPE-005]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-006|UI-RECIPE-006]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-004|UI-PARTS-DETAIL-004]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-005|UI-PARTS-DETAIL-005]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-SMOKE-003|UI-SMOKE-003]] (`submission/automation/ui/tests/smoke.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-001|UI-DELETE-001]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-DELETE-002** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-002|UI-DELETE-002]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/category/{var}/details
   click label:action-menu-category-actions
@@ -279,24 +279,24 @@ Reached by 31 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **PARTS-CROSS-FULL-001** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
-- **PARTS-CROSS-FULL-004** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-001|PARTS-CROSS-FULL-001]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-004|PARTS-CROSS-FULL-004]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
 
-## `GET /api/part/related/`
+## [[../graph/endpoints/get-api-part-related|GET /api/part/related/]]
 
 Reached by 5 UI test(s):
 
-- **UI-EXTRA-005** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-005|UI-EXTRA-005]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   ```
-- **UI-TAB-003** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-003|UI-TAB-003]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
-- **UI-REL-002** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-002|UI-REL-002]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -304,7 +304,7 @@ Reached by 5 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -312,11 +312,11 @@ Reached by 5 UI test(s):
   click role:button:"Submit"
   ```
 
-## `GET /api/part/related/{id}/`
+## [[../graph/endpoints/get-api-part-related-id|GET /api/part/related/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -324,21 +324,21 @@ Reached by 1 UI test(s):
   click role:button:"Submit"
   ```
 
-## `GET /api/part/sale-price/`
+## [[../graph/endpoints/get-api-part-sale-price|GET /api/part/sale-price/]]
 
 Reached by 4 UI test(s):
 
-- **UI-TAB-004** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
@@ -346,31 +346,31 @@ Reached by 4 UI test(s):
   click role:button:"Delete"
   ```
 
-## `GET /api/part/sale-price/{id}/`
+## [[../graph/endpoints/get-api-part-sale-price-id|GET /api/part/sale-price/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `GET /api/part/test-template/`
+## [[../graph/endpoints/get-api-part-test-template|GET /api/part/test-template/]]
 
 Reached by 5 UI test(s):
 
-- **UI-TAB-006** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TT-001** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-006|UI-TAB-006]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TT-001|UI-TT-001]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:action-button-add-test-template
   ```
-- **UI-TT-002** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-002|UI-TT-002]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   ```
-- **UI-TT-003** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-003|UI-TT-003]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
@@ -378,99 +378,99 @@ Reached by 5 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `GET /api/part/test-template/{id}/`
+## [[../graph/endpoints/get-api-part-test-template-id|GET /api/part/test-template/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `GET /api/part/{id}/`
+## [[../graph/endpoints/get-api-part-id|GET /api/part/{id}/]]
 
 Reached by 53 UI test(s):
 
-- **UI-PART-004** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-004|UI-PART-004]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click label:action-menu-part-actions-edit
   click role:button:"Submit"
   ```
-- **UI-PARTS-CROSS-001** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-PARTS-CROSS-002** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-EXTRA-001** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-001|UI-PARTS-CROSS-001]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-002|UI-PARTS-CROSS-002]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-001|UI-EXTRA-001]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/pricing
   ```
-- **UI-EXTRA-004** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-EXTRA-005** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-005|UI-EXTRA-005]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   ```
-- **UI-TAB-001** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-002** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-003** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-004** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-005** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-006** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-007** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-008** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-009** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-010** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-ATTR-001** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-002** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-003** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-004** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-005** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-006** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-007** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-008** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-RECIPE-003** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-004** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-007** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-BOM-001** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-001|UI-TAB-001]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-002|UI-TAB-002]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-003|UI-TAB-003]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-005|UI-TAB-005]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-006|UI-TAB-006]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-007|UI-TAB-007]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-008|UI-TAB-008]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-009|UI-TAB-009]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-010|UI-TAB-010]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-001|UI-ATTR-001]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-002|UI-ATTR-002]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-003|UI-ATTR-003]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-004|UI-ATTR-004]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-005|UI-ATTR-005]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-006|UI-ATTR-006]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-007|UI-ATTR-007]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-008|UI-ATTR-008]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-001|UI-BOM-001]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-003** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-003|UI-BOM-003]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-button-validate-bom
   click role:button:"Submit"
   ```
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -478,23 +478,23 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"OK"
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
   click role:button:"Add Substitute"
   ```
-- **UI-TT-001** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-001|UI-TT-001]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:action-button-add-test-template
   ```
-- **UI-TT-002** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-002|UI-TT-002]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   ```
-- **UI-TT-003** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-003|UI-TT-003]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
@@ -502,18 +502,18 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
-- **UI-REL-002** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-002|UI-REL-002]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -521,90 +521,90 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   click role:button:"Submit"
   ```
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-PARTS-DETAIL-001** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-002** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-003** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-004** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-005** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-SMOKE-003** (`submission/automation/ui/tests/smoke.spec.ts`)
-- **UI-DELETE-001** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-004|UI-PARTS-DETAIL-004]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-005|UI-PARTS-DETAIL-005]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-SMOKE-003|UI-SMOKE-003]] (`submission/automation/ui/tests/smoke.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-001|UI-DELETE-001]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **PARTS-CROSS-FULL-002** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-002|PARTS-CROSS-FULL-002]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-menu-add-parameters
   click label:action-menu-add-parameters-create-parameter
   ```
-- **PARTS-CROSS-FULL-003** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-003|PARTS-CROSS-FULL-003]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-button-add-stock-item
   ```
 
-## `GET /api/part/{id}/bom-validate/`
+## [[../graph/endpoints/get-api-part-id-bom-validate|GET /api/part/{id}/bom-validate/]]
 
 Reached by 9 UI test(s):
 
-- **UI-EXTRA-004** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-TAB-002** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-BOM-001** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-002|UI-TAB-002]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-001|UI-BOM-001]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-003** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-003|UI-BOM-003]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-button-validate-bom
   click role:button:"Submit"
   ```
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -612,7 +612,7 @@ Reached by 9 UI test(s):
   click role:button:"Submit"
   click role:button:"OK"
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -620,25 +620,25 @@ Reached by 9 UI test(s):
   click role:button:"Add Substitute"
   ```
 
-## `GET /api/part/{id}/pricing/`
+## [[../graph/endpoints/get-api-part-id-pricing|GET /api/part/{id}/pricing/]]
 
 Reached by 5 UI test(s):
 
-- **UI-EXTRA-001** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-001|UI-EXTRA-001]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/pricing
   ```
-- **UI-TAB-004** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
@@ -646,81 +646,81 @@ Reached by 5 UI test(s):
   click role:button:"Delete"
   ```
 
-## `GET /api/part/{id}/requirements/`
+## [[../graph/endpoints/get-api-part-id-requirements|GET /api/part/{id}/requirements/]]
 
 Reached by 53 UI test(s):
 
-- **UI-PART-004** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-004|UI-PART-004]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click label:action-menu-part-actions-edit
   click role:button:"Submit"
   ```
-- **UI-PARTS-CROSS-001** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-PARTS-CROSS-002** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-EXTRA-001** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-001|UI-PARTS-CROSS-001]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-002|UI-PARTS-CROSS-002]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-001|UI-EXTRA-001]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/pricing
   ```
-- **UI-EXTRA-004** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-EXTRA-005** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-005|UI-EXTRA-005]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   ```
-- **UI-TAB-001** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-002** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-003** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-004** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-005** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-006** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-007** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-008** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-009** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-010** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-ATTR-001** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-002** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-003** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-004** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-005** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-006** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-007** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-008** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-RECIPE-003** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-004** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-007** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-BOM-001** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-001|UI-TAB-001]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-002|UI-TAB-002]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-003|UI-TAB-003]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-005|UI-TAB-005]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-006|UI-TAB-006]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-007|UI-TAB-007]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-008|UI-TAB-008]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-009|UI-TAB-009]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-010|UI-TAB-010]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-001|UI-ATTR-001]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-002|UI-ATTR-002]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-003|UI-ATTR-003]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-004|UI-ATTR-004]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-005|UI-ATTR-005]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-006|UI-ATTR-006]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-007|UI-ATTR-007]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-008|UI-ATTR-008]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-001|UI-BOM-001]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-003** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-003|UI-BOM-003]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-button-validate-bom
   click role:button:"Submit"
   ```
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -728,23 +728,23 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"OK"
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
   click role:button:"Add Substitute"
   ```
-- **UI-TT-001** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-001|UI-TT-001]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:action-button-add-test-template
   ```
-- **UI-TT-002** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-002|UI-TT-002]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   ```
-- **UI-TT-003** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-003|UI-TT-003]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
@@ -752,18 +752,18 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
-- **UI-REL-002** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-002|UI-REL-002]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -771,127 +771,127 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   click role:button:"Submit"
   ```
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-PARTS-DETAIL-001** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-002** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-003** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-004** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-005** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-SMOKE-003** (`submission/automation/ui/tests/smoke.spec.ts`)
-- **UI-DELETE-001** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-004|UI-PARTS-DETAIL-004]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-005|UI-PARTS-DETAIL-005]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-SMOKE-003|UI-SMOKE-003]] (`submission/automation/ui/tests/smoke.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-001|UI-DELETE-001]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **PARTS-CROSS-FULL-002** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-002|PARTS-CROSS-FULL-002]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-menu-add-parameters
   click label:action-menu-add-parameters-create-parameter
   ```
-- **PARTS-CROSS-FULL-003** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-003|PARTS-CROSS-FULL-003]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-button-add-stock-item
   ```
 
-## `GET /api/part/{id}/serial-numbers/`
+## [[../graph/endpoints/get-api-part-id-serial-numbers|GET /api/part/{id}/serial-numbers/]]
 
 Reached by 53 UI test(s):
 
-- **UI-PART-004** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-004|UI-PART-004]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click label:action-menu-part-actions-edit
   click role:button:"Submit"
   ```
-- **UI-PARTS-CROSS-001** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-PARTS-CROSS-002** (`submission/automation/ui/tests/cross-flow.spec.ts`)
-- **UI-EXTRA-001** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-001|UI-PARTS-CROSS-001]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-CROSS-002|UI-PARTS-CROSS-002]] (`submission/automation/ui/tests/cross-flow.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-001|UI-EXTRA-001]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/pricing
   ```
-- **UI-EXTRA-004** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-EXTRA-005** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-005|UI-EXTRA-005]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   ```
-- **UI-TAB-001** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-002** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-003** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-004** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-005** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-006** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-007** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-008** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-009** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-TAB-010** (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
-- **UI-ATTR-001** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-002** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-003** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-004** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-005** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-006** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-007** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-008** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-RECIPE-003** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-004** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-007** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-BOM-001** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-001|UI-TAB-001]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-002|UI-TAB-002]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-003|UI-TAB-003]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-005|UI-TAB-005]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-006|UI-TAB-006]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-007|UI-TAB-007]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-008|UI-TAB-008]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-009|UI-TAB-009]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-TAB-010|UI-TAB-010]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-001|UI-ATTR-001]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-002|UI-ATTR-002]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-003|UI-ATTR-003]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-004|UI-ATTR-004]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-005|UI-ATTR-005]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-006|UI-ATTR-006]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-007|UI-ATTR-007]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-008|UI-ATTR-008]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-001|UI-BOM-001]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   ```
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
-- **UI-BOM-003** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-003|UI-BOM-003]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-button-validate-bom
   click role:button:"Submit"
   ```
-- **UI-BOM-004** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-004|UI-BOM-004]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -899,23 +899,23 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"OK"
   ```
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
   click role:button:"Add Substitute"
   ```
-- **UI-TT-001** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-001|UI-TT-001]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:action-button-add-test-template
   ```
-- **UI-TT-002** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-002|UI-TT-002]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   ```
-- **UI-TT-003** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-003|UI-TT-003]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
@@ -923,18 +923,18 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
-- **UI-REL-002** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-002|UI-REL-002]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -942,68 +942,68 @@ Reached by 53 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   click role:button:"Submit"
   ```
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
-- **UI-PRICE-003** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-003|UI-PRICE-003]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Delete"
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **UI-PARTS-DETAIL-001** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-002** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-003** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-004** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-PARTS-DETAIL-005** (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
-- **UI-SMOKE-003** (`submission/automation/ui/tests/smoke.spec.ts`)
-- **UI-DELETE-001** (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-004|UI-PARTS-DETAIL-004]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-PARTS-DETAIL-005|UI-PARTS-DETAIL-005]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
+- [[../graph/ui-tests/UI-SMOKE-003|UI-SMOKE-003]] (`submission/automation/ui/tests/smoke.spec.ts`)
+- [[../graph/ui-tests/UI-DELETE-001|UI-DELETE-001]] (`submission/automation/ui/tests/y-parts-ui-delete.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click role:button:"Submit"
   click role:button:"Delete"
   ```
-- **PARTS-CROSS-FULL-002** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-002|PARTS-CROSS-FULL-002]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-menu-add-parameters
   click label:action-menu-add-parameters-create-parameter
   ```
-- **PARTS-CROSS-FULL-003** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-003|PARTS-CROSS-FULL-003]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
   ```
   click label:action-button-add-stock-item
   ```
 
-## `PATCH /api/bom/{id}/`
+## [[../graph/endpoints/patch-api-bom-id|PATCH /api/bom/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-005** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-005|UI-BOM-005]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `PATCH /api/bom/{id}/validate/`
+## [[../graph/endpoints/patch-api-bom-id-validate|PATCH /api/bom/{id}/validate/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-006** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-006|UI-BOM-006]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -1012,24 +1012,24 @@ Reached by 1 UI test(s):
   click role:button:"OK"
   ```
 
-## `PATCH /api/part/category/{id}/`
+## [[../graph/endpoints/patch-api-part-category-id|PATCH /api/part/category/{id}/]]
 
 Reached by 2 UI test(s):
 
-- **UI-EXTRA-003** (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
+- [[../graph/ui-tests/UI-EXTRA-003|UI-EXTRA-003]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
   ```
   goto /web/part/category/{var}/details
   click label:action-menu-category-actions
   click label:action-menu-category-actions-edit
   click role:button:"Submit"
   ```
-- **UI-RECIPE-005** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-005|UI-RECIPE-005]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
-## `PATCH /api/part/related/{id}/`
+## [[../graph/endpoints/patch-api-part-related-id|PATCH /api/part/related/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-REL-003** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-003|UI-REL-003]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:row-action-menu-0
@@ -1037,65 +1037,65 @@ Reached by 1 UI test(s):
   click role:button:"Submit"
   ```
 
-## `PATCH /api/part/sale-price/{id}/`
+## [[../graph/endpoints/patch-api-part-sale-price-id|PATCH /api/part/sale-price/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-PRICE-002** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-002|UI-PRICE-002]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `PATCH /api/part/test-template/{id}/`
+## [[../graph/endpoints/patch-api-part-test-template-id|PATCH /api/part/test-template/{id}/]]
 
 Reached by 1 UI test(s):
 
-- **UI-TT-004** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-004|UI-TT-004]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:row-action-menu-0
   click role:menuitem:"Edit"
   ```
 
-## `PATCH /api/part/{id}/`
+## [[../graph/endpoints/patch-api-part-id|PATCH /api/part/{id}/]]
 
 Reached by 11 UI test(s):
 
-- **UI-PART-004** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-004|UI-PART-004]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/{var}/details
   click label:action-menu-part-actions
   click label:action-menu-part-actions-edit
   click role:button:"Submit"
   ```
-- **UI-ATTR-001** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-002** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-003** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-004** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-005** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-006** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-007** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-ATTR-008** (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
-- **UI-RECIPE-003** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **UI-RECIPE-004** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-001|UI-ATTR-001]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-002|UI-ATTR-002]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-003|UI-ATTR-003]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-004|UI-ATTR-004]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-005|UI-ATTR-005]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-006|UI-ATTR-006]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-007|UI-ATTR-007]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-ATTR-008|UI-ATTR-008]] (`submission/automation/ui/tests/f-parts-attributes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
-## `POST /api/bom/`
+## [[../graph/endpoints/post-api-bom|POST /api/bom/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-002** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:action-menu-add-bom-items
   click label:action-menu-add-bom-items-add-bom-item
   ```
 
-## `POST /api/bom/substitute/`
+## [[../graph/endpoints/post-api-bom-substitute|POST /api/bom/substitute/]]
 
 Reached by 1 UI test(s):
 
-- **UI-BOM-007** (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
   click label:row-action-menu-0
@@ -1103,54 +1103,54 @@ Reached by 1 UI test(s):
   click role:button:"Add Substitute"
   ```
 
-## `POST /api/part/`
+## [[../graph/endpoints/post-api-part|POST /api/part/]]
 
 Reached by 3 UI test(s):
 
-- **UI-PART-002** (`submission/automation/ui/tests/b-parts-create.spec.ts`)
+- [[../graph/ui-tests/UI-PART-002|UI-PART-002]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
   ```
   goto /web/part/category/{var}/parts
   click label:action-menu-add-parts
   click role:button:"Submit"
   ```
-- **UI-RECIPE-002** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- **PARTS-CROSS-FULL-001** (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-002|UI-RECIPE-002]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/PARTS-CROSS-FULL-001|PARTS-CROSS-FULL-001]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
 
-## `POST /api/part/category/`
+## [[../graph/endpoints/post-api-part-category|POST /api/part/category/]]
 
 Reached by 2 UI test(s):
 
-- **UI-CATEGORY-002** (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
+- [[../graph/ui-tests/UI-CATEGORY-002|UI-CATEGORY-002]] (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
   ```
   goto /web/part/category/index/subcategories
   click role:button:"Submit"
   ```
-- **UI-RECIPE-001** (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-RECIPE-001|UI-RECIPE-001]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
-## `POST /api/part/related/`
+## [[../graph/endpoints/post-api-part-related|POST /api/part/related/]]
 
 Reached by 1 UI test(s):
 
-- **UI-REL-001** (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
+- [[../graph/ui-tests/UI-REL-001|UI-REL-001]] (`submission/automation/ui/tests/j-parts-related-ui.spec.ts`)
   ```
   goto /web/part/{var}/related_parts
   click label:action-button-add-related-part
   ```
 
-## `POST /api/part/sale-price/`
+## [[../graph/endpoints/post-api-part-sale-price|POST /api/part/sale-price/]]
 
 Reached by 1 UI test(s):
 
-- **UI-PRICE-001** (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRICE-001|UI-PRICE-001]] (`submission/automation/ui/tests/k-parts-pricing-ui.spec.ts`)
   ```
   click label:action-button-add-price-break
   ```
 
-## `POST /api/part/test-template/`
+## [[../graph/endpoints/post-api-part-test-template|POST /api/part/test-template/]]
 
 Reached by 1 UI test(s):
 
-- **UI-TT-001** (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
+- [[../graph/ui-tests/UI-TT-001|UI-TT-001]] (`submission/automation/ui/tests/i-parts-test-template-ui.spec.ts`)
   ```
   goto /web/part/{var}/test_templates
   click label:action-button-add-test-template

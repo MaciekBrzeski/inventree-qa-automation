@@ -1,7 +1,7 @@
 ---
 title: "UI path primitives — most-used steps"
 tags: [qa, ui-paths, primitives]
-generated: 2026-04-14T13:54:31.095Z
+generated: 2026-04-14T15:01:45.051Z
 ---
 
 # UI path primitives

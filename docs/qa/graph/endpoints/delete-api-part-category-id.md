@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/part/category/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, delete, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # DELETE /api/part/category/{id}/
@@ -23,12 +23,12 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-DELETE-002 delete the UI-created category via the page action menu
-- UI-RECIPE-006 deleteCategoryViaUi → DELETE /api/part/category/{id}/
+- [[UI-DELETE-002]] — delete the UI-created category via the page action menu
+- [[UI-RECIPE-006]] — deleteCategoryViaUi → DELETE /api/part/category/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-025 DELETE /api/part/category/{id}/ removes the child category
+- [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
 
 ## Links
 

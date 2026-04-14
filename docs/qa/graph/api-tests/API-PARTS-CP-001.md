@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-category-parameters.spec.ts
 case-ids: [API-PARTS-CP-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.895Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # API-PARTS-CP-001 GET /api/part/category/parameters/ lists templates
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-category-parameters.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-category-parameters.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-category-parameters.spec.ts)
 - Case IDs: [[API-PARTS-CP-001]]
 
 ## Endpoints exercised

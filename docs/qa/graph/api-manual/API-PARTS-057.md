@@ -4,7 +4,7 @@ id: API-PARTS-057
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.901Z
+generated: 2026-04-14T15:01:44.850Z
 ---
 
 # API-PARTS-057 — Attempt to create a BOM line with missing required fields
@@ -27,7 +27,7 @@ validation
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-negative.spec.ts` — API-PARTS-057 PUT /api/part/ on collection expects a bulk list and returns 400
+- [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts) — API-PARTS-057 PUT /api/part/ on collection expects a bulk list and returns 400
 
 ## Endpoints touched via the automated sibling(s)
 

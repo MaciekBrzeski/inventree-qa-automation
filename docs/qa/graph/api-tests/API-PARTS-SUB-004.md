@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-bom-substitute.spec.ts
 case-ids: [API-PARTS-SUB-004]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # API-PARTS-SUB-004 PATCH /api/bom/substitute/{id}/ updates the substitute
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-bom-substitute.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-bom-substitute.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-bom-substitute.spec.ts)
 - Case IDs: [[API-PARTS-SUB-004]]
 
 ## Endpoints exercised

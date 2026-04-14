@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/related/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # POST /api/part/related/
@@ -23,12 +23,12 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-REL-001 create a related-parts link via action-button-add-related-part → POST /api/part/related/
+- [[UI-REL-001]] — create a related-parts link via action-button-add-related-part → POST /api/part/related/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-PUT-003 PUT /api/part/related/{id}/ replaces a related link
-- API-PARTS-REL-001 POST /api/part/related/ creates a related link
+- [[API-PARTS-PUT-003]] — PUT /api/part/related/{id}/ replaces a related link
+- [[API-PARTS-REL-001]] — POST /api/part/related/ creates a related link
 
 ## Links
 

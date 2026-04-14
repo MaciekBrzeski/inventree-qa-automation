@@ -4,7 +4,7 @@ id: API-PARTS-024
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.900Z
+generated: 2026-04-14T15:01:44.849Z
 ---
 
 # API-PARTS-024 — Rename and reparent a category
@@ -27,7 +27,7 @@ _(none)_
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-category.spec.ts` — API-PARTS-024 POST with empty name returns 400
+- [`submission/automation/api/tests/parts-category.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-category.spec.ts) — API-PARTS-024 POST with empty name returns 400
 
 ## Endpoints touched via the automated sibling(s)
 

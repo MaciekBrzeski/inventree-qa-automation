@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/bom/{id}/validate/"
 paired: paired
 tags: [qa, endpoint, inventree, patch, paired]
-generated: 2026-04-14T13:54:30.887Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # PATCH /api/bom/{id}/validate/
@@ -23,11 +23,11 @@ generated: 2026-04-14T13:54:30.887Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-BOM-006 click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
+- [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BV-003 PATCH /api/bom/{id}/validate/ marks the row as validated
+- [[API-PARTS-BV-003]] — PATCH /api/bom/{id}/validate/ marks the row as validated
 
 ## Links
 

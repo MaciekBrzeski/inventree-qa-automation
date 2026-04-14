@@ -1,0 +1,10 @@
+[
+  {
+    "method": "POST",
+    "url": "/api/bom/"
+  },
+  {
+    "method": "GET",
+    "url": "/api/bom/?part=587&substitutes=true&part_detail=true&sub_part_detail=true&category_detail=true&limit=25&offset=0"
+  }
+]

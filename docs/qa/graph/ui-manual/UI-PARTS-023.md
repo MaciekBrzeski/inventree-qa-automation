@@ -4,7 +4,7 @@ id: UI-PARTS-023
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T13:54:30.897Z
+generated: 2026-04-14T15:01:44.847Z
 ---
 
 # UI-PARTS-023 — Toggle Testable attribute on a Part

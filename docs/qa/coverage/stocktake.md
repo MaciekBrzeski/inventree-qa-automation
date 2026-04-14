@@ -2,7 +2,7 @@
 title: "Coverage — Stocktake"
 area: stocktake
 tags: [qa, coverage, area]
-generated: 2026-04-14T13:54:31.289Z
+generated: 2026-04-14T15:01:45.260Z
 ---
 
 # Stocktake

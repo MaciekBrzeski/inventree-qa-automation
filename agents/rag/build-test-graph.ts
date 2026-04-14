@@ -19,6 +19,23 @@ const MANUAL_UI_DIR = resolve(OUT_DIR, 'ui-manual');
 const MANUAL_API_DIR = resolve(OUT_DIR, 'api-manual');
 const INDEX_PATH = resolve(OUT_DIR, 'index.md');
 
+// GitHub repo root used to build deep links to individual spec files.
+// The on-disk path is `submission/automation/...` but the public repo is
+// rooted at `automation/...` so we strip the `submission/` prefix.
+const REPO_URL =
+  process.env.QA_REPO_URL ?? 'https://github.com/MaciekBrzeski/inventree-qa-automation';
+const REPO_BRANCH = process.env.QA_REPO_BRANCH ?? 'main';
+
+function repoFileUrl(localPath: string): string {
+  const stripped = localPath.replace(/^submission\//, '');
+  return `${REPO_URL}/blob/${REPO_BRANCH}/${stripped}`;
+}
+
+function titleToCaseId(title: string): string | null {
+  const m = title.match(/^(?:API|UI)[A-Z-]*-\d+/);
+  return m ? m[0] : null;
+}
+
 type OpenAPIDoc = {
   paths: Record<string, Record<string, { summary?: string; tags?: string[] }>>;
 };
@@ -262,14 +279,12 @@ async function main(): Promise<void> {
   for (const ep of endpoints.values()) {
     const uiLinks = Array.from(ep.uiCases).sort().map((id) => `[[${id}]]`).join(', ') || '_(none)_';
     const apiLinks = Array.from(ep.apiCases).sort().map((id) => `[[${id}]]`).join(', ') || '_(none)_';
-    const uiTestLinks = Array.from(ep.uiTests)
-      .sort()
-      .map((t) => `- ${t}`)
-      .join('\n') || '_(none)_';
-    const apiTestLinks = Array.from(ep.apiTests)
-      .sort()
-      .map((t) => `- ${t}`)
-      .join('\n') || '_(none)_';
+    const linkTitle = (t: string): string => {
+      const id = titleToCaseId(t);
+      return id ? `- [[${id}]] — ${t.slice(id.length).trim()}` : `- ${t}`;
+    };
+    const uiTestLinks = Array.from(ep.uiTests).sort().map(linkTitle).join('\n') || '_(none)_';
+    const apiTestLinks = Array.from(ep.apiTests).sort().map(linkTitle).join('\n') || '_(none)_';
     const pairedState = ep.uiCases.size > 0 && ep.apiCases.size > 0
       ? 'paired'
       : ep.uiCases.size > 0
@@ -333,7 +348,10 @@ async function main(): Promise<void> {
       for (const sib of others) pairedSibs.add(sib);
     }
     const sibLinks = pairedSibs.size > 0
-      ? Array.from(pairedSibs).sort().map((s) => `- ${s}`).join('\n')
+      ? Array.from(pairedSibs).sort().map((s) => {
+          const id = titleToCaseId(s);
+          return id ? `- [[${id}]] — ${s.slice(id.length).trim()}` : `- ${s}`;
+        }).join('\n')
       : '_(no paired test on the other side)_';
     const title = t.title.replace(/"/g, '\\"');
     const body = [
@@ -351,7 +369,7 @@ async function main(): Promise<void> {
       `# ${t.title}`,
       '',
       `- Side: **${t.side.toUpperCase()}**`,
-      `- Spec file: \`${t.file}\``,
+      `- Spec file: [\`${t.file}\`](${repoFileUrl(t.file)})`,
       `- Case IDs: ${caseLinks}`,
       '',
       '## Endpoints exercised',
@@ -392,7 +410,7 @@ async function main(): Promise<void> {
     );
     const automatedLinks = relatedAutomated.length
       ? relatedAutomated
-          .map((t) => `- \`${t.file}\` — ${t.title}`)
+          .map((t) => `- [\`${t.file}\`](${repoFileUrl(t.file)}) — ${t.title}`)
           .join('\n')
       : '_(not automated)_';
     const endpointLinks = new Set<string>();

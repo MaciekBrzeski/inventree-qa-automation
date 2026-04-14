@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/parts-navigation.spec.ts
 case-ids: [UI-PARTS-NAV-005]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.843Z
 ---
 
 # UI-PARTS-NAV-005 notifications button is visible
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/parts-navigation.spec.ts`
+- Spec file: [`submission/automation/ui/tests/parts-navigation.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/parts-navigation.spec.ts)
 - Case IDs: [[UI-PARTS-NAV-005]]
 
 ## Endpoints exercised

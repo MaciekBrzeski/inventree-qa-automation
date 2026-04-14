@@ -6,13 +6,13 @@ file: submission/automation/ui/tests/a-parts-category-create.spec.ts
 case-ids: [UI-CATEGORY-003]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T13:54:30.891Z
+generated: 2026-04-14T15:01:44.841Z
 ---
 
 # UI-CATEGORY-003 created category is searchable via API (recorder-captured)
 
 - Side: **UI**
-- Spec file: `submission/automation/ui/tests/a-parts-category-create.spec.ts`
+- Spec file: [`submission/automation/ui/tests/a-parts-category-create.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/ui/tests/a-parts-category-create.spec.ts)
 - Case IDs: [[UI-CATEGORY-003]]
 
 ## Endpoints exercised

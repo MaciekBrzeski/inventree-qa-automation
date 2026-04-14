@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-bom.spec.ts
 case-ids: [API-PARTS-BOM-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.894Z
+generated: 2026-04-14T15:01:44.844Z
 ---
 
 # API-PARTS-BOM-003 create BOM line
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-bom.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-bom.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-bom.spec.ts)
 - Case IDs: [[API-PARTS-BOM-003]]
 
 ## Endpoints exercised
@@ -21,4 +21,4 @@ generated: 2026-04-14T13:54:30.894Z
 
 ## Paired tests on the other side
 
-- UI-BOM-002 add a BOM line via UI → POST /api/bom/
+- [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/

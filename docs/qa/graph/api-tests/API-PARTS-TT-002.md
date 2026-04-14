@@ -6,13 +6,13 @@ file: submission/automation/api/tests/parts-test-template.spec.ts
 case-ids: [API-PARTS-TT-002]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T13:54:30.897Z
+generated: 2026-04-14T15:01:44.847Z
 ---
 
 # API-PARTS-TT-002 POST /api/part/test-template/ creates a test template
 
 - Side: **API**
-- Spec file: `submission/automation/api/tests/parts-test-template.spec.ts`
+- Spec file: [`submission/automation/api/tests/parts-test-template.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-test-template.spec.ts)
 - Case IDs: [[API-PARTS-TT-002]]
 
 ## Endpoints exercised
@@ -21,4 +21,4 @@ generated: 2026-04-14T13:54:30.897Z
 
 ## Paired tests on the other side
 
-- UI-TT-001 add a test template via action-button-add-test-template → POST /api/part/test-template/
+- [[UI-TT-001]] — add a test template via action-button-add-test-template → POST /api/part/test-template/

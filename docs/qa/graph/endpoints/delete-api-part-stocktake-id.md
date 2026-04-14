@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/part/stocktake/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, delete, api-only]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # DELETE /api/part/stocktake/{id}/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-STK-005 DELETE /api/part/stocktake/{id}/ removes the entry
+- [[API-PARTS-STK-005]] — DELETE /api/part/stocktake/{id}/ removes the entry
 
 ## Links
 

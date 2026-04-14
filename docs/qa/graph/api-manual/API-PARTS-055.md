@@ -4,7 +4,7 @@ id: API-PARTS-055
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T13:54:30.901Z
+generated: 2026-04-14T15:01:44.850Z
 ---
 
 # API-PARTS-055 — Attempt to update a non-existent category
@@ -27,7 +27,7 @@ not-found
 
 ## Automated by
 
-- `submission/automation/api/tests/parts-negative.spec.ts` — API-PARTS-055 DELETE /api/part/999999999/ returns 404
+- [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts) — API-PARTS-055 DELETE /api/part/999999999/ returns 404
 
 ## Endpoints touched via the automated sibling(s)
 

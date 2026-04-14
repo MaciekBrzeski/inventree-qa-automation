@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/test-template/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T13:54:30.890Z
+generated: 2026-04-14T15:01:44.840Z
 ---
 
 # GET /api/part/test-template/
@@ -23,15 +23,15 @@ generated: 2026-04-14T13:54:30.890Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-- UI-TAB-006 test_templates tab → GET /api/part/test-template/
-- UI-TT-001 add a test template via action-button-add-test-template → POST /api/part/test-template/
-- UI-TT-002 the added template appears in the panel via GET /api/part/test-template/
-- UI-TT-003 delete a test template via row-action-menu → DELETE /api/part/test-template/{id}/
-- UI-TT-004 edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
+- [[UI-TAB-006]] — test_templates tab → GET /api/part/test-template/
+- [[UI-TT-001]] — add a test template via action-button-add-test-template → POST /api/part/test-template/
+- [[UI-TT-002]] — the added template appears in the panel via GET /api/part/test-template/
+- [[UI-TT-003]] — delete a test template via row-action-menu → DELETE /api/part/test-template/{id}/
+- [[UI-TT-004]] — edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-TT-001 GET /api/part/test-template/ lists templates
+- [[API-PARTS-TT-001]] — GET /api/part/test-template/ lists templates
 
 ## Links
 

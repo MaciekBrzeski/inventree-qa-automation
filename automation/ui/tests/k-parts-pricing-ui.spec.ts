@@ -3,6 +3,7 @@ import type { APIRequestContext } from '@playwright/test';
 import { createAuthedContext, createPart, type CreatedPart } from '../helpers/api';
 import { fillNumberField, submitButton } from '../helpers/mantine';
 import { waitForShell, waitLoadersGone } from '../paths/primitives';
+import { captureCheckpoint } from '../helpers/checkpoint';
 
 let api: APIRequestContext | undefined;
 let part: CreatedPart | undefined;
@@ -52,12 +53,14 @@ test.describe.serial('UI-PRICE pricing panel sale-price flows', () => {
   }) => {
     if (!part) throw new Error('seed');
     await openSalePricing(page, part.pk);
+    await captureCheckpoint(page, 'sale-pricing-empty');
 
     await page.getByLabel('action-button-add-price-break').click();
     await page.waitForTimeout(600);
 
     await fillNumberField(page, 'quantity', 1);
     await fillNumberField(page, 'price', 10);
+    await captureCheckpoint(page, 'price-break-form-filled');
 
     const [response] = await Promise.all([
       page.waitForResponse(
@@ -67,6 +70,8 @@ test.describe.serial('UI-PRICE pricing panel sale-price flows', () => {
       submitButton(page).click(),
     ]);
     expect([200, 201]).toContain(response.status());
+    await page.waitForTimeout(1000);
+    await captureCheckpoint(page, 'after-price-break-add');
   });
 
   test('UI-PRICE-002 edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/', async ({

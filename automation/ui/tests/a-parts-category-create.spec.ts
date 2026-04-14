@@ -1,6 +1,7 @@
 import { test, expect } from '../fixtures/auth';
 import { promises as fs } from 'node:fs';
 import { resolve } from 'node:path';
+import { captureCheckpoint } from '../helpers/checkpoint';
 
 const STATE_PATH = resolve(__dirname, '../../../data/ui-crud-state.json');
 
@@ -30,6 +31,7 @@ test.describe.serial('UI-CATEGORY create via UI', () => {
     await expect(page.getByLabel('action-button-add-part-category')).toBeVisible({
       timeout: 15_000,
     });
+    await captureCheckpoint(page, 'subcategories-panel-loaded');
   });
 
   test('UI-CATEGORY-002 open the Add Part Category modal and submit a new category', async ({
@@ -48,6 +50,7 @@ test.describe.serial('UI-CATEGORY create via UI', () => {
     const nameField = page.locator('input[name="name"]').first();
     await nameField.waitFor({ state: 'visible', timeout: 10_000 });
     await nameField.fill(name);
+    await captureCheckpoint(page, 'add-category-form-filled');
 
     // Submit the form.
     const submit = page.getByRole('button', { name: 'Submit' }).first();
@@ -55,6 +58,7 @@ test.describe.serial('UI-CATEGORY create via UI', () => {
 
     // Modal closes on success. A notification toast usually shows, and the table refreshes.
     await page.waitForTimeout(1500);
+    await captureCheckpoint(page, 'after-submit');
 
     await writeState(state);
   });

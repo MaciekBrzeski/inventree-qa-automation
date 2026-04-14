@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/{id}/bom-copy/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T13:54:30.889Z
+generated: 2026-04-14T15:01:44.839Z
 ---
 
 # POST /api/part/{id}/bom-copy/
@@ -27,7 +27,7 @@ _(none)_
 
 ## API spec titles (automated, inferred from spec file scope)
 
-- API-PARTS-BV-004 POST /api/part/{id}/bom-copy/ copies BOM from another assembly
+- [[API-PARTS-BV-004]] — POST /api/part/{id}/bom-copy/ copies BOM from another assembly
 
 ## Links
 

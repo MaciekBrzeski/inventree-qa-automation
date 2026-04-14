@@ -257,12 +257,18 @@ async function main(): Promise<void> {
   byEpLines.push('');
   const endpointsSorted = Array.from(byEndpoint.keys()).sort();
   for (const ep of endpointsSorted) {
-    byEpLines.push(`## \`${ep}\``);
+    const epSlug = ep
+      .toLowerCase()
+      .replace(/[{}]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '');
+    byEpLines.push(`## [[../graph/endpoints/${epSlug}|${ep}]]`);
     byEpLines.push('');
     byEpLines.push(`Reached by ${byEndpoint.get(ep)!.length} UI test(s):`);
     byEpLines.push('');
     for (const tp of byEndpoint.get(ep)!) {
-      byEpLines.push(`- **${tp.caseId || tp.title}** (\`${tp.file}\`)`);
+      const caseId = tp.caseId || tp.title;
+      byEpLines.push(`- [[../graph/ui-tests/${caseId}|${caseId}]] (\`${tp.file}\`)`);
       if (tp.steps.length > 0) {
         byEpLines.push('  ```');
         for (const s of tp.steps) byEpLines.push(`  ${stepSig(s)}`);
