@@ -38,9 +38,101 @@ function scheduleFlush(): void {
   });
 }
 
+// Defect injection for baseline validation: if CHECKPOINT_DEFECT is set to a
+// known key, every page navigation gets a `<style>` or `<script>` block
+// appended to document.head via page.addInitScript. Lets us prove the
+// checkpoint baselines catch real visual regressions without touching the
+// container or the Django templates.
+const DEFECT_KEY = (process.env.CHECKPOINT_DEFECT ?? '').toLowerCase();
+const DEFECT_PAYLOADS: Record<string, { description: string; css?: string; script?: string }> = {
+  'buttons-magenta': {
+    description: 'tint every action-button / action-menu aria-label magenta',
+    css: 'button[aria-label^="action-button"],button[aria-label^="action-menu"]{background:magenta !important;color:white !important;}',
+  },
+  'hide-nav': {
+    description: 'hide the primary navigation menu button',
+    css: 'button[aria-label="navigation-menu"]{display:none !important;}',
+  },
+  'shift-layout': {
+    description: 'shift every Mantine AppShell main region 50px right',
+    css: '.mantine-AppShell-main{padding-left:50px !important;}',
+  },
+  'rename-submit': {
+    description: 'rewrite every Submit button label to SEND IT',
+    script:
+      '(function(){var fix=function(){document.querySelectorAll("button").forEach(function(b){if(b.textContent.trim()==="Submit")b.textContent="SEND IT";});};new MutationObserver(fix).observe(document.documentElement,{childList:true,subtree:true});fix();})()',
+  },
+  'zoom-out': {
+    description: 'zoom the entire page to 80% via CSS transform',
+    css: 'body{transform:scale(0.8) !important;transform-origin:top left !important;}',
+  },
+  'hide-icons': {
+    description: 'hide every inline SVG icon',
+    css: 'svg{display:none !important;}',
+  },
+  'dim-inputs': {
+    description: 'drop input opacity to 30% — unreadable forms',
+    css: 'input,textarea,select,[role="textbox"]{opacity:0.3 !important;}',
+  },
+  'red-rows': {
+    description: 'add red border to every Mantine DataTable row',
+    css: '.mantine-datatable-row,tr{border:2px solid red !important;}',
+  },
+  'comic-sans': {
+    description: 'replace body font with Comic Sans',
+    css: 'body,*{font-family:"Comic Sans MS",cursive !important;}',
+  },
+  'shrink-buttons': {
+    description: 'shrink every button to 50% width + font-size 10px',
+    css: 'button{font-size:10px !important;max-width:50% !important;padding:2px !important;}',
+  },
+  'invert-colors': {
+    description: 'invert entire page color scheme',
+    css: 'html{filter:invert(1) hue-rotate(180deg) !important;}',
+  },
+  'remove-labels': {
+    description: 'hide every form field label',
+    css: 'label,.mantine-InputWrapper-label{display:none !important;}',
+  },
+  'wiggle-table': {
+    description: 'skew every table header by 5deg — layout warp',
+    css: 'th,.mantine-datatable-header-cell{transform:skew(-5deg) !important;}',
+  },
+  'fake-loading': {
+    description: 'inject a fake "Loading..." overlay over the main panel',
+    script:
+      '(function(){var o=document.createElement("div");o.id="qa-defect";o.textContent="Loading…";o.setAttribute("style","position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);color:white;font-size:48px;display:flex;align-items:center;justify-content:center;z-index:99999;");document.body.appendChild(o);})()',
+  },
+  'currency-euro': {
+    description: 'rewrite every $ currency symbol in visible text to €',
+    script:
+      '(function(){var fix=function(){document.querySelectorAll("*").forEach(function(el){if(el.children.length===0&&el.textContent){el.textContent=el.textContent.replace(/\\$/g,"€").replace(/USD/g,"EUR");}});};new MutationObserver(fix).observe(document.documentElement,{childList:true,subtree:true,characterData:true});fix();})()',
+  },
+};
+
 export const test = base.extend<PageBag>({
   recordApiRequests: [
     async ({ page }, use, testInfo) => {
+      const defect = DEFECT_KEY ? DEFECT_PAYLOADS[DEFECT_KEY] : undefined;
+      const applyDefect = async (): Promise<void> => {
+        if (!defect) return;
+        try {
+          if (defect.css) {
+            await page.addStyleTag({ content: defect.css });
+          }
+          if (defect.script) {
+            await page.addScriptTag({ content: defect.script });
+          }
+        } catch {
+          /* page may be mid-navigation; next 'load' will re-apply */
+        }
+      };
+      if (defect) {
+        process.stderr.write(`[defect] injecting ${DEFECT_KEY}\n`);
+        page.on('load', () => {
+          void applyDefect();
+        });
+      }
       scheduleFlush();
       const key = `${testInfo.file.split('/').slice(-1)[0]}::${testInfo.title}`;
       perTest[key] = perTest[key] ?? [];

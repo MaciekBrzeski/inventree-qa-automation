@@ -37,3 +37,5 @@ video/*.mp4
 automation/ui/baseline/**/*.actual.png
 automation/ui/baseline/**/*.actual.html
 automation/ui/baseline/**/*.actual.requests.json
+automation/ui/baseline/**/*.diff.png
+automation/ui/baseline/report.html
