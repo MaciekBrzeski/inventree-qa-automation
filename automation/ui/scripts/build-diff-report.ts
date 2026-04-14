@@ -238,15 +238,14 @@ function renderSummary(label: string, s: DiffSummary): string {
   const suspiciousHtml =
     s.suspicious.length > 0
       ? `<details class="susp-wrap"><summary>🎯 suspicious additions (${s.suspicious.length}) — click to expand</summary><div class="susp"><pre>${s.suspicious
-          .slice(0, 5)
-          .map((l) => highlightTokens(truncate(l)))
+          .map((l) => highlightTokens(l))
           .join('\n\n')}</pre></div></details>`
       : '';
   const samplesHtml = `
     <details class="samples">
-      <summary>first ${Math.min(5, s.adds.length)} added / ${Math.min(5, s.dels.length)} removed (of ${s.addCount}+/${s.delCount}−)</summary>
-      <pre class="adds">${s.adds.slice(0, 5).map((l) => '+ ' + highlightTokens(truncate(l))).join('\n\n') || '<em class="na">(none)</em>'}</pre>
-      <pre class="dels">${s.dels.slice(0, 5).map((l) => '- ' + escapeHtml(truncate(l))).join('\n\n') || '<em class="na">(none)</em>'}</pre>
+      <summary>all added / removed lines (${s.addCount}+ / ${s.delCount}−)</summary>
+      <pre class="adds">${s.adds.map((l) => '+ ' + highlightTokens(l)).join('\n\n') || '<em class="na">(none)</em>'}</pre>
+      <pre class="dels">${s.dels.map((l) => '- ' + escapeHtml(l)).join('\n\n') || '<em class="na">(none)</em>'}</pre>
     </details>`;
   return `
     <div class="summary">
@@ -558,10 +557,11 @@ async function main(): Promise<void> {
                           padding: .45rem .8rem; border-radius: 3px;
                           color: #fa5; font-weight: 600; cursor: pointer; }
   .susp { background: #1a0708; padding: .6rem .8rem; margin-top: .3rem;
-          border-radius: 3px; max-height: 300px; overflow: auto;
+          border-radius: 3px; max-height: 70vh; overflow: auto;
           border: 1px solid #3a1a1a; }
   .susp pre { margin: 0; white-space: pre-wrap; word-break: break-all;
               color: #fbb; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; }
+  .samples pre { max-height: 60vh; overflow: auto; }
   .samples pre { margin: .2rem 0; padding: .4rem; background: #0b0b0d; border-radius: 3px; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; white-space: pre-wrap; word-break: break-all; }
   .samples pre.adds { color: #9fdc9f; }
   .samples pre.dels { color: #f0a0a0; }

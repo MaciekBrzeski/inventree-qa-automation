@@ -29,8 +29,7 @@ data/dom-snapshots/
 data/api-ui-gap/per-test-requests.json
 data/ui-crud-state.json
 
-# Media
-video/*.mp4
+# Media — video/*.mp4 now committed for submission deliverable
 
 # Checkpoint comparison artefacts — only baselines are committed.
 # `.actual.*` files are written by compare mode when a diff is detected.
