@@ -29,7 +29,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 UI_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$UI_DIR"
 
-# "all" mode — run every known defect in sequence, report a summary table.
+# "all" mode — run every known defect in sequence, preserve each defect's
+# .actual.* files under baseline/reports/<defect>/ so the merged HTML report
+# can show every regression in one view.
 if [[ "$DEFECT" == "all" ]]; then
   DEFECTS=(
     buttons-magenta hide-nav shift-layout rename-submit
@@ -38,6 +40,9 @@ if [[ "$DEFECT" == "all" ]]; then
     fake-loading currency-euro
   )
   declare -A RESULTS
+  REPORTS_DIR="$UI_DIR/baseline/reports"
+  rm -rf "$REPORTS_DIR"
+  mkdir -p "$REPORTS_DIR"
   for d in "${DEFECTS[@]}"; do
     echo ""
     echo "========================================"
@@ -48,16 +53,30 @@ if [[ "$DEFECT" == "all" ]]; then
     else
       RESULTS[$d]="MISSED"
     fi
+    # Copy this run's caught actuals into a defect-scoped archive dir so the
+    # next iteration's cleanup doesn't wipe them.
+    DEST="$REPORTS_DIR/$d"
+    mkdir -p "$DEST"
+    find "$UI_DIR/baseline" -maxdepth 3 \( -name '*.actual.*' -o -name '*.diff.png' \) -type f 2>/dev/null |
+      while read -r f; do
+        rel="${f#$UI_DIR/baseline/}"
+        mkdir -p "$DEST/$(dirname "$rel")"
+        cp "$f" "$DEST/$rel"
+      done
   done
   echo ""
   echo "========================================"
   echo "[validate-all] summary"
   echo "========================================"
   for d in "${DEFECTS[@]}"; do
-    printf "  %-20s %s\n" "$d" "${RESULTS[$d]}"
+    CAUGHT_COUNT=$(find "$REPORTS_DIR/$d" -name '*.actual.html' 2>/dev/null | wc -l)
+    printf "  %-20s %s  (%d checkpoints affected)\n" "$d" "${RESULTS[$d]}" "$CAUGHT_COUNT"
   done
   MISSED=$(printf '%s\n' "${RESULTS[@]}" | grep -c MISSED || true)
   echo ""
+  echo "[validate-all] per-defect artefacts in: $REPORTS_DIR"
+  echo "[validate-all] building merged report…"
+  npx tsx "$SCRIPT_DIR/build-diff-report.ts" --all 2>&1 | sed 's/^/  /'
   if [[ "$MISSED" -eq 0 ]]; then
     echo "[validate-all] PASS — all ${#DEFECTS[@]} defects caught"
     exit 0

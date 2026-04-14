@@ -104,9 +104,9 @@ const DEFECT_PAYLOADS: Record<string, { description: string; css?: string; scrip
       '(function(){var o=document.createElement("div");o.id="qa-defect";o.textContent="Loading…";o.setAttribute("style","position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);color:white;font-size:48px;display:flex;align-items:center;justify-content:center;z-index:99999;");document.body.appendChild(o);})()',
   },
   'currency-euro': {
-    description: 'rewrite every $ currency symbol in visible text to €',
+    description: 'rewrite every $ / USD / Parts / Pricing label visible in the SPA',
     script:
-      '(function(){var fix=function(){document.querySelectorAll("*").forEach(function(el){if(el.children.length===0&&el.textContent){el.textContent=el.textContent.replace(/\\$/g,"€").replace(/USD/g,"EUR");}});};new MutationObserver(fix).observe(document.documentElement,{childList:true,subtree:true,characterData:true});fix();})()',
+      '(function(){var swap={"$":"€","USD":"EUR","Parts":"Komponenty","Pricing":"Cennik","Submit":"Wyślij","Delete":"Usuń"};var fix=function(){document.querySelectorAll("body *").forEach(function(el){if(el.children.length===0&&el.textContent){var t=el.textContent;var n=t;Object.keys(swap).forEach(function(k){n=n.split(k).join(swap[k]);});if(n!==t)el.textContent=n;}});};new MutationObserver(fix).observe(document.documentElement,{childList:true,subtree:true,characterData:true});fix();})()',
   },
 };
 

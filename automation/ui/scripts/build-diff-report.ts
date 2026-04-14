@@ -17,8 +17,11 @@ import pixelmatch from 'pixelmatch';
 const HERE = new URL('.', import.meta.url).pathname;
 const BASELINE = path.resolve(HERE, '..', 'baseline');
 const OUT = path.join(BASELINE, 'report.html');
+const ALL_MODE = process.argv.includes('--all');
+const REPORTS_DIR = path.join(BASELINE, 'reports');
 
 type Diff = {
+  defect: string | null; // null for single-defect runs
   checkpoint: string; // "<test-slug>/<step-slug>"
   pngBase: string | null;
   pngActual: string | null;
@@ -249,21 +252,20 @@ function renderSummary(label: string, s: DiffSummary): string {
 }
 
 async function main(): Promise<void> {
-  const files = await walk(BASELINE);
-  const actuals = files.filter((f) => /\.(actual|diff)\.(png|html|requests\.json)$/.test(f));
   const byCheckpoint = new Map<string, Diff>();
 
-  for (const actual of actuals) {
+  const ingest = async (actual: string, defect: string | null): Promise<void> => {
     const dir = path.dirname(actual);
     const testSlug = path.basename(dir);
     const fname = path.basename(actual);
     const isDiffPng = /\.diff\.png$/.test(fname);
     const stem = fname.replace(/\.(actual|diff)\.(png|html|requests\.json)$/, '');
     const kind = /\.png$/.test(fname) ? 'png' : /\.html$/.test(fname) ? 'html' : 'requests';
-    const key = `${testSlug}/${stem}`;
+    const key = defect ? `${defect}/${testSlug}/${stem}` : `${testSlug}/${stem}`;
     if (!byCheckpoint.has(key)) {
       byCheckpoint.set(key, {
-        checkpoint: key,
+        defect,
+        checkpoint: `${testSlug}/${stem}`,
         pngBase: null,
         pngActual: null,
         pngDiff: null,
@@ -274,9 +276,13 @@ async function main(): Promise<void> {
       });
     }
     const d = byCheckpoint.get(key)!;
+    // Baseline files always live at baseline/<test-slug>/<stem>.{png,html,requests.json}
+    // regardless of whether the actuals are in baseline/ (single run) or
+    // baseline/reports/<defect>/<test-slug>/ (all-mode archive).
+    const baselineRoot = path.join(BASELINE, testSlug);
     const basePath =
       kind === 'png' ? `${stem}.png` : kind === 'html' ? `${stem}.html` : `${stem}.requests.json`;
-    const baseFull = path.join(dir, basePath);
+    const baseFull = path.join(baselineRoot, basePath);
     if (kind === 'png') {
       if (isDiffPng) {
         d.pngDiff = actual;
@@ -290,6 +296,34 @@ async function main(): Promise<void> {
     } else {
       d.reqActual = actual;
       d.reqBase = baseFull;
+    }
+  };
+
+  if (ALL_MODE) {
+    let defectDirs: string[] = [];
+    try {
+      defectDirs = (await fs.readdir(REPORTS_DIR, { withFileTypes: true }))
+        .filter((e) => e.isDirectory())
+        .map((e) => e.name);
+    } catch {
+      console.log(`[report] no ${REPORTS_DIR} — run validate-baseline.sh all first`);
+      return;
+    }
+    for (const defect of defectDirs) {
+      const defectRoot = path.join(REPORTS_DIR, defect);
+      const files = await walk(defectRoot);
+      for (const f of files.filter((f) => /\.(actual|diff)\.(png|html|requests\.json)$/.test(f))) {
+        await ingest(f, defect);
+      }
+    }
+  } else {
+    const files = await walk(BASELINE);
+    for (const f of files.filter(
+      (f) =>
+        /\.(actual|diff)\.(png|html|requests\.json)$/.test(f) &&
+        !f.includes('/baseline/reports/'),
+    )) {
+      await ingest(f, null);
     }
   }
 
@@ -390,9 +424,12 @@ async function main(): Promise<void> {
       ? `<div class="diff">${renderDiff(reqOps)}</div>`
       : '<p class="na">(no requests diff)</p>';
 
+    const defectBadge = d.defect
+      ? `<span class="defect-badge">${escapeHtml(d.defect)}</span>`
+      : '';
     sections.push(`
       <section class="checkpoint">
-        <h2>${escapeHtml(key)}</h2>
+        <h2>${defectBadge}${escapeHtml(d.checkpoint)}</h2>
         ${topSummary}
         <details open>
           <summary>Screenshot (side-by-side)</summary>
@@ -410,9 +447,9 @@ async function main(): Promise<void> {
     `);
   }
 
-  const summary = Array.from(byCheckpoint.keys())
-    .sort()
-    .map((k) => `<li><a href="#${escapeAnchor(k)}">${escapeHtml(k)}</a></li>`)
+  const summary = Array.from(byCheckpoint.entries())
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([k, d]) => `<li><a href="#${escapeAnchor(k)}">${d.defect ? `[${escapeHtml(d.defect)}] ` : ''}${escapeHtml(d.checkpoint)}</a></li>`)
     .join('');
 
   const html = `<!doctype html>
@@ -444,6 +481,10 @@ async function main(): Promise<void> {
   .triple figure { margin: 0; }
   .triple figcaption { font-size: .8rem; color: #aaa; margin-bottom: .2rem; }
   .triple img { max-width: 100%; border: 1px solid #333; background: #000; }
+  .defect-badge { display: inline-block; background: #4a1a5a; color: #f0d0ff;
+                  padding: 2px 8px; border-radius: 10px; font-size: .75rem;
+                  margin-right: .6rem; font-weight: 600; text-transform: uppercase;
+                  letter-spacing: .05em; }
   .diff { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
           font-size: 12px; background: #0b0b0d; padding: .6rem;
           max-height: 600px; overflow: auto; border: 1px solid #222; }
