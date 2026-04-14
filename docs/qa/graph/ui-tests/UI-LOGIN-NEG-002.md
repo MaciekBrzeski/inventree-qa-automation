@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/parts-login-negative.spec.ts
 case-ids: [UI-LOGIN-NEG-002]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # UI-LOGIN-NEG-002 username with empty password does not authenticate

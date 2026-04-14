@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/internal-price/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # POST /api/part/internal-price/

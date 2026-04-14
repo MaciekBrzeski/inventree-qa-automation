@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-test-template.spec.ts
 case-ids: [API-PARTS-TT-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # API-PARTS-TT-001 GET /api/part/test-template/ lists templates
@@ -21,6 +21,7 @@ generated: 2026-04-14T15:01:44.847Z
 
 ## Paired tests on the other side
 
+- BASELINE-004 test templates panel with one required template
 - [[UI-TAB-006]] — test_templates tab → GET /api/part/test-template/
 - [[UI-TT-001]] — add a test template via action-button-add-test-template → POST /api/part/test-template/
 - [[UI-TT-002]] — the added template appears in the panel via GET /api/part/test-template/

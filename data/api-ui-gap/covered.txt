@@ -1,4 +1,5 @@
 DELETE /api/bom/
+DELETE /api/bom/substitute/{id}/
 DELETE /api/part/category/{id}/
 DELETE /api/part/related/{id}/
 DELETE /api/part/sale-price/{id}/
@@ -28,8 +29,10 @@ PATCH /api/part/related/{id}/
 PATCH /api/part/sale-price/{id}/
 PATCH /api/part/test-template/{id}/
 PATCH /api/part/{id}/
+POST /api/bom/
 POST /api/bom/substitute/
 POST /api/part/
 POST /api/part/category/
 POST /api/part/related/
+POST /api/part/sale-price/
 POST /api/part/test-template/

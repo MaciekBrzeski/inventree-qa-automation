@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/f-parts-attributes.spec.ts
 case-ids: [UI-ATTR-005]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.842Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-ATTR-005 flip trackable flag via UI edit modal

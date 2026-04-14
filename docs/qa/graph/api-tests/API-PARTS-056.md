@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-negative.spec.ts
 case-ids: [API-PARTS-056]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.846Z
+generated: 2026-04-14T20:24:42.872Z
 ---
 
 # API-PARTS-056 POST /api/part/category/ with empty name returns 400

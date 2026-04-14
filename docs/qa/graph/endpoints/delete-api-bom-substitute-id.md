@@ -2,20 +2,20 @@
 title: "DELETE /api/bom/substitute/{id}/"
 method: DELETE
 path: "/api/bom/substitute/{id}/"
-paired: api-only
-tags: [qa, endpoint, inventree, delete, api-only]
-generated: 2026-04-14T15:01:44.839Z
+paired: paired
+tags: [qa, endpoint, inventree, delete, paired]
+generated: 2026-04-14T20:24:42.865Z
 ---
 
 # DELETE /api/bom/substitute/{id}/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-SUBSTITUTE-001]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 

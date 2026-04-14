@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/part/category/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, delete, paired]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # DELETE /api/part/category/{id}/

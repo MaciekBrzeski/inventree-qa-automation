@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/j-parts-related-ui.spec.ts
 case-ids: [UI-REL-001]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-REL-001 create a related-parts link via action-button-add-related-part → POST /api/part/related/

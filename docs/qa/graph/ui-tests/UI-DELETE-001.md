@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/y-parts-ui-delete.spec.ts
 case-ids: [UI-DELETE-001]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # UI-DELETE-001 delete the UI-created part via the page action menu

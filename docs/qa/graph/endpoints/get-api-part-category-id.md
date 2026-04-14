@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/category/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # GET /api/part/category/{id}/
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.840Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-001 part detail header + tab bar
 - [[UI-ATTR-001]] — flip assembly flag via UI edit modal → PATCH /api/part/{id}/
 - [[UI-ATTR-002]] — flip component flag via UI edit modal
 - [[UI-ATTR-003]] — flip purchaseable flag via UI edit modal

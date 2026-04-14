@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/smoke.spec.ts
 case-ids: [UI-SMOKE-003]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # UI-SMOKE-003 part detail by id opens and shows action buttons

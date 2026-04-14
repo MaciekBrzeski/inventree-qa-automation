@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category.spec.ts
 case-ids: [API-PARTS-022]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.844Z
+generated: 2026-04-14T20:24:42.871Z
 ---
 
 # API-PARTS-022 create a child category (hierarchy)

@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/category/parameters/{id}/"
 paired: unpaired
 tags: [qa, endpoint, inventree, put, unpaired]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # PUT /api/part/category/parameters/{id}/

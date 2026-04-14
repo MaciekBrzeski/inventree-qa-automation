@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/k-parts-pricing-ui.spec.ts
 case-ids: [UI-PRICE-001]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-PRICE-001 add a sale price break via UI → POST /api/part/sale-price/

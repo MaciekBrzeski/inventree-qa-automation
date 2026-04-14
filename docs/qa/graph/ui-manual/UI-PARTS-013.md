@@ -4,7 +4,7 @@ id: UI-PARTS-013
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.874Z
 ---
 
 # UI-PARTS-013 — Browse a part category to view contained parts

@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-crud.spec.ts
 case-ids: [API-PARTS-005]
 endpoints-hit: 2
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.845Z
+generated: 2026-04-14T20:24:42.871Z
 ---
 
 # API-PARTS-005 delete part

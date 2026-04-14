@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom-substitute.spec.ts
 case-ids: [API-PARTS-SUB-006]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.844Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # API-PARTS-SUB-006 DELETE /api/bom/substitute/{id}/ removes it
@@ -21,4 +21,4 @@ generated: 2026-04-14T15:01:44.844Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/

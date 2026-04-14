@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/d-parts-extra-ui.spec.ts
 case-ids: [UI-EXTRA-003]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.841Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-EXTRA-003 rename the created category via UI → PATCH /api/part/category/{id}/

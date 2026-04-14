@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-stocktake.spec.ts
 case-ids: [API-PARTS-STK-005]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # API-PARTS-STK-005 DELETE /api/part/stocktake/{id}/ removes the entry

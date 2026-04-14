@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/e-parts-tabs.spec.ts
 case-ids: [UI-TAB-010]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.842Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-TAB-010 attachments tab → any /api/ fetch

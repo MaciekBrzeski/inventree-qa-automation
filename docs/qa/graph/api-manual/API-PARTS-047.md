@@ -4,7 +4,7 @@ id: API-PARTS-047
 side: api
 priority: P3
 tags: [qa, test, manual, api]
-generated: 2026-04-14T15:01:44.850Z
+generated: 2026-04-14T20:24:42.877Z
 ---
 
 # API-PARTS-047 — Create a BOM line with zero quantity

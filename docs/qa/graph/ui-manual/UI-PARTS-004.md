@@ -4,7 +4,7 @@ id: UI-PARTS-004
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # UI-PARTS-004 — Fail creation when name is missing

@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/bom/"
 paired: paired
 tags: [qa, endpoint, inventree, delete, paired]
-generated: 2026-04-14T15:01:44.838Z
+generated: 2026-04-14T20:24:42.865Z
 ---
 
 # DELETE /api/bom/

@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/{id}/requirements/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.839Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # GET /api/part/{id}/requirements/
@@ -15,7 +15,7 @@ generated: 2026-04-14T15:01:44.839Z
 
 ## UI test cases
 
-[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
+[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-SUBSTITUTE-001]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
 
 ## API test cases
 
@@ -23,6 +23,11 @@ generated: 2026-04-14T15:01:44.839Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-001 part detail header + tab bar
+- BASELINE-002 BOM panel with one populated row
+- BASELINE-003 pricing panel with internal + sale breaks
+- BASELINE-004 test templates panel with one required template
+- BASELINE-005 related parts panel with one linked row
 - [[UI-ATTR-001]] — flip assembly flag via UI edit modal → PATCH /api/part/{id}/
 - [[UI-ATTR-002]] — flip component flag via UI edit modal
 - [[UI-ATTR-003]] — flip purchaseable flag via UI edit modal
@@ -62,6 +67,7 @@ generated: 2026-04-14T15:01:44.839Z
 - [[UI-REL-002]] — delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/
 - [[UI-REL-003]] — edit the related-parts note via row-action-menu Edit → PATCH /api/part/related/{id}/
 - [[UI-SMOKE-003]] — part detail by id opens and shows action buttons
+- [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/
 - [[UI-TAB-001]] — parameters tab → some /api/part/ fetch on the current part
 - [[UI-TAB-002]] — bom tab → GET /api/bom/
 - [[UI-TAB-003]] — related parts tab → GET /api/part/related/

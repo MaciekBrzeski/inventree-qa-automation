@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-query.spec.ts
 case-ids: [API-PARTS-008]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.846Z
+generated: 2026-04-14T20:24:42.872Z
 ---
 
 # API-PARTS-008 filter by category
@@ -21,6 +21,7 @@ generated: 2026-04-14T15:01:44.846Z
 
 ## Paired tests on the other side
 
+- BASELINE-006 parts list at QA-ROOT
 - [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
 - [[UI-PART-001]] — navigate to parts panel and open Add menu

@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.839Z
+generated: 2026-04-14T20:24:42.865Z
 ---
 
 # GET /api/part/
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.839Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-006 parts list at QA-ROOT
 - [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
 - [[UI-PART-001]] — navigate to parts panel and open Add menu

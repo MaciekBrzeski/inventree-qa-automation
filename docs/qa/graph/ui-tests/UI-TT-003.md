@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/i-parts-test-template-ui.spec.ts
 case-ids: [UI-TT-003]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-TT-003 delete a test template via row-action-menu → DELETE /api/part/test-template/{id}/

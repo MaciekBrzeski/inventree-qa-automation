@@ -1,7 +1,7 @@
 ---
 title: "Coverage index — test organisation by feature area"
 tags: [qa, coverage, index]
-generated: 2026-04-14T15:01:45.260Z
+generated: 2026-04-14T20:24:43.274Z
 ---
 
 # Coverage index

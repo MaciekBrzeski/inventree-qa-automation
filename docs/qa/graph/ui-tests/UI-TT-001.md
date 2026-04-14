@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/i-parts-test-template-ui.spec.ts
 case-ids: [UI-TT-001]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-TT-001 add a test template via action-button-add-test-template → POST /api/part/test-template/

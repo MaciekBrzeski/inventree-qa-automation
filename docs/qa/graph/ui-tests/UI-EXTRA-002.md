@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/d-parts-extra-ui.spec.ts
 case-ids: [UI-EXTRA-002]
 endpoints-hit: 1
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.841Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-EXTRA-002 click nav-breadcrumb-action on parts root → GET /api/part/category/tree/

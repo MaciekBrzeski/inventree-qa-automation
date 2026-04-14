@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/related/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # GET /api/part/related/
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.840Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-005 related parts panel with one linked row
 - [[UI-EXTRA-005]] — navigate to Related Parts tab → GET /api/part/related/
 - [[UI-REL-001]] — create a related-parts link via action-button-add-related-part → POST /api/part/related/
 - [[UI-REL-002]] — delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/

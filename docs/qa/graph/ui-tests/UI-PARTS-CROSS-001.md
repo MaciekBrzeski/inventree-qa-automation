@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/cross-flow.spec.ts
 case-ids: [UI-PARTS-CROSS-001]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.841Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-PARTS-CROSS-001 API-seeded part renders on its detail page

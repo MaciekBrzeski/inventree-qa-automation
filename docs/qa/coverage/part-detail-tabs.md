@@ -2,7 +2,7 @@
 title: "Coverage — Part detail tabs"
 area: part-detail-tabs
 tags: [qa, coverage, area]
-generated: 2026-04-14T15:01:45.259Z
+generated: 2026-04-14T20:24:43.273Z
 ---
 
 # Part detail tabs

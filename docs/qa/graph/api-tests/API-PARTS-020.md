@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category.spec.ts
 case-ids: [API-PARTS-020]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.844Z
+generated: 2026-04-14T20:24:42.871Z
 ---
 
 # API-PARTS-020 retrieve a category
@@ -21,6 +21,7 @@ generated: 2026-04-14T15:01:44.844Z
 
 ## Paired tests on the other side
 
+- BASELINE-001 part detail header + tab bar
 - [[UI-ATTR-001]] — flip assembly flag via UI edit modal → PATCH /api/part/{id}/
 - [[UI-ATTR-002]] — flip component flag via UI edit modal
 - [[UI-ATTR-003]] — flip purchaseable flag via UI edit modal

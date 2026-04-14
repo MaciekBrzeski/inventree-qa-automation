@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/category/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.839Z
+generated: 2026-04-14T20:24:42.866Z
 ---
 
 # GET /api/part/category/
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.839Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-007 subcategory panel at root
 - [[UI-CATEGORY-001]] — navigate to the subcategories panel
 - [[UI-CATEGORY-002]] — open the Add Part Category modal and submit a new category
 - [[UI-RECIPE-001]] — createCategoryViaUi → POST /api/part/category/

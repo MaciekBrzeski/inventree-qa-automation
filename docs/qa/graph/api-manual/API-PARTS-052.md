@@ -4,7 +4,7 @@ id: API-PARTS-052
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T15:01:44.850Z
+generated: 2026-04-14T20:24:42.877Z
 ---
 
 # API-PARTS-052 — Attempt to update a non-existent part

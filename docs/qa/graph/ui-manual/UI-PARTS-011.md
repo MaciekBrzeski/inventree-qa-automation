@@ -4,7 +4,7 @@ id: UI-PARTS-011
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # UI-PARTS-011 — Create a new stock item

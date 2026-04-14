@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/b-parts-create.spec.ts
 case-ids: [UI-PART-001]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.841Z
+generated: 2026-04-14T20:24:42.868Z
 ---
 
 # UI-PART-001 navigate to parts panel and open Add menu

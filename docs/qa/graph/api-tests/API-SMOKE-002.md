@@ -6,7 +6,7 @@ file: submission/automation/api/tests/smoke.spec.ts
 case-ids: [API-SMOKE-002]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # API-SMOKE-002 authed list parts returns 200 + array-ish
@@ -21,6 +21,7 @@ generated: 2026-04-14T15:01:44.847Z
 
 ## Paired tests on the other side
 
+- BASELINE-006 parts list at QA-ROOT
 - [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
 - [[UI-PART-001]] — navigate to parts panel and open Add menu

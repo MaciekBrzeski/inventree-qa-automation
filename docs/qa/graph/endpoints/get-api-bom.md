@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.838Z
+generated: 2026-04-14T20:24:42.864Z
 ---
 
 # GET /api/bom/
@@ -15,7 +15,7 @@ generated: 2026-04-14T15:01:44.838Z
 
 ## UI test cases
 
-[[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-EXTRA-004]], [[UI-TAB-002]]
+[[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-EXTRA-004]], [[UI-SUBSTITUTE-001]], [[UI-TAB-002]]
 
 ## API test cases
 
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.838Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-002 BOM panel with one populated row
 - [[UI-BOM-001]] — open the BOM panel and see the Add BOM Items action menu
 - [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 - [[UI-BOM-003]] — trigger Validate BOM via UI → /api/part/{id}/bom-validate/ or /api/bom/{id}/validate/
@@ -31,6 +32,7 @@ generated: 2026-04-14T15:01:44.838Z
 - [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA
+- [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/
 - [[UI-TAB-002]] — bom tab → GET /api/bom/
 
 ## API spec titles (automated, inferred from spec file scope)

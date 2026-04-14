@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/g-parts-recipes.spec.ts
 case-ids: [UI-RECIPE-001]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.842Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-RECIPE-001 createCategoryViaUi → POST /api/part/category/

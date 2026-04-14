@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-004]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.842Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-BOM-004 bulk-delete BOM lines via Select all + action-button-delete-selected-records

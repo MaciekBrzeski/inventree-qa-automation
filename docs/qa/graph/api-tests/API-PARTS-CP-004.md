@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category-parameters.spec.ts
 case-ids: [API-PARTS-CP-004]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.844Z
+generated: 2026-04-14T20:24:42.871Z
 ---
 
 # API-PARTS-CP-004 PATCH /api/part/category/parameters/{id}/ updates default_value

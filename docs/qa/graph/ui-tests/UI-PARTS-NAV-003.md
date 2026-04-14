@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/parts-navigation.spec.ts
 case-ids: [UI-PARTS-NAV-003]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # UI-PARTS-NAV-003 breadcrumb action button is visible on parts list

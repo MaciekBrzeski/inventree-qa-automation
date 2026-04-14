@@ -4,7 +4,7 @@ id: UI-PARTS-042
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T15:01:44.848Z
+generated: 2026-04-14T20:24:42.874Z
 ---
 
 # UI-PARTS-042 — Add a parameter using a parameter template on a variant part

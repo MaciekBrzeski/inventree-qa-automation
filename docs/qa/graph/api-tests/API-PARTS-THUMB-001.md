@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-thumbs.spec.ts
 case-ids: [API-PARTS-THUMB-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # API-PARTS-THUMB-001 GET /api/part/thumbs/ lists thumbnails

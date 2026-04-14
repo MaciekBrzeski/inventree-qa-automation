@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-005]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.846Z
+generated: 2026-04-14T20:24:42.872Z
 ---
 
 # API-PARTS-PUT-005 PUT /api/part/sale-price/{id}/ replaces a sale price break

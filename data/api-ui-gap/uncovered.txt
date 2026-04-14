@@ -1,4 +1,3 @@
-DELETE /api/bom/substitute/{id}/
 DELETE /api/bom/{id}/
 DELETE /api/part/category/parameters/{id}/
 DELETE /api/part/internal-price/{id}/
@@ -23,10 +22,8 @@ PATCH /api/part/stocktake/{id}/
 PATCH /api/part/thumbs/{id}/
 PATCH /api/part/{id}/bom-validate/
 PATCH /api/part/{id}/pricing/
-POST /api/bom/
 POST /api/part/category/parameters/
 POST /api/part/internal-price/
-POST /api/part/sale-price/
 POST /api/part/stocktake/
 POST /api/part/stocktake/generate/
 POST /api/part/{id}/bom-copy/

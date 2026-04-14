@@ -6,7 +6,7 @@ file: submission/automation/api/tests/smoke.spec.ts
 case-ids: [API-SMOKE-001]
 endpoints-hit: 0
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.847Z
+generated: 2026-04-14T20:24:42.873Z
 ---
 
 # API-SMOKE-001 GET /api/ returns InvenTree banner

@@ -1,10 +1,5 @@
 [
   {
-    "endpoint": "DELETE /api/bom/substitute/{id}/",
-    "seed": "/web/part/<assembly-pk> → BOM tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
     "endpoint": "DELETE /api/bom/{id}/",
     "seed": "/web/part/<assembly-pk> → BOM tab",
     "rationale": "heuristic match on path prefix"
@@ -125,22 +120,12 @@
     "rationale": "heuristic match on path prefix"
   },
   {
-    "endpoint": "POST /api/bom/",
-    "seed": "/web/part/<assembly-pk> → BOM tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
     "endpoint": "POST /api/part/category/parameters/",
     "seed": "/web/partcategory/<pk>",
     "rationale": "heuristic match on path prefix"
   },
   {
     "endpoint": "POST /api/part/internal-price/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "POST /api/part/sale-price/",
     "seed": "/web/part/<pk> → Part Pricing tab",
     "rationale": "heuristic match on path prefix"
   },

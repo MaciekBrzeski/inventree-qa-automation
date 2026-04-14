@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts
 case-ids: [PARTS-CROSS-FULL-003]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.844Z
+generated: 2026-04-14T20:24:42.870Z
 ---
 
 # UI-PARTS-CROSS-FULL-003 add stock via the Stock tab → POST /api/stock/

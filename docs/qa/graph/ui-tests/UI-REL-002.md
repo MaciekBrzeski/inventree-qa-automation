@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/j-parts-related-ui.spec.ts
 case-ids: [UI-REL-002]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-REL-002 delete the related-parts link via row-action-menu → DELETE /api/part/related/{id}/

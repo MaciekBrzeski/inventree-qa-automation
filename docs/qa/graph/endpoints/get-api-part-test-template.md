@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/test-template/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T15:01:44.840Z
+generated: 2026-04-14T20:24:42.867Z
 ---
 
 # GET /api/part/test-template/
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.840Z
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
+- BASELINE-004 test templates panel with one required template
 - [[UI-TAB-006]] — test_templates tab → GET /api/part/test-template/
 - [[UI-TT-001]] — add a test template via action-button-add-test-template → POST /api/part/test-template/
 - [[UI-TT-002]] — the added template appears in the panel via GET /api/part/test-template/

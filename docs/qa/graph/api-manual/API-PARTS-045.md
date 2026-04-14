@@ -4,7 +4,7 @@ id: API-PARTS-045
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T15:01:44.850Z
+generated: 2026-04-14T20:24:42.876Z
 ---
 
 # API-PARTS-045 — Delete a specific substitute BOM line

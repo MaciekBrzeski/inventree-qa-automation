@@ -4,7 +4,7 @@ method: POST
 path: "/api/bom/substitute/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T15:01:44.839Z
+generated: 2026-04-14T20:24:42.865Z
 ---
 
 # POST /api/bom/substitute/

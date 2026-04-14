@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-005]
 endpoints-hit: 7
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T15:01:44.843Z
+generated: 2026-04-14T20:24:42.869Z
 ---
 
 # UI-BOM-005 edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/

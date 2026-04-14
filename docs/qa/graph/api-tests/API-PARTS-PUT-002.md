@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-002]
 endpoints-hit: 3
 tags: [qa, test, automated, api]
-generated: 2026-04-14T15:01:44.846Z
+generated: 2026-04-14T20:24:42.872Z
 ---
 
 # API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
@@ -23,6 +23,7 @@ generated: 2026-04-14T15:01:44.846Z
 
 ## Paired tests on the other side
 
+- BASELINE-001 part detail header + tab bar
 - [[UI-ATTR-001]] — flip assembly flag via UI edit modal → PATCH /api/part/{id}/
 - [[UI-ATTR-002]] — flip component flag via UI edit modal
 - [[UI-ATTR-003]] — flip purchaseable flag via UI edit modal
