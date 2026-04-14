@@ -94,6 +94,7 @@ find "$UI_DIR/baseline" -maxdepth 3 -name '*.actual.*' -type f -delete 2>/dev/nu
 
 set +e
 CHECKPOINT_MODE=compare CHECKPOINT_DEFECT="$DEFECT" npx playwright test \
+  tests/0-baseline-seeded.spec.ts \
   tests/a-parts-category-create.spec.ts \
   tests/h-parts-bom-ui.spec.ts \
   tests/k-parts-pricing-ui.spec.ts \

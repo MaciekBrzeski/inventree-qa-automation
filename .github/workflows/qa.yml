@@ -90,24 +90,97 @@ jobs:
         working-directory: automation/ui
         run: npx playwright test --reporter=list
 
-      - name: Checkpoint baseline compare (informational)
-        id: compare
-        continue-on-error: true
+      # ── Visual regression flow ───────────────────────────────────────────
+      # On `main` push: capture fresh baselines in this runner env and upload
+      #                 as `baseline-main` artefact (90d retention).
+      # Otherwise:      download the latest `baseline-main` from main, run
+      #                 compare against it, fail PRs on real visual drift.
+
+      - name: Is this a main-branch push?
+        id: branch
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" && "${{ github.event_name }}" == "push" ]]; then
+            echo "is_main=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_main=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Capture baselines (main only)
+        if: steps.branch.outputs.is_main == 'true'
         working-directory: automation/ui
         run: |
-          CHECKPOINT_MODE=compare npx playwright test \
+          rm -rf baseline
+          CHECKPOINT_MODE=capture npx playwright test \
+            tests/0-baseline-seeded.spec.ts \
             tests/a-parts-category-create.spec.ts \
             tests/h-parts-bom-ui.spec.ts \
             tests/k-parts-pricing-ui.spec.ts \
             --reporter=list
 
-      - name: Build diff report (always if compare ran)
-        if: always() && steps.compare.outcome != 'skipped'
+      - name: Upload main baseline artefact
+        if: steps.branch.outputs.is_main == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseline-main
+          path: |
+            automation/ui/baseline/**/*.png
+            automation/ui/baseline/**/*.html
+            automation/ui/baseline/**/*.requests.json
+            !automation/ui/baseline/**/*.actual.*
+            !automation/ui/baseline/**/*.diff.*
+            !automation/ui/baseline/report.html
+            !automation/ui/baseline/reports/**
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Download latest main baseline
+        if: steps.branch.outputs.is_main != 'true'
+        id: dl
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          RUN_ID=$(gh run list \
+            --repo "${{ github.repository }}" \
+            --workflow qa.yml \
+            --branch main \
+            --status success \
+            --limit 1 \
+            --json databaseId -q '.[0].databaseId')
+          if [[ -z "$RUN_ID" ]]; then
+            echo "::warning::no successful main run yet — baseline compare will be skipped"
+            echo "has_baseline=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Downloading baseline-main from run $RUN_ID"
+          mkdir -p automation/ui/baseline
+          gh run download "$RUN_ID" \
+            --repo "${{ github.repository }}" \
+            --name baseline-main \
+            --dir automation/ui/baseline
+          echo "has_baseline=true" >> "$GITHUB_OUTPUT"
+          find automation/ui/baseline -type f | wc -l
+
+      - name: Checkpoint baseline compare vs main
+        if: steps.branch.outputs.is_main != 'true' && steps.dl.outputs.has_baseline == 'true'
+        id: compare
+        working-directory: automation/ui
+        run: |
+          CHECKPOINT_MODE=compare npx playwright test \
+            tests/0-baseline-seeded.spec.ts \
+            tests/a-parts-category-create.spec.ts \
+            tests/h-parts-bom-ui.spec.ts \
+            tests/k-parts-pricing-ui.spec.ts \
+            --reporter=list
+
+      - name: Build diff report
+        if: always() && steps.compare.outcome == 'failure'
         working-directory: automation/ui
         run: npx tsx scripts/build-diff-report.ts || true
 
-      - name: Upload diff report artefact
-        if: always()
+      - name: Upload diff report on regression
+        if: always() && steps.compare.outcome == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: baseline-diff-${{ github.run_id }}
@@ -116,7 +189,7 @@ jobs:
             automation/ui/baseline/**/*.actual.*
             automation/ui/baseline/**/*.diff.png
           if-no-files-found: ignore
-          retention-days: 14
+          retention-days: 30
 
       - name: Upload test-results on failure
         if: failure()

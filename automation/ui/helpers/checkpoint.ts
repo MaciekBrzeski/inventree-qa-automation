@@ -9,7 +9,11 @@ import pixelmatch from 'pixelmatch';
 export type CheckpointMode = 'off' | 'capture' | 'compare';
 
 const MODE = (process.env.CHECKPOINT_MODE ?? 'off') as CheckpointMode;
-const ROOT = path.resolve(__dirname, '..', 'baseline');
+// Default to the repo-local baseline/ dir. Override via QA_CHECKPOINT_ROOT for
+// cross-branch comparisons (see scripts/compare-against-main.sh).
+const ROOT = process.env.QA_CHECKPOINT_ROOT
+  ? path.resolve(process.env.QA_CHECKPOINT_ROOT)
+  : path.resolve(__dirname, '..', 'baseline');
 // True pixel-level comparison via pixelmatch. Fraction of differing pixels
 // allowed before the checkpoint fails. 0.001 = 0.1% of pixels may drift.
 // Small text antialiasing is handled by pixelmatch's threshold param below,

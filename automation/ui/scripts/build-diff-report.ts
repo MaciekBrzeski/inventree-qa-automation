@@ -428,28 +428,44 @@ async function main(): Promise<void> {
       ? `<span class="defect-badge">${escapeHtml(d.defect)}</span>`
       : '';
     sections.push(`
-      <section class="checkpoint">
+      <section class="checkpoint" id="${escapeAnchor(key)}">
         <h2>${defectBadge}${escapeHtml(d.checkpoint)}</h2>
         ${topSummary}
         <details open>
-          <summary>Screenshot (side-by-side)</summary>
+          <summary>📸 Screenshot (side-by-side)</summary>
           ${pngBlock}
         </details>
         <details>
-          <summary>Full HTML diff (masked)</summary>
+          <summary>📄 Full HTML diff (masked) — ${htmlSum ? `${htmlSum.addCount}+ / ${htmlSum.delCount}−` : 'n/a'}</summary>
           ${htmlBlock}
         </details>
         <details>
-          <summary>Full requests diff (masked)</summary>
+          <summary>🌐 Full requests diff (masked) — ${reqSum ? `${reqSum.addCount}+ / ${reqSum.delCount}−` : 'n/a'}</summary>
           ${reqBlock}
         </details>
       </section>
     `);
   }
 
-  const summary = Array.from(byCheckpoint.entries())
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([k, d]) => `<li><a href="#${escapeAnchor(k)}">${d.defect ? `[${escapeHtml(d.defect)}] ` : ''}${escapeHtml(d.checkpoint)}</a></li>`)
+  // Group nav entries by defect for the sidebar.
+  const entries = Array.from(byCheckpoint.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+  const groups = new Map<string, Array<[string, Diff]>>();
+  for (const [k, d] of entries) {
+    const groupKey = d.defect ?? '(single run)';
+    if (!groups.has(groupKey)) groups.set(groupKey, []);
+    groups.get(groupKey)!.push([k, d]);
+  }
+  const navGroups = Array.from(groups.entries())
+    .map(([defect, items], i) => {
+      const open = i === 0 ? ' open' : '';
+      const lis = items
+        .map(
+          ([k, d]) =>
+            `<li><a href="#${escapeAnchor(k)}">${escapeHtml(d.checkpoint)}</a></li>`,
+        )
+        .join('');
+      return `<details${open} class="nav-group"><summary>${escapeHtml(defect)} <span class="count">${items.length}</span></summary><ul>${lis}</ul></details>`;
+    })
     .join('');
 
   const html = `<!doctype html>
@@ -459,15 +475,32 @@ async function main(): Promise<void> {
 <title>Checkpoint diff report</title>
 <style>
   :root { color-scheme: dark light; }
+  * { box-sizing: border-box; }
   body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-         max-width: 1400px; margin: 2rem auto; padding: 0 1rem; line-height: 1.4; }
+         margin: 0; padding: 0; line-height: 1.4;
+         display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
+  aside { position: sticky; top: 0; height: 100vh; overflow-y: auto;
+          background: #101014; border-right: 1px solid #333; padding: 1rem; }
+  aside h1 { font-size: 1.05rem; margin: 0 0 .8rem; color: #fdb; }
+  aside .meta { font-size: .75rem; color: #888; margin-bottom: 1rem; }
+  main { padding: 1.5rem 2rem; max-width: 1400px; }
   h1 { margin-top: 0; }
-  nav { position: sticky; top: 0; background: rgba(20,20,22,.9); padding: .6rem 1rem;
-        margin: -2rem -1rem 2rem; border-bottom: 1px solid #333; z-index: 10; }
-  nav ul { margin: 0; padding: 0 0 0 1.2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
-  nav li { list-style: disc; }
-  nav a { color: #9cf; text-decoration: none; }
-  nav a:hover { text-decoration: underline; }
+  .nav-group { margin: .3rem 0; border-bottom: 1px solid #222; padding-bottom: .3rem; }
+  .nav-group > summary { cursor: pointer; font-weight: 600; color: #f0d0ff; padding: .35rem 0;
+                          text-transform: uppercase; font-size: .78rem; letter-spacing: .04em;
+                          list-style: none; }
+  .nav-group > summary::-webkit-details-marker { display: none; }
+  .nav-group > summary::before { content: '▶'; display: inline-block; width: 1em;
+                                  transform: rotate(0deg); transition: transform .15s; color: #888; }
+  .nav-group[open] > summary::before { transform: rotate(90deg); }
+  .nav-group .count { font-size: .7rem; color: #999; background: #222; padding: 1px 6px;
+                      border-radius: 8px; margin-left: .4rem; }
+  .nav-group ul { margin: .3rem 0 .5rem 1.2rem; padding: 0; list-style: none; }
+  .nav-group li { margin: .15rem 0; }
+  .nav-group a { color: #9cf; text-decoration: none; font-size: .78rem;
+                 display: block; padding: 2px 6px; border-radius: 3px;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .nav-group a:hover { background: #1f2a3a; text-decoration: none; }
   section.checkpoint { border: 1px solid #444; border-radius: 6px; padding: 1rem;
                        margin-bottom: 2rem; background: #161618; }
   section.checkpoint h2 { margin: 0 0 .6rem; font-size: 1.1rem; color: #fdb; word-break: break-all; }
@@ -516,10 +549,16 @@ async function main(): Promise<void> {
 </style>
 </head>
 <body>
-<nav><ul>${summary}</ul></nav>
+<aside>
+  <h1>Diff report</h1>
+  <div class="meta">${byCheckpoint.size} checkpoint(s)<br>${new Date().toISOString().slice(0, 19).replace('T', ' ')}</div>
+  ${navGroups}
+</aside>
+<main>
 <h1>Checkpoint diff report</h1>
 <p>Generated ${new Date().toISOString()} — ${byCheckpoint.size} checkpoint(s) with detected drift.</p>
-${sections.map((s, i) => s.replace('<h2>', `<h2 id="${escapeAnchor(Array.from(byCheckpoint.keys()).sort()[i]!)}">`)).join('\n')}
+${sections.join('\n')}
+</main>
 </body>
 </html>`;
 
