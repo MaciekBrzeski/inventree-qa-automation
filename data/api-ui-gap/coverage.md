@@ -1,14 +1,14 @@
 # api-ui-gap coverage report
 
-Generated: 2026-04-14T15:01:44.622Z
+Generated: 2026-04-14T19:19:37.643Z
 
 ## Summary
 
 - OpenAPI endpoints in scope: **83**
-- Covered by at least one UI test: **37**
-- Uncovered: **46**
+- Covered by at least one UI test: **35**
+- Uncovered: **48**
 - Dead (requests observed but not in OpenAPI): **28**
-- Coverage ratio: **44.6%**
+- Coverage ratio: **42.2%**
 
 ## Covered endpoints
 
@@ -20,23 +20,23 @@ Generated: 2026-04-14T15:01:44.622Z
 | `DELETE /api/part/sale-price/{id}/` | 1 |
 | `DELETE /api/part/test-template/{id}/` | 1 |
 | `DELETE /api/part/{id}/` | 2 |
-| `GET /api/bom/` | 9 |
+| `GET /api/bom/` | 10 |
 | `GET /api/bom/{id}/` | 1 |
 | `GET /api/part/` | 8 |
-| `GET /api/part/category/` | 4 |
+| `GET /api/part/category/` | 6 |
 | `GET /api/part/category/tree/` | 1 |
 | `GET /api/part/category/{id}/` | 32 |
-| `GET /api/part/related/` | 5 |
+| `GET /api/part/related/` | 6 |
 | `GET /api/part/related/{id}/` | 1 |
-| `GET /api/part/sale-price/` | 4 |
+| `GET /api/part/sale-price/` | 5 |
 | `GET /api/part/sale-price/{id}/` | 1 |
-| `GET /api/part/test-template/` | 5 |
+| `GET /api/part/test-template/` | 6 |
 | `GET /api/part/test-template/{id}/` | 1 |
-| `GET /api/part/{id}/` | 54 |
-| `GET /api/part/{id}/bom-validate/` | 9 |
-| `GET /api/part/{id}/pricing/` | 5 |
-| `GET /api/part/{id}/requirements/` | 54 |
-| `GET /api/part/{id}/serial-numbers/` | 54 |
+| `GET /api/part/{id}/` | 59 |
+| `GET /api/part/{id}/bom-validate/` | 10 |
+| `GET /api/part/{id}/pricing/` | 6 |
+| `GET /api/part/{id}/requirements/` | 59 |
+| `GET /api/part/{id}/serial-numbers/` | 59 |
 | `PATCH /api/bom/{id}/` | 1 |
 | `PATCH /api/bom/{id}/validate/` | 1 |
 | `PATCH /api/part/category/{id}/` | 2 |
@@ -44,12 +44,10 @@ Generated: 2026-04-14T15:01:44.622Z
 | `PATCH /api/part/sale-price/{id}/` | 1 |
 | `PATCH /api/part/test-template/{id}/` | 1 |
 | `PATCH /api/part/{id}/` | 11 |
-| `POST /api/bom/` | 1 |
 | `POST /api/bom/substitute/` | 1 |
 | `POST /api/part/` | 3 |
 | `POST /api/part/category/` | 2 |
 | `POST /api/part/related/` | 1 |
-| `POST /api/part/sale-price/` | 1 |
 | `POST /api/part/test-template/` | 1 |
 
 ## Uncovered endpoints + suggested seeds
@@ -81,8 +79,10 @@ Generated: 2026-04-14T15:01:44.622Z
 | `PATCH /api/part/thumbs/{id}/` | /web/part/<pk> → image upload |
 | `PATCH /api/part/{id}/bom-validate/` | /web/part or /web/part/<pk> |
 | `PATCH /api/part/{id}/pricing/` | /web/part or /web/part/<pk> |
+| `POST /api/bom/` | /web/part/<assembly-pk> → BOM tab |
 | `POST /api/part/category/parameters/` | /web/partcategory/<pk> |
 | `POST /api/part/internal-price/` | /web/part/<pk> → Part Pricing tab |
+| `POST /api/part/sale-price/` | /web/part/<pk> → Part Pricing tab |
 | `POST /api/part/stocktake/` | /web/part/<pk> → Stock → Stocktake |
 | `POST /api/part/stocktake/generate/` | /web/part/<pk> → Stock → Stocktake |
 | `POST /api/part/{id}/bom-copy/` | /web/part or /web/part/<pk> |

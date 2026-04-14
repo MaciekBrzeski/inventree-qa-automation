@@ -4,6 +4,62 @@ import { createAuthedContext, createPart, type CreatedPart } from '../helpers/ap
 import { captureCheckpoint } from '../helpers/checkpoint';
 import { waitForShell, waitLoadersGone } from '../paths/primitives';
 
+// Idempotent lookup: search by fixed IPN, reuse if already seeded so the
+// rendered text (pk, name, IPN) stays byte-for-byte identical across runs —
+// required for strict pixel-diff comparisons.
+async function findOrCreate(
+  ctx: APIRequestContext,
+  ipn: string,
+  overrides: Record<string, unknown>,
+): Promise<CreatedPart> {
+  const listRes = await ctx.get(`/api/part/?IPN=${encodeURIComponent(ipn)}`);
+  const raw = (await listRes.json()) as unknown;
+  const list = Array.isArray(raw) ? raw : ((raw as { results?: unknown[] }).results ?? []);
+  for (const row of list as Array<{ pk?: number; name?: string; IPN?: string }>) {
+    if (row.IPN === ipn && typeof row.pk === 'number' && row.name) {
+      return { pk: row.pk, name: row.name, IPN: row.IPN };
+    }
+  }
+  const created = await createPart(ctx, { ...overrides, IPN: ipn, name: ipn });
+  return created;
+}
+
+async function findOrCreateBom(
+  ctx: APIRequestContext,
+  partPk: number,
+  subPk: number,
+): Promise<number> {
+  const listRes = await ctx.get(`/api/bom/?part=${partPk}&sub_part=${subPk}`);
+  const raw = (await listRes.json()) as unknown;
+  const list = Array.isArray(raw) ? raw : ((raw as { results?: unknown[] }).results ?? []);
+  for (const row of list as Array<{ pk?: number }>) {
+    if (typeof row.pk === 'number') return row.pk;
+  }
+  const created = await ctx.post('/api/bom/', {
+    data: { part: partPk, sub_part: subPk, quantity: 4, reference: 'R1' },
+  });
+  return ((await created.json()) as { pk: number }).pk;
+}
+
+async function findOrCreatePrice(
+  ctx: APIRequestContext,
+  endpoint: 'internal-price' | 'sale-price',
+  partPk: number,
+  price: string,
+): Promise<number | undefined> {
+  const listRes = await ctx.get(`/api/part/${endpoint}/?part=${partPk}`);
+  const raw = (await listRes.json()) as unknown;
+  const list = Array.isArray(raw) ? raw : ((raw as { results?: unknown[] }).results ?? []);
+  for (const row of list as Array<{ pk?: number }>) {
+    if (typeof row.pk === 'number') return row.pk;
+  }
+  const created = await ctx.post(`/api/part/${endpoint}/`, {
+    data: { part: partPk, quantity: 1, price, price_currency: 'USD' },
+  });
+  if (created.status() !== 201) return undefined;
+  return ((await created.json()) as { pk: number }).pk;
+}
+
 // A single richly-populated part used as the canonical visual baseline.
 // Every panel in this spec shows real data so checkpoints are not empty —
 // critical for pixel-diff defects (colour, layout, icons) to be visible.
@@ -20,7 +76,7 @@ let relId: number | undefined;
 test.describe.serial('BASELINE canonical seeded part — visual regression source', () => {
   test.beforeAll(async () => {
     api = await createAuthedContext();
-    assembly = await createPart(api, {
+    assembly = await findOrCreate(api, 'BASELINE-ASM', {
       assembly: true,
       component: false,
       purchaseable: true,
@@ -28,60 +84,59 @@ test.describe.serial('BASELINE canonical seeded part — visual regression sourc
       testable: true,
       description: 'BASELINE canonical assembly',
     });
-    component = await createPart(api, {
+    component = await findOrCreate(api, 'BASELINE-CMP', {
       component: true,
       purchaseable: true,
       description: 'BASELINE canonical component',
     });
 
-    // BOM line so the BOM panel has content.
-    const bomRes = await api.post('/api/bom/', {
-      data: { part: assembly.pk, sub_part: component.pk, quantity: 4, reference: 'R1' },
-    });
-    bomId = ((await bomRes.json()) as { pk?: number }).pk;
+    bomId = await findOrCreateBom(api, assembly.pk, component.pk);
+    priceIntId = await findOrCreatePrice(api, 'internal-price', assembly.pk, '5.00');
+    priceSaleId = await findOrCreatePrice(api, 'sale-price', assembly.pk, '15.00');
 
-    // Internal + sale price breaks so pricing panels show rows.
-    const ipRes = await api.post('/api/part/internal-price/', {
-      data: { part: assembly.pk, quantity: 1, price: '5.00', price_currency: 'USD' },
-    });
-    if (ipRes.status() === 201) priceIntId = ((await ipRes.json()) as { pk?: number }).pk;
+    // Test template — idempotent by test_name prefix.
+    const ttList = await api.get(`/api/part/test-template/?part=${assembly.pk}`);
+    const ttRaw = (await ttList.json()) as unknown;
+    const ttArr = Array.isArray(ttRaw) ? ttRaw : ((ttRaw as { results?: unknown[] }).results ?? []);
+    const existingTt = (ttArr as Array<{ pk?: number; test_name?: string }>).find(
+      (r) => r.test_name === 'BASELINE-check',
+    );
+    if (existingTt?.pk) {
+      ttId = existingTt.pk;
+    } else {
+      const ttRes = await api.post('/api/part/test-template/', {
+        data: {
+          part: assembly.pk,
+          test_name: 'BASELINE-check',
+          description: 'BASELINE seeded test template',
+          required: true,
+        },
+      });
+      if (ttRes.status() === 201) ttId = ((await ttRes.json()) as { pk?: number }).pk;
+    }
 
-    const spRes = await api.post('/api/part/sale-price/', {
-      data: { part: assembly.pk, quantity: 1, price: '15.00', price_currency: 'USD' },
-    });
-    if (spRes.status() === 201) priceSaleId = ((await spRes.json()) as { pk?: number }).pk;
-
-    // Test template so the Tests panel has content.
-    const ttRes = await api.post('/api/part/test-template/', {
-      data: {
-        part: assembly.pk,
-        test_name: `BASELINE-check-${Date.now()}`,
-        description: 'BASELINE seeded test template',
-        required: true,
-      },
-    });
-    if (ttRes.status() === 201) ttId = ((await ttRes.json()) as { pk?: number }).pk;
-
-    // Related part link so the Related panel has content.
-    const relRes = await api.post('/api/part/related/', {
-      data: { part_1: assembly.pk, part_2: component.pk, note: 'BASELINE seeded relation' },
-    });
-    if (relRes.status() === 201) relId = ((await relRes.json()) as { pk?: number }).pk;
+    // Related part link — idempotent by part pair.
+    const relList = await api.get(`/api/part/related/?part=${assembly.pk}`);
+    const relRaw = (await relList.json()) as unknown;
+    const relArr = Array.isArray(relRaw)
+      ? relRaw
+      : ((relRaw as { results?: unknown[] }).results ?? []);
+    const existingRel = (relArr as Array<{ pk?: number }>)[0];
+    if (existingRel?.pk) {
+      relId = existingRel.pk;
+    } else {
+      const relRes = await api.post('/api/part/related/', {
+        data: { part_1: assembly.pk, part_2: component.pk, note: 'BASELINE seeded relation' },
+      });
+      if (relRes.status() === 201) relId = ((await relRes.json()) as { pk?: number }).pk;
+    }
   });
 
   test.afterAll(async () => {
+    // NOTE: persistent fixtures — we don't delete them so the next run finds
+    // the same pks and renders identically. Clean up manually if you want to
+    // re-seed: via API, search IPN BASELINE-ASM / BASELINE-CMP and delete.
     if (!api) return;
-    if (relId) await api.delete(`/api/part/related/${relId}/`);
-    if (ttId) await api.delete(`/api/part/test-template/${ttId}/`);
-    if (priceSaleId) await api.delete(`/api/part/sale-price/${priceSaleId}/`);
-    if (priceIntId) await api.delete(`/api/part/internal-price/${priceIntId}/`);
-    if (bomId) await api.delete(`/api/bom/${bomId}/`);
-    for (const p of [component, assembly]) {
-      if (p) {
-        await api.patch(`/api/part/${p.pk}/`, { data: { active: false } });
-        await api.delete(`/api/part/${p.pk}/`);
-      }
-    }
     await api.dispose();
   });
 

@@ -92,6 +92,12 @@ echo "[validate] defect: $DEFECT (injected via page.addInitScript)"
 # this defect's detected changes.
 find "$UI_DIR/baseline" -maxdepth 3 -name '*.actual.*' -type f -delete 2>/dev/null || true
 
+# Ultra-sensitive defect detection: 0.05% pixel ratio + strict per-pixel
+# color threshold so even a single-button recolor is caught. Normal
+# compare runs keep the looser defaults from checkpoint.ts.
+export CHECKPOINT_PIXEL_DIFF_RATIO="${CHECKPOINT_PIXEL_DIFF_RATIO:-0.0005}"
+export CHECKPOINT_PIXEL_THRESHOLD="${CHECKPOINT_PIXEL_THRESHOLD:-0.05}"
+
 set +e
 CHECKPOINT_MODE=compare CHECKPOINT_DEFECT="$DEFECT" npx playwright test \
   tests/0-baseline-seeded.spec.ts \
