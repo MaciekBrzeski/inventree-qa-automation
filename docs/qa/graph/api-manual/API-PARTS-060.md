@@ -4,7 +4,7 @@ id: API-PARTS-060
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T20:24:42.877Z
+generated: 2026-04-14T21:13:09.854Z
 ---
 
 # API-PARTS-060 — Attempt to create a part with an invalid IPN (duplicate)

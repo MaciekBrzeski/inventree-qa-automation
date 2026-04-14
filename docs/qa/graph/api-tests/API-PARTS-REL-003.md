@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-related.spec.ts
 case-ids: [API-PARTS-REL-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.873Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-PARTS-REL-003 GET /api/part/related/{id}/ retrieves the link by id

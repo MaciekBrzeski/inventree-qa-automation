@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/test-template/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T20:24:42.867Z
+generated: 2026-04-14T21:13:09.840Z
 ---
 
 # GET /api/part/test-template/{id}/

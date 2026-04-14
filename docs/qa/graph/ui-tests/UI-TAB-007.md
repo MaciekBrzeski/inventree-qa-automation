@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/e-parts-tabs.spec.ts
 case-ids: [UI-TAB-007]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.842Z
 ---
 
 # UI-TAB-007 suppliers tab → GET /api/company/part/ or similar

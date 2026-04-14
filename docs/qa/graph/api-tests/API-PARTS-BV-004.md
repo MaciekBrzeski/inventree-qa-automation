@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom-validate.spec.ts
 case-ids: [API-PARTS-BV-004]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.871Z
+generated: 2026-04-14T21:13:09.846Z
 ---
 
 # API-PARTS-BV-004 POST /api/part/{id}/bom-copy/ copies BOM from another assembly

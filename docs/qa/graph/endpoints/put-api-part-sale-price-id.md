@@ -4,7 +4,7 @@ method: PUT
 path: "/api/part/sale-price/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, put, api-only]
-generated: 2026-04-14T20:24:42.867Z
+generated: 2026-04-14T21:13:09.840Z
 ---
 
 # PUT /api/part/sale-price/{id}/

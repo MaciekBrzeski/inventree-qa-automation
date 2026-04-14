@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-002]
 endpoints-hit: 3
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-PUT-002 PUT /api/part/category/{id}/ replaces the category
@@ -33,6 +33,9 @@ generated: 2026-04-14T20:24:42.872Z
 - [[UI-ATTR-007]] — flip virtual flag via UI edit modal
 - [[UI-ATTR-008]] — flip active flag via UI edit modal
 - [[UI-CATEGORY-002]] — open the Add Part Category modal and submit a new category
+- [[UI-CPAR-001]] — add a category parameter via UI → POST /api/part/category/parameters/
+- [[UI-CPAR-002]] — edit a category parameter via row-action-menu Edit → PATCH /api/part/category/parameters/{id}/
+- [[UI-CPAR-003]] — delete a category parameter via row-action-menu Delete → DELETE /api/part/category/parameters/{id}/
 - [[UI-DELETE-001]] — delete the UI-created part via the page action menu
 - [[UI-DELETE-002]] — delete the UI-created category via the page action menu
 - [[UI-EXTRA-003]] — rename the created category via UI → PATCH /api/part/category/{id}/

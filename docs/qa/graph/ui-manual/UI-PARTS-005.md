@@ -4,7 +4,7 @@ id: UI-PARTS-005
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.873Z
+generated: 2026-04-14T21:13:09.850Z
 ---
 
 # UI-PARTS-005 — Fail creation when IPN is missing

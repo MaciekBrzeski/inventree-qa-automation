@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-pricing.spec.ts
 case-ids: [API-PARTS-PRICE-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-PRICE-003 GET /api/part/internal-price/{id}/ retrieves the price break
@@ -21,4 +21,4 @@ generated: 2026-04-14T20:24:42.872Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-INTPRICE-002]] — edit internal price break via row-action-menu → PATCH /api/part/internal-price/{id}/

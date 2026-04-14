@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/b-parts-create.spec.ts
 case-ids: [UI-PART-004]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.842Z
 ---
 
 # UI-PART-004 edit the created part via action-menu-part-actions-edit → PATCH

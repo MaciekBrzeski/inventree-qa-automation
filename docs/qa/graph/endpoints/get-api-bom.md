@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T20:24:42.864Z
+generated: 2026-04-14T21:13:09.836Z
 ---
 
 # GET /api/bom/

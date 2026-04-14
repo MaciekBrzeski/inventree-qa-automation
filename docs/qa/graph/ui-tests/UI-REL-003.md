@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/j-parts-related-ui.spec.ts
 case-ids: [UI-REL-003]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.844Z
 ---
 
 # UI-REL-003 edit the related-parts note via row-action-menu Edit → PATCH /api/part/related/{id}/

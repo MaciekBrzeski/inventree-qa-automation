@@ -4,7 +4,7 @@ id: UI-PARTS-060
 side: ui
 priority: P3
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.875Z
+generated: 2026-04-14T21:13:09.851Z
 ---
 
 # UI-PARTS-060 — Attempt to create a duplicate IPN revision

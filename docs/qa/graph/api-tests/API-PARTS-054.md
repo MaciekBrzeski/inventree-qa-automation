@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-negative.spec.ts
 case-ids: [API-PARTS-054]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-054 PATCH /api/part/999999999/ returns 404

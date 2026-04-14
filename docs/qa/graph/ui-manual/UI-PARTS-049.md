@@ -4,7 +4,7 @@ id: UI-PARTS-049
 side: ui
 priority: P3
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.874Z
+generated: 2026-04-14T21:13:09.851Z
 ---
 
 # UI-PARTS-049 — Negative: Attempt to create a circular template relationship

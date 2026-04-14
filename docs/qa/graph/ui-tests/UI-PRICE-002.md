@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/k-parts-pricing-ui.spec.ts
 case-ids: [UI-PRICE-002]
 endpoints-hit: 7
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.844Z
 ---
 
 # UI-PRICE-002 edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/

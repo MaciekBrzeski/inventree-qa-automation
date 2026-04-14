@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/{id}/bom-validate/"
 paired: api-only
 tags: [qa, endpoint, inventree, patch, api-only]
-generated: 2026-04-14T20:24:42.866Z
+generated: 2026-04-14T21:13:09.838Z
 ---
 
 # PATCH /api/part/{id}/bom-validate/

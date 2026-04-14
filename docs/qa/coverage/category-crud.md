@@ -2,7 +2,7 @@
 title: "Coverage — Part category CRUD"
 area: category-crud
 tags: [qa, coverage, area]
-generated: 2026-04-14T20:24:43.273Z
+generated: 2026-04-14T21:13:10.252Z
 ---
 
 # Part category CRUD

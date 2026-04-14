@@ -4,7 +4,7 @@ id: API-PARTS-007
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T20:24:42.875Z
+generated: 2026-04-14T21:13:09.852Z
 ---
 
 # API-PARTS-007 — Search for parts by name/IPN/description

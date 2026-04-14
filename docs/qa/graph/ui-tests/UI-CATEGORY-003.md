@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/a-parts-category-create.spec.ts
 case-ids: [UI-CATEGORY-003]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.841Z
 ---
 
 # UI-CATEGORY-003 created category is searchable via API (recorder-captured)

@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-related.spec.ts
 case-ids: [API-PARTS-REL-005]
 endpoints-hit: 2
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.873Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-PARTS-REL-005 DELETE /api/part/related/{id}/ removes the link

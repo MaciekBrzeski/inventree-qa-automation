@@ -2,7 +2,7 @@
 title: "Coverage — Pricing (internal + sale price)"
 area: pricing
 tags: [qa, coverage, area]
-generated: 2026-04-14T20:24:43.274Z
+generated: 2026-04-14T21:13:10.252Z
 ---
 
 # Pricing (internal + sale price)

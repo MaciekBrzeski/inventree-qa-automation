@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/d-parts-extra-ui.spec.ts
 case-ids: [UI-EXTRA-005]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.842Z
 ---
 
 # UI-EXTRA-005 navigate to Related Parts tab → GET /api/part/related/

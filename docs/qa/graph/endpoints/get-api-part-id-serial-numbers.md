@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/{id}/serial-numbers/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T20:24:42.866Z
+generated: 2026-04-14T21:13:09.838Z
 ---
 
 # GET /api/part/{id}/serial-numbers/
@@ -15,7 +15,7 @@ generated: 2026-04-14T20:24:42.866Z
 
 ## UI test cases
 
-[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-SUBSTITUTE-001]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
+[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-INTPRICE-001]], [[UI-INTPRICE-002]], [[UI-INTPRICE-003]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRECALC-001]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-SUBSTITUTE-001]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
 
 ## API test cases
 
@@ -47,6 +47,9 @@ generated: 2026-04-14T20:24:42.866Z
 - [[UI-EXTRA-001]] — navigate to Part Pricing tab → GET /api/part/{id}/pricing/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA
 - [[UI-EXTRA-005]] — navigate to Related Parts tab → GET /api/part/related/
+- [[UI-INTPRICE-001]] — add internal price break via UI → POST /api/part/internal-price/
+- [[UI-INTPRICE-002]] — edit internal price break via row-action-menu → PATCH /api/part/internal-price/{id}/
+- [[UI-INTPRICE-003]] — delete internal price break via row-action-menu → DELETE /api/part/internal-price/{id}/
 - [[UI-PART-004]] — edit the created part via action-menu-part-actions-edit → PATCH
 - [[UI-PARTS-CROSS-001]] — API-seeded part renders on its detail page
 - [[UI-PARTS-CROSS-002]] — action buttons on the seeded part detail are reachable
@@ -57,6 +60,7 @@ generated: 2026-04-14T20:24:42.866Z
 - [[UI-PARTS-DETAIL-003]] — subscribe-to-notifications action button is visible
 - [[UI-PARTS-DETAIL-004]] — barcode actions menu trigger is visible
 - [[UI-PARTS-DETAIL-005]] — breadcrumb shows parts root segment
+- [[UI-PRECALC-001]] — click Refresh in pricing-actions menu → PATCH /api/part/{id}/pricing/
 - [[UI-PRICE-001]] — add a sale price break via UI → POST /api/part/sale-price/
 - [[UI-PRICE-002]] — edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/
 - [[UI-PRICE-003]] — delete a sale price break via row-action-menu Delete → DELETE /api/part/sale-price/{id}/

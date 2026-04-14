@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/parts-detail-actions.spec.ts
 case-ids: [UI-PARTS-DETAIL-002]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.870Z
+generated: 2026-04-14T21:13:09.844Z
 ---
 
 # UI-PARTS-DETAIL-002 open-in-admin action button is visible

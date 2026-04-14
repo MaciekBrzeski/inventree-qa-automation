@@ -4,7 +4,7 @@ id: UI-PARTS-070
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.875Z
+generated: 2026-04-14T21:13:09.852Z
 ---
 
 # UI-PARTS-070 — Attempt to delete a part as a read-only user

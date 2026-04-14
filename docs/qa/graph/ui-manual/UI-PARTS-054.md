@@ -4,7 +4,7 @@ id: UI-PARTS-054
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.875Z
+generated: 2026-04-14T21:13:09.851Z
 ---
 
 # UI-PARTS-054 — Navigate between revisions of a part

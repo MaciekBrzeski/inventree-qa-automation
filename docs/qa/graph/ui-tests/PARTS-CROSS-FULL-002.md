@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts
 case-ids: [PARTS-CROSS-FULL-002]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.870Z
+generated: 2026-04-14T21:13:09.845Z
 ---
 
 # UI-PARTS-CROSS-FULL-002 add a parameter via the Parameters tab → POST /api/part/parameter/

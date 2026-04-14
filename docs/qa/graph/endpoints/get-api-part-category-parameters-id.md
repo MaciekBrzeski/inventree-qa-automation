@@ -2,20 +2,20 @@
 title: "GET /api/part/category/parameters/{id}/"
 method: GET
 path: "/api/part/category/parameters/{id}/"
-paired: api-only
-tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T20:24:42.866Z
+paired: paired
+tags: [qa, endpoint, inventree, get, paired]
+generated: 2026-04-14T21:13:09.839Z
 ---
 
 # GET /api/part/category/parameters/{id}/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-CPAR-002]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-CPAR-002]] — edit a category parameter via row-action-menu Edit → PATCH /api/part/category/parameters/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 

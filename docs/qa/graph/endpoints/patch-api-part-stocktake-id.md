@@ -4,7 +4,7 @@ method: PATCH
 path: "/api/part/stocktake/{id}/"
 paired: api-only
 tags: [qa, endpoint, inventree, patch, api-only]
-generated: 2026-04-14T20:24:42.867Z
+generated: 2026-04-14T21:13:09.840Z
 ---
 
 # PATCH /api/part/stocktake/{id}/

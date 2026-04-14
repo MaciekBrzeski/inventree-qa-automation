@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/l-parts-bom-substitute-delete-ui.spec.ts
 case-ids: [UI-SUBSTITUTE-001]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.844Z
 ---
 
 # UI-SUBSTITUTE-001 delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/

@@ -4,7 +4,7 @@ id: UI-PARTS-047
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.874Z
+generated: 2026-04-14T21:13:09.851Z
 ---
 
 # UI-PARTS-047 — Aggregate stock display for a Template part

@@ -2,20 +2,20 @@
 title: "DELETE /api/part/internal-price/{id}/"
 method: DELETE
 path: "/api/part/internal-price/{id}/"
-paired: api-only
-tags: [qa, endpoint, inventree, delete, api-only]
-generated: 2026-04-14T20:24:42.866Z
+paired: paired
+tags: [qa, endpoint, inventree, delete, paired]
+generated: 2026-04-14T21:13:09.839Z
 ---
 
 # DELETE /api/part/internal-price/{id}/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-INTPRICE-003]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-INTPRICE-003]] — delete internal price break via row-action-menu → DELETE /api/part/internal-price/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 

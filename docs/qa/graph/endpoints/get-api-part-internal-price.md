@@ -2,20 +2,20 @@
 title: "GET /api/part/internal-price/"
 method: GET
 path: "/api/part/internal-price/"
-paired: api-only
-tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T20:24:42.866Z
+paired: paired
+tags: [qa, endpoint, inventree, get, paired]
+generated: 2026-04-14T21:13:09.839Z
 ---
 
 # GET /api/part/internal-price/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-INTPRICE-001]], [[UI-INTPRICE-002]], [[UI-INTPRICE-003]]
 
 ## API test cases
 
@@ -23,7 +23,9 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-INTPRICE-001]] — add internal price break via UI → POST /api/part/internal-price/
+- [[UI-INTPRICE-002]] — edit internal price break via row-action-menu → PATCH /api/part/internal-price/{id}/
+- [[UI-INTPRICE-003]] — delete internal price break via row-action-menu → DELETE /api/part/internal-price/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 

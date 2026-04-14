@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/i-parts-test-template-ui.spec.ts
 case-ids: [UI-TT-004]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.844Z
 ---
 
 # UI-TT-004 edit a test template via row-action-menu Edit → PATCH /api/part/test-template/{id}/

@@ -4,7 +4,7 @@ id: API-PARTS-031
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T20:24:42.876Z
+generated: 2026-04-14T21:13:09.853Z
 ---
 
 # API-PARTS-031 — Rename a category to an invalid parent ID

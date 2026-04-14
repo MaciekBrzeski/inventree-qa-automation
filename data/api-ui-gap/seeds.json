@@ -5,16 +5,6 @@
     "rationale": "heuristic match on path prefix"
   },
   {
-    "endpoint": "DELETE /api/part/category/parameters/{id}/",
-    "seed": "/web/partcategory/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "DELETE /api/part/internal-price/{id}/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
     "endpoint": "DELETE /api/part/stocktake/",
     "seed": "/web/part/<pk> → Stock → Stocktake",
     "rationale": "heuristic match on path prefix"
@@ -32,26 +22,6 @@
   {
     "endpoint": "GET /api/bom/substitute/{id}/",
     "seed": "/web/part/<assembly-pk> → BOM tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "GET /api/part/category/parameters/",
-    "seed": "/web/partcategory/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "GET /api/part/category/parameters/{id}/",
-    "seed": "/web/partcategory/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "GET /api/part/internal-price/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "GET /api/part/internal-price/{id}/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
     "rationale": "heuristic match on path prefix"
   },
   {
@@ -90,16 +60,6 @@
     "rationale": "heuristic match on path prefix"
   },
   {
-    "endpoint": "PATCH /api/part/category/parameters/{id}/",
-    "seed": "/web/partcategory/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "PATCH /api/part/internal-price/{id}/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
     "endpoint": "PATCH /api/part/stocktake/{id}/",
     "seed": "/web/part/<pk> → Stock → Stocktake",
     "rationale": "heuristic match on path prefix"
@@ -112,21 +72,6 @@
   {
     "endpoint": "PATCH /api/part/{id}/bom-validate/",
     "seed": "/web/part or /web/part/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "PATCH /api/part/{id}/pricing/",
-    "seed": "/web/part or /web/part/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "POST /api/part/category/parameters/",
-    "seed": "/web/partcategory/<pk>",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
-    "endpoint": "POST /api/part/internal-price/",
-    "seed": "/web/part/<pk> → Part Pricing tab",
     "rationale": "heuristic match on path prefix"
   },
   {

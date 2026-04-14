@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category-parameters.spec.ts
 case-ids: [API-PARTS-CP-004]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.871Z
+generated: 2026-04-14T21:13:09.847Z
 ---
 
 # API-PARTS-CP-004 PATCH /api/part/category/parameters/{id}/ updates default_value
@@ -21,4 +21,4 @@ generated: 2026-04-14T20:24:42.871Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-CPAR-002]] — edit a category parameter via row-action-menu Edit → PATCH /api/part/category/parameters/{id}/

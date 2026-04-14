@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-negative.spec.ts
 case-ids: [API-PARTS-053]
 endpoints-hit: 3
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-053 POST /api/part/ with name only actually succeeds

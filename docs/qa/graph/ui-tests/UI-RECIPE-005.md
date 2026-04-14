@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/g-parts-recipes.spec.ts
 case-ids: [UI-RECIPE-005]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.843Z
 ---
 
 # UI-RECIPE-005 renameCategoryViaUi → PATCH /api/part/category/{id}/

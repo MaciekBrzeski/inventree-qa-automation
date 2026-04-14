@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/d-parts-extra-ui.spec.ts
 case-ids: [UI-EXTRA-004]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.842Z
 ---
 
 # UI-EXTRA-004 navigate to Part BOM tab → GET /api/bom/ via SPA

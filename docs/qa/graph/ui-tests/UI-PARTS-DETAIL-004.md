@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/parts-detail-actions.spec.ts
 case-ids: [UI-PARTS-DETAIL-004]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.870Z
+generated: 2026-04-14T21:13:09.845Z
 ---
 
 # UI-PARTS-DETAIL-004 barcode actions menu trigger is visible

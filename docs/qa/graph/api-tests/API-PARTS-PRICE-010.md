@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-pricing.spec.ts
 case-ids: [API-PARTS-PRICE-010]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-PRICE-010 DELETE /api/part/sale-price/{id}/ removes the sale price break

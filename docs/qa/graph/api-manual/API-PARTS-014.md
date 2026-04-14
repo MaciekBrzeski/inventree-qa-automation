@@ -4,7 +4,7 @@ id: API-PARTS-014
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T20:24:42.876Z
+generated: 2026-04-14T21:13:09.852Z
 ---
 
 # API-PARTS-014 — List parts by category and salable status

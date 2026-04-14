@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-stocktake.spec.ts
 case-ids: [API-PARTS-STK-002]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.873Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-PARTS-STK-002 POST /api/part/stocktake/ creates a stocktake entry

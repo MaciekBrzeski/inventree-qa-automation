@@ -2,20 +2,20 @@
 title: "PATCH /api/part/{id}/pricing/"
 method: PATCH
 path: "/api/part/{id}/pricing/"
-paired: api-only
-tags: [qa, endpoint, inventree, patch, api-only]
-generated: 2026-04-14T20:24:42.866Z
+paired: paired
+tags: [qa, endpoint, inventree, patch, paired]
+generated: 2026-04-14T21:13:09.838Z
 ---
 
 # PATCH /api/part/{id}/pricing/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-PRECALC-001]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-PRECALC-001]] — click Refresh in pricing-actions menu → PATCH /api/part/{id}/pricing/
 
 ## API spec titles (automated, inferred from spec file scope)
 

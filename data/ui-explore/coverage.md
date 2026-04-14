@@ -1,18 +1,18 @@
 # ui-explore coverage report
 
-Generated: 2026-04-14T20:13:26.990Z
+Generated: 2026-04-14T21:06:22.826Z
 Budget: 30 clicks, max depth 3.
-Seeds: /web/part/1140, /web/part
+Seeds: /web/part/1200, /web/part
 
 Clicks executed: **30**
 Snapshots captured: **9**
 Routes discovered: **3**
 Elements visited: **30**
-Elements still in backlog: **140**
+Elements still in backlog: **146**
 
 ## Routes and their unique elements
 
-### /web/part/1140/details (30 elements)
+### /web/part/1200/details (30 elements)
 
 - Attachments
 - Bill of Materials
@@ -64,7 +64,7 @@ Elements still in backlog: **140**
 - open-search
 - open-spotlight
 
-### /web/part/category/index/subcategories (42 elements)
+### /web/part/category/index/subcategories (44 elements)
 
 - 1
 - 25
@@ -96,6 +96,8 @@ Elements still in backlog: **140**
 - row-action-menu-12
 - row-action-menu-13
 - row-action-menu-14
+- row-action-menu-15
+- row-action-menu-16
 - row-action-menu-2
 - row-action-menu-3
 - row-action-menu-4
@@ -104,34 +106,32 @@ Elements still in backlog: **140**
 - row-action-menu-7
 - row-action-menu-8
 - row-action-menu-9
-- table-export-data
-- table-refresh
-- ... +2 more
+- ... +4 more
 
 ## Unexplored backlog (top 25)
 
-- [/web/part/1140/details] navigation-menu (depth 0)
-- [/web/part/1140/details] Dashboard (depth 0)
-- [/web/part/1140/details] Parts (depth 0)
-- [/web/part/1140/details] Stock (depth 0)
-- [/web/part/1140/details] Manufacturing (depth 0)
-- [/web/part/1140/details] Purchasing (depth 0)
-- [/web/part/1140/details] Sales (depth 0)
-- [/web/part/1140/details] open-search (depth 0)
-- [/web/part/1140/details] open-spotlight (depth 0)
-- [/web/part/1140/details] barcode-scan-button-any (depth 0)
-- [/web/part/1140/details] open-notifications (depth 0)
-- [/web/part/1140/details] open-alerts (depth 0)
-- [/web/part/1140/details] admin (depth 0)
-- [/web/part/1140/details] nav-breadcrumb-action (depth 0)
-- [/web/part/1140/details] action-button-open-in-admin-interface (depth 0)
-- [/web/part/1140/details] action-button-subscribe-to-notifications (depth 0)
-- [/web/part/1140/details] action-menu-barcode-actions (depth 0)
-- [/web/part/1140/details] action-menu-printing-actions (depth 0)
-- [/web/part/1140/details] action-menu-stock-actions (depth 0)
-- [/web/part/1140/details] action-menu-part-actions (depth 0)
-- [/web/part/1140/details] Part Details (depth 0)
-- [/web/part/1140/details] Bill of Materials (depth 0)
-- [/web/part/1140/details] Part Pricing (depth 0)
-- [/web/part/1140/details] Suppliers (depth 0)
-- [/web/part/1140/details] Purchase Orders (depth 0)
+- [/web/part/1200/details] navigation-menu (depth 0)
+- [/web/part/1200/details] Dashboard (depth 0)
+- [/web/part/1200/details] Parts (depth 0)
+- [/web/part/1200/details] Stock (depth 0)
+- [/web/part/1200/details] Manufacturing (depth 0)
+- [/web/part/1200/details] Purchasing (depth 0)
+- [/web/part/1200/details] Sales (depth 0)
+- [/web/part/1200/details] open-search (depth 0)
+- [/web/part/1200/details] open-spotlight (depth 0)
+- [/web/part/1200/details] barcode-scan-button-any (depth 0)
+- [/web/part/1200/details] open-notifications (depth 0)
+- [/web/part/1200/details] open-alerts (depth 0)
+- [/web/part/1200/details] admin (depth 0)
+- [/web/part/1200/details] nav-breadcrumb-action (depth 0)
+- [/web/part/1200/details] action-button-open-in-admin-interface (depth 0)
+- [/web/part/1200/details] action-button-subscribe-to-notifications (depth 0)
+- [/web/part/1200/details] action-menu-barcode-actions (depth 0)
+- [/web/part/1200/details] action-menu-printing-actions (depth 0)
+- [/web/part/1200/details] action-menu-stock-actions (depth 0)
+- [/web/part/1200/details] action-menu-part-actions (depth 0)
+- [/web/part/1200/details] Part Details (depth 0)
+- [/web/part/1200/details] Bill of Materials (depth 0)
+- [/web/part/1200/details] Part Pricing (depth 0)
+- [/web/part/1200/details] Suppliers (depth 0)
+- [/web/part/1200/details] Purchase Orders (depth 0)

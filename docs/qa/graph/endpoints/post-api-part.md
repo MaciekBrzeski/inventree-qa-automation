@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T20:24:42.865Z
+generated: 2026-04-14T21:13:09.837Z
 ---
 
 # POST /api/part/

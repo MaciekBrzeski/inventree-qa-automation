@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category-parameters.spec.ts
 case-ids: [API-PARTS-CP-005]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.871Z
+generated: 2026-04-14T21:13:09.847Z
 ---
 
 # API-PARTS-CP-005 DELETE /api/part/category/parameters/{id}/ removes it
@@ -21,4 +21,4 @@ generated: 2026-04-14T20:24:42.871Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-CPAR-003]] — delete a category parameter via row-action-menu Delete → DELETE /api/part/category/parameters/{id}/

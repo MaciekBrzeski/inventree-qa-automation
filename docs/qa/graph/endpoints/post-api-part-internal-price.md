@@ -2,20 +2,20 @@
 title: "POST /api/part/internal-price/"
 method: POST
 path: "/api/part/internal-price/"
-paired: api-only
-tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T20:24:42.866Z
+paired: paired
+tags: [qa, endpoint, inventree, post, paired]
+generated: 2026-04-14T21:13:09.839Z
 ---
 
 # POST /api/part/internal-price/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-INTPRICE-001]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-INTPRICE-001]] — add internal price break via UI → POST /api/part/internal-price/
 
 ## API spec titles (automated, inferred from spec file scope)
 

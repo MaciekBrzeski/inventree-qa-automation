@@ -4,7 +4,7 @@ id: UI-PARTS-016
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.874Z
+generated: 2026-04-14T21:13:09.850Z
 ---
 
 # UI-PARTS-016 — View sub-categories within a category

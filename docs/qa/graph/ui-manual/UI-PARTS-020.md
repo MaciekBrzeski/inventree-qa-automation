@@ -4,7 +4,7 @@ id: UI-PARTS-020
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T20:24:42.874Z
+generated: 2026-04-14T21:13:09.850Z
 ---
 
 # UI-PARTS-020 — Toggle Template attribute on a Part

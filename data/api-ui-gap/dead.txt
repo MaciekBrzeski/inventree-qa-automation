@@ -12,6 +12,7 @@ GET /api/order/po-line/
 GET /api/order/so-line/
 GET /api/parameter/
 GET /api/parameter/template/
+GET /api/parameter/template/{id}/
 GET /api/plugins/
 GET /api/settings/global/
 GET /api/settings/user/

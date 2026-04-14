@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/category/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T20:24:42.866Z
+generated: 2026-04-14T21:13:09.838Z
 ---
 
 # GET /api/part/category/{id}/
@@ -15,7 +15,7 @@ generated: 2026-04-14T20:24:42.866Z
 
 ## UI test cases
 
-[[PARTS-CROSS-FULL-001]], [[PARTS-CROSS-FULL-004]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-CATEGORY-002]], [[UI-DELETE-001]], [[UI-DELETE-002]], [[UI-EXTRA-003]], [[UI-PART-001]], [[UI-PART-002]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-RECIPE-002]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-005]], [[UI-RECIPE-006]], [[UI-RECIPE-007]], [[UI-SMOKE-003]]
+[[PARTS-CROSS-FULL-001]], [[PARTS-CROSS-FULL-004]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-CATEGORY-002]], [[UI-CPAR-001]], [[UI-CPAR-002]], [[UI-CPAR-003]], [[UI-DELETE-001]], [[UI-DELETE-002]], [[UI-EXTRA-003]], [[UI-PART-001]], [[UI-PART-002]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-RECIPE-002]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-005]], [[UI-RECIPE-006]], [[UI-RECIPE-007]], [[UI-SMOKE-003]]
 
 ## API test cases
 
@@ -33,6 +33,9 @@ generated: 2026-04-14T20:24:42.866Z
 - [[UI-ATTR-007]] — flip virtual flag via UI edit modal
 - [[UI-ATTR-008]] — flip active flag via UI edit modal
 - [[UI-CATEGORY-002]] — open the Add Part Category modal and submit a new category
+- [[UI-CPAR-001]] — add a category parameter via UI → POST /api/part/category/parameters/
+- [[UI-CPAR-002]] — edit a category parameter via row-action-menu Edit → PATCH /api/part/category/parameters/{id}/
+- [[UI-CPAR-003]] — delete a category parameter via row-action-menu Delete → DELETE /api/part/category/parameters/{id}/
 - [[UI-DELETE-001]] — delete the UI-created part via the page action menu
 - [[UI-DELETE-002]] — delete the UI-created category via the page action menu
 - [[UI-EXTRA-003]] — rename the created category via UI → PATCH /api/part/category/{id}/

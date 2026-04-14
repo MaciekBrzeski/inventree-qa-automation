@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-003]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.843Z
 ---
 
 # UI-BOM-003 trigger Validate BOM via UI → /api/part/{id}/bom-validate/ or /api/bom/{id}/validate/

@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-pricing.spec.ts
 case-ids: [API-PARTS-PRICE-011]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.848Z
 ---
 
 # API-PARTS-PRICE-011 PATCH /api/part/{id}/pricing/ triggers pricing recalc
@@ -21,4 +21,4 @@ generated: 2026-04-14T20:24:42.872Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-PRECALC-001]] — click Refresh in pricing-actions menu → PATCH /api/part/{id}/pricing/

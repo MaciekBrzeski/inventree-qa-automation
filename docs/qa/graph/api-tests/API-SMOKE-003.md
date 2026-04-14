@@ -6,7 +6,7 @@ file: submission/automation/api/tests/smoke.spec.ts
 case-ids: [API-SMOKE-003]
 endpoints-hit: 0
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.873Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-SMOKE-003 QA-ROOT category resolved in global setup

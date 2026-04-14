@@ -1,7 +1,7 @@
 ---
 title: "UI paths by endpoint"
 tags: [qa, ui-paths, endpoint-recipes]
-generated: 2026-04-14T20:24:43.073Z
+generated: 2026-04-14T21:13:10.054Z
 ---
 
 # UI paths by endpoint
@@ -30,6 +30,18 @@ Reached by 1 UI test(s):
   click role:menuitem:"Edit Substitutes"
   ```
 
+## [[../graph/endpoints/delete-api-part-category-parameters-id|DELETE /api/part/category/parameters/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-CPAR-003|UI-CPAR-003]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+
 ## [[../graph/endpoints/delete-api-part-category-id|DELETE /api/part/category/{id}/]]
 
 Reached by 2 UI test(s):
@@ -40,6 +52,18 @@ Reached by 2 UI test(s):
   goto /web/part/category/{var}/details
   click label:action-menu-category-actions
   click label:action-menu-category-actions-delete
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+
+## [[../graph/endpoints/delete-api-part-internal-price-id|DELETE /api/part/internal-price/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
   click role:button:"Submit"
   click role:button:"Delete"
   ```
@@ -168,7 +192,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part|GET /api/part/]]
 
-Reached by 9 UI test(s):
+Reached by 8 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-006 parts list at QA-ROOT|BASELINE-006 parts list at QA-ROOT]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-PART-001|UI-PART-001]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
@@ -182,12 +206,6 @@ Reached by 9 UI test(s):
   click role:button:"Submit"
   ```
 - [[../graph/ui-tests/UI-RECIPE-002|UI-RECIPE-002]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
-- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
-  ```
-  goto /web/part/{var}/bom
-  click label:action-menu-add-bom-items
-  click label:action-menu-add-bom-items-add-bom-item
-  ```
 - [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
@@ -219,6 +237,37 @@ Reached by 4 UI test(s):
   ```
 - [[../graph/ui-tests/UI-RECIPE-001|UI-RECIPE-001]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
+## [[../graph/endpoints/get-api-part-category-parameters|GET /api/part/category/parameters/]]
+
+Reached by 3 UI test(s):
+
+- [[../graph/ui-tests/UI-CPAR-001|UI-CPAR-001]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:action-button-add-category-parameter
+  ```
+- [[../graph/ui-tests/UI-CPAR-002|UI-CPAR-002]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-CPAR-003|UI-CPAR-003]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+
+## [[../graph/endpoints/get-api-part-category-parameters-id|GET /api/part/category/parameters/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-CPAR-002|UI-CPAR-002]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+
 ## [[../graph/endpoints/get-api-part-category-tree|GET /api/part/category/tree/]]
 
 Reached by 1 UI test(s):
@@ -231,7 +280,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-category-id|GET /api/part/category/{id}/]]
 
-Reached by 32 UI test(s):
+Reached by 35 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-CATEGORY-002|UI-CATEGORY-002]] (`submission/automation/ui/tests/a-parts-category-create.spec.ts`)
@@ -279,6 +328,22 @@ Reached by 32 UI test(s):
 - [[../graph/ui-tests/UI-RECIPE-005|UI-RECIPE-005]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 - [[../graph/ui-tests/UI-RECIPE-006|UI-RECIPE-006]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 - [[../graph/ui-tests/UI-RECIPE-007|UI-RECIPE-007]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-CPAR-001|UI-CPAR-001]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:action-button-add-category-parameter
+  ```
+- [[../graph/ui-tests/UI-CPAR-002|UI-CPAR-002]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-CPAR-003|UI-CPAR-003]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
 - [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
@@ -302,6 +367,38 @@ Reached by 32 UI test(s):
   ```
 - [[../graph/ui-tests/PARTS-CROSS-FULL-001|PARTS-CROSS-FULL-001]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
 - [[../graph/ui-tests/PARTS-CROSS-FULL-004|PARTS-CROSS-FULL-004]] (`submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts`)
+
+## [[../graph/endpoints/get-api-part-internal-price|GET /api/part/internal-price/]]
+
+Reached by 3 UI test(s):
+
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+
+## [[../graph/endpoints/get-api-part-internal-price-id|GET /api/part/internal-price/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
 
 ## [[../graph/endpoints/get-api-part-related|GET /api/part/related/]]
 
@@ -348,7 +445,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-sale-price|GET /api/part/sale-price/]]
 
-Reached by 5 UI test(s):
+Reached by 6 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-003 pricing panel with internal + sale breaks|BASELINE-003 pricing panel with internal + sale breaks]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-TAB-004|UI-TAB-004]] (`submission/automation/ui/tests/e-parts-tabs.spec.ts`)
@@ -367,6 +464,14 @@ Reached by 5 UI test(s):
   click role:menuitem:"Delete"
   click role:button:"Submit"
   click role:button:"Delete"
+  ```
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
   ```
 
 ## [[../graph/endpoints/get-api-part-sale-price-id|GET /api/part/sale-price/{id}/]]
@@ -422,7 +527,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id|GET /api/part/{id}/]]
 
-Reached by 59 UI test(s):
+Reached by 63 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -578,6 +683,31 @@ Reached by 59 UI test(s):
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
+  ```
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
   ```
 - [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
@@ -664,7 +794,7 @@ Reached by 11 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id-pricing|GET /api/part/{id}/pricing/]]
 
-Reached by 6 UI test(s):
+Reached by 10 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-003 pricing panel with internal + sale breaks|BASELINE-003 pricing panel with internal + sale breaks]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-EXTRA-001|UI-EXTRA-001]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
@@ -688,10 +818,35 @@ Reached by 6 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
 
 ## [[../graph/endpoints/get-api-part-id-requirements|GET /api/part/{id}/requirements/]]
 
-Reached by 59 UI test(s):
+Reached by 63 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -847,6 +1002,31 @@ Reached by 59 UI test(s):
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
+  ```
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
   ```
 - [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
@@ -873,7 +1053,7 @@ Reached by 59 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id-serial-numbers|GET /api/part/{id}/serial-numbers/]]
 
-Reached by 59 UI test(s):
+Reached by 63 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -1029,6 +1209,31 @@ Reached by 59 UI test(s):
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
+  ```
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+- [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
   ```
 - [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
@@ -1077,6 +1282,16 @@ Reached by 1 UI test(s):
   click role:button:"OK"
   ```
 
+## [[../graph/endpoints/patch-api-part-category-parameters-id|PATCH /api/part/category/parameters/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-CPAR-002|UI-CPAR-002]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
+
 ## [[../graph/endpoints/patch-api-part-category-id|PATCH /api/part/category/{id}/]]
 
 Reached by 2 UI test(s):
@@ -1089,6 +1304,16 @@ Reached by 2 UI test(s):
   click role:button:"Submit"
   ```
 - [[../graph/ui-tests/UI-RECIPE-005|UI-RECIPE-005]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+
+## [[../graph/endpoints/patch-api-part-internal-price-id|PATCH /api/part/internal-price/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-INTPRICE-002|UI-INTPRICE-002]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:row-action-menu-0
+  click role:menuitem:"Edit"
+  ```
 
 ## [[../graph/endpoints/patch-api-part-related-id|PATCH /api/part/related/{id}/]]
 
@@ -1145,15 +1370,17 @@ Reached by 11 UI test(s):
 - [[../graph/ui-tests/UI-RECIPE-003|UI-RECIPE-003]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 - [[../graph/ui-tests/UI-RECIPE-004|UI-RECIPE-004]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
 
-## [[../graph/endpoints/post-api-bom|POST /api/bom/]]
+## [[../graph/endpoints/patch-api-part-id-pricing|PATCH /api/part/{id}/pricing/]]
 
 Reached by 1 UI test(s):
 
-- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+- [[../graph/ui-tests/UI-PRECALC-001|UI-PRECALC-001]] (`submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts`)
   ```
-  goto /web/part/{var}/bom
-  click label:action-menu-add-bom-items
-  click label:action-menu-add-bom-items-add-bom-item
+  goto /web/part/{var}/pricing
+  click label:action-menu-pricing-actions
+  click label:action-menu-pricing-actions-refresh
+  click role:button:"Submit"
+  click role:button:"OK"
   ```
 
 ## [[../graph/endpoints/post-api-bom-substitute|POST /api/bom/substitute/]]
@@ -1191,6 +1418,25 @@ Reached by 2 UI test(s):
   click role:button:"Submit"
   ```
 - [[../graph/ui-tests/UI-RECIPE-001|UI-RECIPE-001]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+
+## [[../graph/endpoints/post-api-part-category-parameters|POST /api/part/category/parameters/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-CPAR-001|UI-CPAR-001]] (`submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts`)
+  ```
+  click label:action-button-add-category-parameter
+  ```
+
+## [[../graph/endpoints/post-api-part-internal-price|POST /api/part/internal-price/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-INTPRICE-001|UI-INTPRICE-001]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
+  ```
+  click label:action-button-add-price-break
+  click role:button:"Internal Pricing"
+  ```
 
 ## [[../graph/endpoints/post-api-part-related|POST /api/part/related/]]
 

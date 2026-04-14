@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-query.spec.ts
 case-ids: [API-PARTS-012]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-PARTS-012 filter by active=false returns the seeded inactive part

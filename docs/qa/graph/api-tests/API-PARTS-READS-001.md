@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-reads.spec.ts
 case-ids: [API-PARTS-READS-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.872Z
+generated: 2026-04-14T21:13:09.849Z
 ---
 
 # API-PARTS-READS-001 GET /api/part/{id}/requirements/ returns 200
@@ -45,6 +45,9 @@ generated: 2026-04-14T20:24:42.872Z
 - [[UI-EXTRA-001]] — navigate to Part Pricing tab → GET /api/part/{id}/pricing/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA
 - [[UI-EXTRA-005]] — navigate to Related Parts tab → GET /api/part/related/
+- [[UI-INTPRICE-001]] — add internal price break via UI → POST /api/part/internal-price/
+- [[UI-INTPRICE-002]] — edit internal price break via row-action-menu → PATCH /api/part/internal-price/{id}/
+- [[UI-INTPRICE-003]] — delete internal price break via row-action-menu → DELETE /api/part/internal-price/{id}/
 - [[UI-PART-004]] — edit the created part via action-menu-part-actions-edit → PATCH
 - [[UI-PARTS-CROSS-001]] — API-seeded part renders on its detail page
 - [[UI-PARTS-CROSS-002]] — action buttons on the seeded part detail are reachable
@@ -55,6 +58,7 @@ generated: 2026-04-14T20:24:42.872Z
 - [[UI-PARTS-DETAIL-003]] — subscribe-to-notifications action button is visible
 - [[UI-PARTS-DETAIL-004]] — barcode actions menu trigger is visible
 - [[UI-PARTS-DETAIL-005]] — breadcrumb shows parts root segment
+- [[UI-PRECALC-001]] — click Refresh in pricing-actions menu → PATCH /api/part/{id}/pricing/
 - [[UI-PRICE-001]] — add a sale price break via UI → POST /api/part/sale-price/
 - [[UI-PRICE-002]] — edit a sale price break via row-action-menu Edit → PATCH /api/part/sale-price/{id}/
 - [[UI-PRICE-003]] — delete a sale price break via row-action-menu Delete → DELETE /api/part/sale-price/{id}/

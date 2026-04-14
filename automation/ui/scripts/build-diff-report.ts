@@ -226,22 +226,27 @@ function summarise(ops: ReturnType<typeof unifiedDiff>): DiffSummary {
   };
 }
 
+function truncate(s: string, max = 400): string {
+  if (s.length <= max) return s;
+  return s.slice(0, max) + ` … (+${s.length - max} chars)`;
+}
+
 function renderSummary(label: string, s: DiffSummary): string {
   if (s.addCount === 0 && s.delCount === 0) {
     return `<div class="summary empty">${label}: <span class="na">identical</span></div>`;
   }
   const suspiciousHtml =
     s.suspicious.length > 0
-      ? `<div class="susp"><strong>🎯 suspicious additions (${s.suspicious.length}):</strong><pre>${s.suspicious
+      ? `<details class="susp-wrap"><summary>🎯 suspicious additions (${s.suspicious.length}) — click to expand</summary><div class="susp"><pre>${s.suspicious
           .slice(0, 5)
-          .map((l) => highlightTokens(l))
-          .join('\n')}</pre></div>`
+          .map((l) => highlightTokens(truncate(l)))
+          .join('\n\n')}</pre></div></details>`
       : '';
   const samplesHtml = `
     <details class="samples">
       <summary>first ${Math.min(5, s.adds.length)} added / ${Math.min(5, s.dels.length)} removed (of ${s.addCount}+/${s.delCount}−)</summary>
-      <pre class="adds">${s.adds.slice(0, 5).map((l) => '+ ' + highlightTokens(l)).join('\n') || '<em class="na">(none)</em>'}</pre>
-      <pre class="dels">${s.dels.slice(0, 5).map((l) => '- ' + escapeHtml(l)).join('\n') || '<em class="na">(none)</em>'}</pre>
+      <pre class="adds">${s.adds.slice(0, 5).map((l) => '+ ' + highlightTokens(truncate(l))).join('\n\n') || '<em class="na">(none)</em>'}</pre>
+      <pre class="dels">${s.dels.slice(0, 5).map((l) => '- ' + escapeHtml(truncate(l))).join('\n\n') || '<em class="na">(none)</em>'}</pre>
     </details>`;
   return `
     <div class="summary">
@@ -513,7 +518,16 @@ async function main(): Promise<void> {
   .triple { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .8rem; margin: .8rem 0; }
   .triple figure { margin: 0; }
   .triple figcaption { font-size: .8rem; color: #aaa; margin-bottom: .2rem; }
-  .triple img { max-width: 100%; border: 1px solid #333; background: #000; }
+  .triple img { max-width: 100%; border: 1px solid #333; background: #000; cursor: zoom-in; }
+  .pair img { cursor: zoom-in; }
+  /* Lightbox modal */
+  .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.92); display: none;
+              align-items: center; justify-content: center; z-index: 1000; padding: 2rem;
+              cursor: zoom-out; }
+  .lightbox.on { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 100%; box-shadow: 0 0 40px rgba(0,0,0,.8); }
+  .lightbox .hint { position: absolute; top: 1rem; right: 1.5rem; color: #ccc;
+                     font-size: .85rem; font-family: system-ui, sans-serif; }
   .defect-badge { display: inline-block; background: #4a1a5a; color: #f0d0ff;
                   padding: 2px 8px; border-radius: 10px; font-size: .75rem;
                   margin-right: .6rem; font-weight: 600; text-transform: uppercase;
@@ -539,9 +553,15 @@ async function main(): Promise<void> {
   .summary { margin: .6rem 0; }
   .summary h3 { margin: .3rem 0; font-size: .88rem; color: #9cf; }
   .summary.empty { color: #666; font-style: italic; }
-  .susp { background: #2a0f13; border-left: 3px solid #f55; padding: .5rem .8rem; margin: .4rem 0; border-radius: 3px; }
-  .susp strong { color: #fa5; }
-  .susp pre { margin: .3rem 0 0; white-space: pre-wrap; word-break: break-all; color: #fbb; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; }
+  .susp-wrap { margin: .4rem 0; }
+  .susp-wrap > summary { background: #2a0f13; border-left: 3px solid #f55;
+                          padding: .45rem .8rem; border-radius: 3px;
+                          color: #fa5; font-weight: 600; cursor: pointer; }
+  .susp { background: #1a0708; padding: .6rem .8rem; margin-top: .3rem;
+          border-radius: 3px; max-height: 300px; overflow: auto;
+          border: 1px solid #3a1a1a; }
+  .susp pre { margin: 0; white-space: pre-wrap; word-break: break-all;
+              color: #fbb; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; }
   .samples pre { margin: .2rem 0; padding: .4rem; background: #0b0b0d; border-radius: 3px; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; white-space: pre-wrap; word-break: break-all; }
   .samples pre.adds { color: #9fdc9f; }
   .samples pre.dels { color: #f0a0a0; }
@@ -559,6 +579,26 @@ async function main(): Promise<void> {
 <p>Generated ${new Date().toISOString()} — ${byCheckpoint.size} checkpoint(s) with detected drift.</p>
 ${sections.join('\n')}
 </main>
+<div class="lightbox" id="lb">
+  <span class="hint">click anywhere or press Esc to close</span>
+  <img id="lbi" alt="">
+</div>
+<script>
+(function(){
+  const lb = document.getElementById('lb');
+  const lbi = document.getElementById('lbi');
+  document.querySelectorAll('main img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbi.src = img.src;
+      lb.classList.add('on');
+    });
+  });
+  lb.addEventListener('click', () => lb.classList.remove('on'));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lb.classList.remove('on');
+  });
+})();
+</script>
 </body>
 </html>`;
 

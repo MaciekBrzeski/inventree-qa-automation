@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/z1-cross-flow-full-ui.spec.ts
 case-ids: [PARTS-CROSS-FULL-001]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.870Z
+generated: 2026-04-14T21:13:09.845Z
 ---
 
 # UI-PARTS-CROSS-FULL-001 create the part via Add menu → POST /api/part/

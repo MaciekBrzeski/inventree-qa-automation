@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom.spec.ts
 case-ids: [API-PARTS-BOM-007]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T20:24:42.871Z
+generated: 2026-04-14T21:13:09.846Z
 ---
 
 # API-PARTS-BOM-007 delete BOM line

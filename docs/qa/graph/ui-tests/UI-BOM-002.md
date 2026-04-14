@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-002]
 endpoints-hit: 7
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.869Z
+generated: 2026-04-14T21:13:09.843Z
 ---
 
 # UI-BOM-002 add a BOM line via UI → POST /api/bom/

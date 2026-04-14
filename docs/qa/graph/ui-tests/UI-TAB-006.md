@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/e-parts-tabs.spec.ts
 case-ids: [UI-TAB-006]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.868Z
+generated: 2026-04-14T21:13:09.842Z
 ---
 
 # UI-TAB-006 test_templates tab → GET /api/part/test-template/

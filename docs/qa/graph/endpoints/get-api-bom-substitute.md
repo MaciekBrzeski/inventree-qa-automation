@@ -4,7 +4,7 @@ method: GET
 path: "/api/bom/substitute/"
 paired: api-only
 tags: [qa, endpoint, inventree, get, api-only]
-generated: 2026-04-14T20:24:42.865Z
+generated: 2026-04-14T21:13:09.837Z
 ---
 
 # GET /api/bom/substitute/

@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/z-parts-cleanup.spec.ts
 case-ids: [UI-CLEANUP-002]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T20:24:42.870Z
+generated: 2026-04-14T21:13:09.845Z
 ---
 
 # UI-CLEANUP-002 delete the UI-created category (if any)
