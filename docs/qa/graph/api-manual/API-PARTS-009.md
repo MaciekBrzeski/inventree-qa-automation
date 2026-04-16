@@ -4,7 +4,7 @@ id: API-PARTS-009
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.852Z
+generated: 2026-04-16T14:45:16.425Z
 ---
 
 # API-PARTS-009 — Order parts by name
@@ -27,8 +27,8 @@ query, filter, ordering
 
 ## Automated by
 
-- [`submission/automation/api/tests/parts-query.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-query.spec.ts) — API-PARTS-009 filter by assembly=true returns the seeded assembly
+_(not automated)_
 
 ## Endpoints touched via the automated sibling(s)
 
-- [[get-api-part|GET /api/part/]]
+_(none traced — case may not yet be automated or automation does not hit /api/part|/api/bom)_

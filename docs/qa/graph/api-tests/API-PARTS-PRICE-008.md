@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-pricing.spec.ts
 case-ids: [API-PARTS-PRICE-008]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.848Z
+generated: 2026-04-16T14:45:16.422Z
 ---
 
 # API-PARTS-PRICE-008 GET /api/part/sale-price/{id}/ retrieves the sale price break

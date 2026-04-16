@@ -19,7 +19,11 @@ env:
 jobs:
   qa:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        suite: [api, ui]
     steps:
       - name: Checkout automation repo
         uses: actions/checkout@v4
@@ -70,34 +74,40 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install API suite deps
-        working-directory: automation/api
-        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+      - name: Cache ${{ matrix.suite }} node_modules + Playwright browsers
+        uses: actions/cache@v4
+        id: cache
+        with:
+          path: |
+            automation/${{ matrix.suite }}/node_modules
+            ~/.cache/ms-playwright
+          key: qa-deps-${{ matrix.suite }}-${{ runner.os }}-${{ hashFiles(format('automation/{0}/package-lock.json', matrix.suite)) }}
+          restore-keys: |
+            qa-deps-${{ matrix.suite }}-${{ runner.os }}-
 
-      - name: Run API suite
-        working-directory: automation/api
-        run: npx playwright test --reporter=list
+      - name: Install ${{ matrix.suite }} suite deps
+        working-directory: automation/${{ matrix.suite }}
+        run: |
+          if [[ "${{ steps.cache.outputs.cache-hit }}" == "true" ]]; then
+            echo "cache hit — skipping full install"
+          else
+            npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+          fi
 
-      - name: Install UI suite deps
-        working-directory: automation/ui
-        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
-
-      - name: Install Playwright browsers
+      - name: Install Playwright browsers (ui only)
+        if: matrix.suite == 'ui'
         working-directory: automation/ui
         run: npx playwright install --with-deps chromium
 
-      - name: Run UI suite
-        working-directory: automation/ui
+      - name: Run ${{ matrix.suite }} suite
+        working-directory: automation/${{ matrix.suite }}
         run: npx playwright test --reporter=list
 
-      # ── Visual regression flow ───────────────────────────────────────────
-      # On `main` push: capture fresh baselines in this runner env and upload
-      #                 as `baseline-main` artefact (90d retention).
-      # Otherwise:      download the latest `baseline-main` from main, run
-      #                 compare against it, fail PRs on real visual drift.
+      # ── Visual regression (ui matrix element only) ─────────────────────
 
       - name: Is this a main-branch push?
         id: branch
+        if: matrix.suite == 'ui'
         run: |
           if [[ "${{ github.ref }}" == "refs/heads/main" && "${{ github.event_name }}" == "push" ]]; then
             echo "is_main=true" >> "$GITHUB_OUTPUT"
@@ -105,8 +115,8 @@ jobs:
             echo "is_main=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Capture baselines (main only)
-        if: steps.branch.outputs.is_main == 'true'
+      - name: Capture baselines (main push only)
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main == 'true'
         working-directory: automation/ui
         run: |
           rm -rf baseline
@@ -118,7 +128,7 @@ jobs:
             --reporter=list
 
       - name: Upload main baseline artefact
-        if: steps.branch.outputs.is_main == 'true'
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: baseline-main
@@ -133,8 +143,50 @@ jobs:
           if-no-files-found: error
           retention-days: 90
 
-      - name: Download latest main baseline
-        if: steps.branch.outputs.is_main != 'true'
+      - name: Emit coverage summary (main push only)
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main == 'true'
+        working-directory: agents/rag
+        run: |
+          # api-ui-gap emits coverage-summary.json next to coverage.md. Track 3
+          # of the accelerator plan consumes this file to append to the CSV.
+          npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+          npx tsx api-ui-gap.ts || true
+        continue-on-error: true
+
+      - name: Append coverage-timeline row (main push only)
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main == 'true'
+        run: |
+          SUMMARY="data/api-ui-gap/coverage-summary.json"
+          if [[ ! -f "$SUMMARY" ]]; then
+            echo "no coverage-summary.json — skipping timeline update"
+            exit 0
+          fi
+          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          COVERED=$(jq -r '.covered' "$SUMMARY")
+          TOTAL=$(jq -r '.total' "$SUMMARY")
+          RATIO=$(jq -r '.ratio' "$SUMMARY")
+          UI_COUNT=$(ls automation/ui/tests/*.spec.ts | grep -v '/_' | wc -l)
+          API_COUNT=$(ls automation/api/tests/*.spec.ts | wc -l)
+          CSV="docs/qa/snapshots/coverage-timeline.csv"
+          if [[ ! -f "$CSV" ]]; then
+            echo "timestamp,covered,total,ratio_pct,ui_specs,api_specs,sha" > "$CSV"
+          fi
+          echo "$TS,$COVERED,$TOTAL,$RATIO,$UI_COUNT,$API_COUNT,${{ github.sha }}" >> "$CSV"
+          npx tsx agents/rag/render-coverage-timeline.ts || true
+          if ! git diff --quiet "$CSV" docs/qa/snapshots/index.md; then
+            git config user.email "ci@noreply.github.com"
+            git config user.name "github-actions[bot]"
+            git add "$CSV" docs/qa/snapshots/index.md || true
+            git commit -m "ci: append coverage snapshot $TS ($COVERED/$TOTAL)" || true
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push origin main && break
+              sleep 2
+            done
+          fi
+        continue-on-error: true
+
+      - name: Download latest main baseline (non-main only)
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main != 'true'
         id: dl
         continue-on-error: true
         env:
@@ -163,7 +215,7 @@ jobs:
           find automation/ui/baseline -type f | wc -l
 
       - name: Checkpoint baseline compare vs main
-        if: steps.branch.outputs.is_main != 'true' && steps.dl.outputs.has_baseline == 'true'
+        if: matrix.suite == 'ui' && steps.branch.outputs.is_main != 'true' && steps.dl.outputs.has_baseline == 'true'
         id: compare
         working-directory: automation/ui
         run: |
@@ -175,12 +227,12 @@ jobs:
             --reporter=list
 
       - name: Build diff report
-        if: always() && steps.compare.outcome == 'failure'
+        if: matrix.suite == 'ui' && always() && steps.compare.outcome == 'failure'
         working-directory: automation/ui
         run: npx tsx scripts/build-diff-report.ts || true
 
       - name: Upload diff report on regression
-        if: always() && steps.compare.outcome == 'failure'
+        if: matrix.suite == 'ui' && always() && steps.compare.outcome == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: baseline-diff-${{ github.run_id }}
@@ -195,10 +247,9 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: qa-failure-${{ github.run_id }}
+          name: qa-${{ matrix.suite }}-failure-${{ github.run_id }}
           path: |
-            automation/ui/test-results/
-            automation/api/test-results/
+            automation/${{ matrix.suite }}/test-results/
           if-no-files-found: ignore
           retention-days: 14
 

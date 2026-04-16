@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/y-parts-ui-delete.spec.ts
 case-ids: [UI-DELETE-002]
 endpoints-hit: 2
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.845Z
+generated: 2026-04-16T14:45:16.421Z
 ---
 
 # UI-DELETE-002 delete the UI-created category via the page action menu
@@ -24,5 +24,4 @@ generated: 2026-04-14T21:13:09.845Z
 
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category

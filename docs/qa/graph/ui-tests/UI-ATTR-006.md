@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/f-parts-attributes.spec.ts
 case-ids: [UI-ATTR-006]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.843Z
+generated: 2026-04-16T14:45:16.419Z
 ---
 
 # UI-ATTR-006 flip testable flag via UI edit modal
@@ -30,10 +30,7 @@ generated: 2026-04-14T21:13:09.843Z
 - [[API-PARTS-005]] — delete part
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-053]] — POST /api/part/ with name only actually succeeds
-- [[API-PARTS-054]] — PATCH /api/part/999999999/ returns 404
 - [[API-PARTS-BV-004]] — POST /api/part/{id}/bom-copy/ copies BOM from another assembly
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category

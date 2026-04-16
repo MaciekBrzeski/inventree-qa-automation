@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T21:13:09.837Z
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # GET /api/part/
@@ -19,7 +19,7 @@ generated: 2026-04-14T21:13:09.837Z
 
 ## API test cases
 
-[[API-PARTS-001]], [[API-PARTS-006]], [[API-PARTS-007]], [[API-PARTS-008]], [[API-PARTS-009]], [[API-PARTS-010]], [[API-PARTS-011]], [[API-PARTS-012]], [[API-PARTS-048]], [[API-PARTS-049]], [[API-PARTS-THUMB-002]], [[API-SMOKE-002]], [[API-SMOKE-004]]
+[[API-PARTS-001]], [[API-PARTS-THUMB-002]], [[API-SMOKE-002]], [[API-SMOKE-004]]
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
@@ -36,15 +36,6 @@ generated: 2026-04-14T21:13:09.837Z
 ## API spec titles (automated, inferred from spec file scope)
 
 - [[API-PARTS-001]] — list parts
-- [[API-PARTS-006]] — list with limit
-- [[API-PARTS-007]] — list with offset
-- [[API-PARTS-008]] — filter by category
-- [[API-PARTS-009]] — filter by assembly=true returns the seeded assembly
-- [[API-PARTS-010]] — search by name substring
-- [[API-PARTS-011]] — ordering by name asc
-- [[API-PARTS-012]] — filter by active=false returns the seeded inactive part
-- [[API-PARTS-048]] — GET /api/part/ with no Authorization returns 401
-- [[API-PARTS-049]] — GET /api/part/ with invalid token returns 401
 - [[API-PARTS-THUMB-002]] — GET /api/part/thumbs/{id}/ retrieves a thumbnail by part id
 - [[API-SMOKE-002]] — authed list parts returns 200 + array-ish
 - [[API-SMOKE-004]] — schema validator runs against real part list

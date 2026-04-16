@@ -1,0 +1,139 @@
+name: Validate baseline (defect matrix)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 04:00 UTC daily — catches visual-regression masking drift overnight.
+    - cron: '0 4 * * *'
+
+env:
+  INVENTREE_DOCKER_REPO: MaciekBrzeski/inventree-qa-docker
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        defect:
+          - buttons-magenta
+          - hide-nav
+          - shift-layout
+          - rename-submit
+          - zoom-out
+          - hide-icons
+          - dim-inputs
+          - red-rows
+          - comic-sans
+          - shrink-buttons
+          - invert-colors
+          - remove-labels
+          - wiggle-table
+          - fake-loading
+          - currency-euro
+    steps:
+      - name: Checkout automation repo
+        uses: actions/checkout@v4
+
+      - name: Checkout inventree-qa-docker
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.INVENTREE_DOCKER_REPO }}
+          ref: main
+          path: inventree-qa-docker
+
+      - name: Map inventree.localhost to 127.0.0.1
+        run: echo "127.0.0.1 inventree.localhost" | sudo tee -a /etc/hosts
+
+      - name: Boot InvenTree stack + restore seed
+        working-directory: inventree-qa-docker
+        run: ./setup.sh
+
+      - name: Wait for /api/ to become healthy
+        run: |
+          for i in {1..90}; do
+            if curl -sf http://inventree.localhost/api/ > /dev/null 2>&1; then
+              echo "InvenTree up after ${i}s"
+              exit 0
+            fi
+            sleep 2
+          done
+          docker compose -f inventree-qa-docker/docker-compose.yml logs --tail=100 || true
+          exit 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Cache UI suite deps
+        uses: actions/cache@v4
+        with:
+          path: |
+            automation/ui/node_modules
+            ~/.cache/ms-playwright
+          key: qa-deps-ui-${{ runner.os }}-${{ hashFiles('automation/ui/package-lock.json') }}
+          restore-keys: |
+            qa-deps-ui-${{ runner.os }}-
+
+      - name: Install UI suite deps
+        working-directory: automation/ui
+        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+
+      - name: Install Playwright browsers
+        working-directory: automation/ui
+        run: npx playwright install --with-deps chromium
+
+      - name: Download latest main baseline
+        id: dl
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          RUN_ID=$(gh run list \
+            --repo "${{ github.repository }}" \
+            --workflow qa.yml \
+            --branch main \
+            --status success \
+            --limit 1 \
+            --json databaseId -q '.[0].databaseId')
+          if [[ -z "$RUN_ID" ]]; then
+            echo "::error::no successful main run yet — cannot validate without baseline"
+            exit 1
+          fi
+          mkdir -p automation/ui/baseline
+          gh run download "$RUN_ID" \
+            --repo "${{ github.repository }}" \
+            --name baseline-main \
+            --dir automation/ui/baseline
+          find automation/ui/baseline -type f | wc -l
+
+      - name: Run defect ${{ matrix.defect }}
+        working-directory: automation/ui
+        run: ./scripts/validate-baseline.sh ${{ matrix.defect }}
+
+      - name: Upload per-defect diff artefacts
+        if: failure() || success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: defect-${{ matrix.defect }}
+          path: |
+            automation/ui/baseline/**/*.actual.*
+            automation/ui/baseline/**/*.diff.png
+            automation/ui/baseline/report.html
+          if-no-files-found: ignore
+          retention-days: 14
+
+  report:
+    needs: validate
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Summary
+        run: |
+          echo "## Defect matrix summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "See individual job results for each defect." >> $GITHUB_STEP_SUMMARY
+          echo "Artefacts: defect-<name> per defect (actual.png + diff.png)." >> $GITHUB_STEP_SUMMARY

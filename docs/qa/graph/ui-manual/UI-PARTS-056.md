@@ -4,7 +4,7 @@ id: UI-PARTS-056
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T21:13:09.851Z
+generated: 2026-04-16T14:45:16.425Z
 ---
 
 # UI-PARTS-056 — Validate uniqueness of revision numbers per parent part

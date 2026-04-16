@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/stocktake/generate/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T21:13:09.840Z
+generated: 2026-04-16T14:45:16.418Z
 ---
 
 # POST /api/part/stocktake/generate/

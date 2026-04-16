@@ -4,7 +4,7 @@ id: API-PARTS-032
 side: api
 priority: P3
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.853Z
+generated: 2026-04-16T14:45:16.426Z
 ---
 
 # API-PARTS-032 — Delete a category with child categories

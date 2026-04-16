@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/k-parts-pricing-ui.spec.ts
 case-ids: [UI-PRICE-003]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-PRICE-003 delete a sale price break via row-action-menu Delete → DELETE /api/part/sale-price/{id}/
@@ -27,7 +27,6 @@ generated: 2026-04-14T21:13:09.844Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-PRICE-006]] — GET /api/part/sale-price/ list returns 200
 - [[API-PARTS-PRICE-010]] — DELETE /api/part/sale-price/{id}/ removes the sale price break
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part

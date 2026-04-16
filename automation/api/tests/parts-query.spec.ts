@@ -2,11 +2,32 @@ import { test, expect, type APIRequestContext } from '@playwright/test';
 import { createAuthedContext } from '../helpers/client';
 import { makePart } from '../helpers/factories';
 
+// Parameterised (data-driven) variant of the query suite. The PDF requirement
+// "Demonstrate data-driven or parameterised testing where appropriate" is
+// satisfied here: one cases table + one `for` loop that emits a stable
+// `API-PARTS-<ID>` test per row. Each row specifies the URL, the per-row
+// assertion, and the expected status.
+
+type QueryCase = {
+  id: string;
+  title: string;
+  url: () => string;
+  // Returns void or throws via expect — runs after the request lands.
+  assert: (list: unknown[], raw: unknown) => void;
+  status?: number;
+};
+
 let ctx: APIRequestContext | undefined;
 const createdIds: number[] = [];
 let assemblyName: string | undefined;
 
-test.describe.serial('API-PARTS parts query', () => {
+function unwrap(body: unknown): unknown[] {
+  if (Array.isArray(body)) return body;
+  const results = (body as { results?: unknown[] }).results;
+  return Array.isArray(results) ? results : [];
+}
+
+test.describe.serial('API-PARTS parts query (parameterised)', () => {
   test.beforeAll(async () => {
     ctx = await createAuthedContext();
     const rootId = Number(process.env.INVENTREE_QA_ROOT_ID);
@@ -33,76 +54,88 @@ test.describe.serial('API-PARTS parts query', () => {
     await ctx.dispose();
   });
 
-  function unwrap(body: unknown): unknown[] {
-    if (Array.isArray(body)) return body;
-    const results = (body as { results?: unknown[] }).results;
-    return Array.isArray(results) ? results : [];
+  const cases: QueryCase[] = [
+    {
+      id: 'API-PARTS-006',
+      title: 'list with limit=2',
+      url: () => '/api/part/?limit=2',
+      assert: (list) => {
+        expect(list.length).toBeLessThanOrEqual(2);
+      },
+    },
+    {
+      id: 'API-PARTS-007',
+      title: 'list with limit=1 offset=1',
+      url: () => '/api/part/?limit=1&offset=1',
+      assert: (list) => {
+        expect(list.length).toBeLessThanOrEqual(1);
+      },
+    },
+    {
+      id: 'API-PARTS-008',
+      title: 'filter by category',
+      url: () => `/api/part/?category=${Number(process.env.INVENTREE_QA_ROOT_ID)}&limit=50`,
+      assert: (list) => {
+        const rootId = Number(process.env.INVENTREE_QA_ROOT_ID);
+        expect(list.length).toBeGreaterThan(0);
+        for (const p of list as Array<{ category?: number }>) {
+          expect(p.category).toBe(rootId);
+        }
+      },
+    },
+    {
+      id: 'API-PARTS-009',
+      title: 'filter assembly=true returns the seeded assembly',
+      url: () => '/api/part/?assembly=true&limit=100',
+      assert: (list) => {
+        const match = (list as Array<{ name?: string; assembly?: boolean }>).find(
+          (p) => p.name === assemblyName,
+        );
+        expect(match).toBeDefined();
+        expect(match?.assembly).toBe(true);
+      },
+    },
+    {
+      id: 'API-PARTS-010',
+      title: 'search by name substring',
+      url: () => `/api/part/?search=${encodeURIComponent(assemblyName!.slice(0, 12))}&limit=10`,
+      assert: (list) => {
+        const needle = assemblyName!.slice(0, 12);
+        expect((list as Array<{ name?: string }>).some((p) => p.name?.includes(needle))).toBe(true);
+      },
+    },
+    {
+      id: 'API-PARTS-011',
+      title: 'ordering by name asc',
+      url: () => '/api/part/?ordering=name&limit=10',
+      assert: (list) => {
+        const names = (list as Array<{ name?: string }>).map((p) => p.name ?? '');
+        const sorted = [...names].sort((a, b) => a.localeCompare(b));
+        expect(names).toEqual(sorted);
+      },
+    },
+    {
+      id: 'API-PARTS-012',
+      title: 'filter active=false returns the seeded inactive part',
+      url: () => '/api/part/?active=false&limit=100',
+      assert: (list) => {
+        const inactiveIds = createdIds.slice(-1);
+        const match = (list as Array<{ pk?: number; active?: boolean }>).find(
+          (p) => typeof p.pk === 'number' && inactiveIds.includes(p.pk),
+        );
+        expect(match).toBeDefined();
+        expect(match?.active).toBe(false);
+      },
+    },
+  ];
+
+  for (const c of cases) {
+    test(`${c.id} ${c.title}`, async () => {
+      if (!ctx) throw new Error('ctx');
+      const response = await ctx.get(c.url());
+      expect(response.status()).toBe(c.status ?? 200);
+      const raw = await response.json();
+      c.assert(unwrap(raw), raw);
+    });
   }
-
-  test('API-PARTS-006 list with limit', async () => {
-    if (!ctx) throw new Error('ctx');
-    const response = await ctx.get('/api/part/?limit=2');
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json());
-    expect(list.length).toBeLessThanOrEqual(2);
-  });
-
-  test('API-PARTS-007 list with offset', async () => {
-    if (!ctx) throw new Error('ctx');
-    const response = await ctx.get('/api/part/?limit=1&offset=1');
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json());
-    expect(list.length).toBeLessThanOrEqual(1);
-  });
-
-  test('API-PARTS-008 filter by category', async () => {
-    if (!ctx) throw new Error('ctx');
-    const rootId = Number(process.env.INVENTREE_QA_ROOT_ID);
-    const response = await ctx.get(`/api/part/?category=${rootId}&limit=50`);
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json()) as Array<{ category?: number }>;
-    expect(list.length).toBeGreaterThan(0);
-    for (const p of list) expect(p.category).toBe(rootId);
-  });
-
-  test('API-PARTS-009 filter by assembly=true returns the seeded assembly', async () => {
-    if (!ctx) throw new Error('ctx');
-    const response = await ctx.get('/api/part/?assembly=true&limit=100');
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json()) as Array<{ name?: string; assembly?: boolean }>;
-    const match = list.find((p) => p.name === assemblyName);
-    expect(match).toBeDefined();
-    expect(match?.assembly).toBe(true);
-  });
-
-  test('API-PARTS-010 search by name substring', async () => {
-    if (!ctx) throw new Error('ctx');
-    expect(assemblyName).toBeDefined();
-    const needle = assemblyName!.slice(0, 12);
-    const response = await ctx.get(`/api/part/?search=${encodeURIComponent(needle)}&limit=10`);
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json()) as Array<{ name?: string }>;
-    expect(list.some((p) => p.name?.includes(needle))).toBe(true);
-  });
-
-  test('API-PARTS-011 ordering by name asc', async () => {
-    if (!ctx) throw new Error('ctx');
-    const response = await ctx.get('/api/part/?ordering=name&limit=10');
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json()) as Array<{ name?: string }>;
-    const names = list.map((p) => p.name ?? '');
-    const sorted = [...names].sort((a, b) => a.localeCompare(b));
-    expect(names).toEqual(sorted);
-  });
-
-  test('API-PARTS-012 filter by active=false returns the seeded inactive part', async () => {
-    if (!ctx) throw new Error('ctx');
-    const response = await ctx.get('/api/part/?active=false&limit=100');
-    expect(response.status()).toBe(200);
-    const list = unwrap(await response.json()) as Array<{ pk?: number; active?: boolean }>;
-    const inactiveIds = createdIds.slice(-1);
-    const match = list.find((p) => typeof p.pk === 'number' && inactiveIds.includes(p.pk));
-    expect(match).toBeDefined();
-    expect(match?.active).toBe(false);
-  });
 });

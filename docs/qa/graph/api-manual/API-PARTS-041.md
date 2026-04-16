@@ -4,7 +4,7 @@ id: API-PARTS-041
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.854Z
+generated: 2026-04-16T14:45:16.426Z
 ---
 
 # API-PARTS-041 — Validate a specific BOM line

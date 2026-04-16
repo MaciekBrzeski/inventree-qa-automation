@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/{id}/bom-validate/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T21:13:09.837Z
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # GET /api/part/{id}/bom-validate/
@@ -15,7 +15,7 @@ generated: 2026-04-14T21:13:09.837Z
 
 ## UI test cases
 
-[[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-EXTRA-004]], [[UI-SUBSTITUTE-001]], [[UI-TAB-002]]
+[[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-BOM-DEL-001]], [[UI-EXTRA-004]], [[UI-SUBSTITUTE-001]], [[UI-TAB-002]]
 
 ## API test cases
 
@@ -31,6 +31,7 @@ generated: 2026-04-14T21:13:09.837Z
 - [[UI-BOM-005]] — edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
 - [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA
 - [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/
 - [[UI-TAB-002]] — bom tab → GET /api/bom/

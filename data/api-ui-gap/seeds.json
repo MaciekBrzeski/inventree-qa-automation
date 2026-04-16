@@ -1,10 +1,5 @@
 [
   {
-    "endpoint": "DELETE /api/bom/{id}/",
-    "seed": "/web/part/<assembly-pk> → BOM tab",
-    "rationale": "heuristic match on path prefix"
-  },
-  {
     "endpoint": "DELETE /api/part/stocktake/",
     "seed": "/web/part/<pk> → Stock → Stocktake",
     "rationale": "heuristic match on path prefix"

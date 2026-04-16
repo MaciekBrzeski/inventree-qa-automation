@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-stocktake-generate.spec.ts
 case-ids: [PARTS-STK-GEN-001]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.849Z
+generated: 2026-04-16T14:45:16.423Z
 ---
 
 # API-PARTS-STK-GEN-001 POST /api/part/stocktake/generate/ triggers generation

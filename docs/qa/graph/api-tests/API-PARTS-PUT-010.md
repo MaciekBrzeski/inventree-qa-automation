@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-010]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.848Z
+generated: 2026-04-16T14:45:16.423Z
 ---
 
 # API-PARTS-PUT-010 PUT /api/part/{id}/pricing/ triggers pricing recalc

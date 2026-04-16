@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/0-baseline-seeded.spec.ts
 case-ids: []
 endpoints-hit: 1
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.841Z
+generated: 2026-04-16T14:45:16.418Z
 ---
 
 # BASELINE-007 subcategory panel at root

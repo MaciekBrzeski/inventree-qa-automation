@@ -92,6 +92,18 @@ async function main() {
   });
   await fs.writeFile(resolve(OUT_DIR, 'seeds.json'), JSON.stringify(seeds, null, 2));
 
+  // Machine-readable summary consumed by the CI coverage-timeline step and
+  // by any dashboard script downstream. Keep the shape minimal.
+  const summary = {
+    generated: new Date().toISOString(),
+    total: schemaSet.size,
+    covered: covered.length,
+    uncovered: uncovered.length,
+    dead: deadList.length,
+    ratio: Number(((covered.length / schemaSet.size) * 100).toFixed(2)),
+  };
+  await fs.writeFile(resolve(OUT_DIR, 'coverage-summary.json'), JSON.stringify(summary, null, 2));
+
   const lines: string[] = [];
   lines.push('# api-ui-gap coverage report');
   lines.push('');

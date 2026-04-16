@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts
 case-ids: [UI-INTPRICE-001]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-INTPRICE-001 add internal price break via UI → POST /api/part/internal-price/
@@ -27,7 +27,6 @@ generated: 2026-04-14T21:13:09.844Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-PRICE-001]] — GET /api/part/internal-price/ list returns 200
 - [[API-PARTS-PRICE-002]] — POST /api/part/internal-price/ creates a price break
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part

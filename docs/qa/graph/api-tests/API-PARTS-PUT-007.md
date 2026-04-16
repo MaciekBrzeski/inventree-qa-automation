@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-007]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.848Z
+generated: 2026-04-16T14:45:16.423Z
 ---
 
 # API-PARTS-PUT-007 PUT /api/bom/{id}/ replaces a BOM line
@@ -26,3 +26,4 @@ generated: 2026-04-14T21:13:09.848Z
 
 - [[UI-BOM-002]] — add a BOM line via UI → POST /api/bom/
 - [[UI-BOM-005]] — edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/

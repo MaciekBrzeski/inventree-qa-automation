@@ -2,7 +2,7 @@
 title: "Coverage — Negative / auth / bulk"
 area: negative
 tags: [qa, coverage, area]
-generated: 2026-04-14T21:13:10.253Z
+generated: 2026-04-16T14:45:17.087Z
 ---
 
 # Negative / auth / bulk
@@ -12,10 +12,10 @@ Auth errors (401/403), not-found (404), validation errors (400), bulk-operation 
 ## Headline
 
 - Endpoints in scope: **83**
-- Endpoints hit by at least one automated test: **13**
-- Coverage ratio: **15.7%**
+- Endpoints hit by at least one automated test: **9**
+- Coverage ratio: **10.8%**
 - Automated UI tests in this area: **3**
-- Automated API tests in this area: **15**
+- Automated API tests in this area: **8**
 - Manual UI test cases matched: **18**
 - Manual API test cases matched: **12**
 - Bugs filed in this area: **2**
@@ -30,15 +30,8 @@ Auth errors (401/403), not-found (404), validation errors (400), bulk-operation 
 
 ### API
 
-- **API-PARTS-048 GET /api/part/ with no Authorization returns 401** `API-PARTS-048` — `parts-negative.spec.ts` → `GET /api/part/`
-- **API-PARTS-049 GET /api/part/ with invalid token returns 401** `API-PARTS-049` — `parts-negative.spec.ts` → `GET /api/part/`
-- **API-PARTS-050 GET /api/part/999999999/ returns 404** `API-PARTS-050` — `parts-negative.spec.ts` → `GET /api/part/{id}/`
-- **API-PARTS-051 GET /api/part/category/999999999/ returns 404** `API-PARTS-051` — `parts-negative.spec.ts` → `GET /api/part/category/{id}/`
-- **API-PARTS-052 POST /api/part/ with empty payload returns 400** `API-PARTS-052` — `parts-negative.spec.ts` → `POST /api/part/`
+- **${c.id} ${c.title}** — `parts-negative.spec.ts`
 - **API-PARTS-053 POST /api/part/ with name only actually succeeds** `API-PARTS-053` — `parts-negative.spec.ts` → `POST /api/part/`, `PATCH /api/part/{id}/`, `DELETE /api/part/{id}/`
-- **API-PARTS-054 PATCH /api/part/999999999/ returns 404** `API-PARTS-054` — `parts-negative.spec.ts` → `PATCH /api/part/{id}/`
-- **API-PARTS-055 DELETE /api/part/999999999/ returns 404** `API-PARTS-055` — `parts-negative.spec.ts` → `DELETE /api/part/{id}/`
-- **API-PARTS-056 POST /api/part/category/ with empty name returns 400** `API-PARTS-056` — `parts-negative.spec.ts` → `POST /api/part/category/`
 - **API-PARTS-057 PUT /api/part/ on collection expects a bulk list and returns 400** `API-PARTS-057` — `parts-negative.spec.ts` → `PUT /api/part/`
 - **API-PARTS-BULK-001 PATCH /api/part/ rejects non-list** `API-PARTS-BULK-001` — `parts-bulk.spec.ts` → `PATCH /api/part/`
 - **API-PARTS-BULK-002 PATCH /api/part/category/ rejects non-list** `API-PARTS-BULK-002` — `parts-bulk.spec.ts` → `PATCH /api/part/category/`
@@ -66,12 +59,12 @@ Auth errors (401/403), not-found (404), validation errors (400), bulk-operation 
 | `GET /api/bom/substitute/` | ❌ missing |
 | `GET /api/bom/substitute/{id}/` | ❌ missing |
 | `GET /api/bom/{id}/` | ❌ missing |
-| `GET /api/part/` | ✅ covered |
+| `GET /api/part/` | ❌ missing |
 | `GET /api/part/category/` | ❌ missing |
 | `GET /api/part/category/parameters/` | ❌ missing |
 | `GET /api/part/category/parameters/{id}/` | ❌ missing |
 | `GET /api/part/category/tree/` | ❌ missing |
-| `GET /api/part/category/{id}/` | ✅ covered |
+| `GET /api/part/category/{id}/` | ❌ missing |
 | `GET /api/part/internal-price/` | ❌ missing |
 | `GET /api/part/internal-price/{id}/` | ❌ missing |
 | `GET /api/part/related/` | ❌ missing |
@@ -84,7 +77,7 @@ Auth errors (401/403), not-found (404), validation errors (400), bulk-operation 
 | `GET /api/part/test-template/{id}/` | ❌ missing |
 | `GET /api/part/thumbs/` | ❌ missing |
 | `GET /api/part/thumbs/{id}/` | ❌ missing |
-| `GET /api/part/{id}/` | ✅ covered |
+| `GET /api/part/{id}/` | ❌ missing |
 | `GET /api/part/{id}/bom-validate/` | ❌ missing |
 | `GET /api/part/{id}/pricing/` | ❌ missing |
 | `GET /api/part/{id}/requirements/` | ❌ missing |
@@ -108,7 +101,7 @@ Auth errors (401/403), not-found (404), validation errors (400), bulk-operation 
 | `POST /api/bom/` | ❌ missing |
 | `POST /api/bom/substitute/` | ❌ missing |
 | `POST /api/part/` | ✅ covered |
-| `POST /api/part/category/` | ✅ covered |
+| `POST /api/part/category/` | ❌ missing |
 | `POST /api/part/category/parameters/` | ❌ missing |
 | `POST /api/part/internal-price/` | ❌ missing |
 | `POST /api/part/related/` | ❌ missing |

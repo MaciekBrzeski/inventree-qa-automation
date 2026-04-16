@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/0-baseline-seeded.spec.ts
 case-ids: []
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.841Z
+generated: 2026-04-16T14:45:16.418Z
 ---
 
 # BASELINE-001 part detail header + tab bar
@@ -27,8 +27,6 @@ generated: 2026-04-14T21:13:09.841Z
 - [[API-PARTS-003]] — retrieve part
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
 - [[API-PARTS-READS-001]] — GET /api/part/{id}/requirements/ returns 200

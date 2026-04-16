@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-puts.spec.ts
 case-ids: [API-PARTS-PUT-006]
 endpoints-hit: 4
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.848Z
+generated: 2026-04-16T14:45:16.423Z
 ---
 
 # API-PARTS-PUT-006 PUT /api/part/test-template/{id}/ replaces a test template

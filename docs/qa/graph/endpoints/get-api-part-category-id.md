@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/category/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T21:13:09.838Z
+generated: 2026-04-16T14:45:16.417Z
 ---
 
 # GET /api/part/category/{id}/
@@ -19,7 +19,7 @@ generated: 2026-04-14T21:13:09.838Z
 
 ## API test cases
 
-[[API-PARTS-020]], [[API-PARTS-025]], [[API-PARTS-051]], [[API-PARTS-PUT-002]]
+[[API-PARTS-020]], [[API-PARTS-025]], [[API-PARTS-PUT-002]]
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
@@ -63,7 +63,6 @@ generated: 2026-04-14T21:13:09.838Z
 
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
 
 ## Links
