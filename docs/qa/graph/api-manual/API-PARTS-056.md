@@ -4,7 +4,7 @@ id: API-PARTS-056
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.854Z
+generated: 2026-04-16T14:45:16.426Z
 ---
 
 # API-PARTS-056 — Attempt to delete a non-existent category
@@ -27,8 +27,8 @@ not-found
 
 ## Automated by
 
-- [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts) — API-PARTS-056 POST /api/part/category/ with empty name returns 400
+_(not automated)_
 
 ## Endpoints touched via the automated sibling(s)
 
-- [[post-api-part-category|POST /api/part/category/]]
+_(none traced — case may not yet be automated or automation does not hit /api/part|/api/bom)_

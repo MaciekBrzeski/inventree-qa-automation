@@ -4,7 +4,7 @@ id: UI-PARTS-066
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T21:13:09.852Z
+generated: 2026-04-16T14:45:16.425Z
 ---
 
 # UI-PARTS-066 — Attempt to create a part with a unique code constraint violation

@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-reads.spec.ts
 case-ids: [API-PARTS-READS-004]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.849Z
+generated: 2026-04-16T14:45:16.423Z
 ---
 
 # API-PARTS-READS-004 GET /api/part/{id}/bom-validate/ returns 200 for assembly
@@ -29,6 +29,7 @@ generated: 2026-04-14T21:13:09.849Z
 - [[UI-BOM-005]] — edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
 - [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA
 - [[UI-SUBSTITUTE-001]] — delete an existing BOM substitute via Edit Substitutes dialog → DELETE /api/bom/substitute/{id}/
 - [[UI-TAB-002]] — bom tab → GET /api/bom/

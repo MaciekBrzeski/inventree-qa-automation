@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-adjacent-endpoints.spec.ts
 case-ids: [API-ADJ-006]
 endpoints-hit: 0
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.846Z
+generated: 2026-04-16T14:45:16.421Z
 ---
 
 # API-ADJ-006 GET /api/order/po-line/ — list PO lines (smoke)

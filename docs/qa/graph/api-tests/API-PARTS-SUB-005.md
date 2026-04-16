@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom-substitute.spec.ts
 case-ids: [API-PARTS-SUB-005]
 endpoints-hit: 2
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.846Z
+generated: 2026-04-16T14:45:16.421Z
 ---
 
 # API-PARTS-SUB-005 PUT /api/bom/substitute/{id}/ replaces the substitute

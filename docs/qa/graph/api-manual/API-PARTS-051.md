@@ -4,7 +4,7 @@ id: API-PARTS-051
 side: api
 priority: P2
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.854Z
+generated: 2026-04-16T14:45:16.426Z
 ---
 
 # API-PARTS-051 — Attempt to create a part with missing required fields
@@ -27,8 +27,8 @@ validation
 
 ## Automated by
 
-- [`submission/automation/api/tests/parts-negative.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-negative.spec.ts) — API-PARTS-051 GET /api/part/category/999999999/ returns 404
+_(not automated)_
 
 ## Endpoints touched via the automated sibling(s)
 
-- [[get-api-part-category-id|GET /api/part/category/{id}/]]
+_(none traced — case may not yet be automated or automation does not hit /api/part|/api/bom)_

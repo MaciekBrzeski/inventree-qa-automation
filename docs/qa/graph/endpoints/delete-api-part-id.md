@@ -4,7 +4,7 @@ method: DELETE
 path: "/api/part/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, delete, paired]
-generated: 2026-04-14T21:13:09.837Z
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # DELETE /api/part/{id}/
@@ -19,7 +19,7 @@ generated: 2026-04-14T21:13:09.837Z
 
 ## API test cases
 
-[[API-PARTS-005]], [[API-PARTS-053]], [[API-PARTS-055]], [[API-PARTS-BV-004]]
+[[API-PARTS-005]], [[API-PARTS-053]], [[API-PARTS-BV-004]]
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
@@ -30,7 +30,6 @@ generated: 2026-04-14T21:13:09.837Z
 
 - [[API-PARTS-005]] — delete part
 - [[API-PARTS-053]] — POST /api/part/ with name only actually succeeds
-- [[API-PARTS-055]] — DELETE /api/part/999999999/ returns 404
 - [[API-PARTS-BV-004]] — POST /api/part/{id}/bom-copy/ copies BOM from another assembly
 
 ## Links

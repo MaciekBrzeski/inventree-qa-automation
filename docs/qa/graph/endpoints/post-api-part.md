@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/"
 paired: paired
 tags: [qa, endpoint, inventree, post, paired]
-generated: 2026-04-14T21:13:09.837Z
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # POST /api/part/
@@ -19,7 +19,7 @@ generated: 2026-04-14T21:13:09.837Z
 
 ## API test cases
 
-[[API-PARTS-002]], [[API-PARTS-052]], [[API-PARTS-053]], [[API-PARTS-BOM-001]], [[API-PARTS-BOM-002]], [[API-PARTS-BV-004]]
+[[API-PARTS-002]], [[API-PARTS-053]], [[API-PARTS-BOM-001]], [[API-PARTS-BOM-002]], [[API-PARTS-BV-004]]
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
@@ -30,7 +30,6 @@ generated: 2026-04-14T21:13:09.837Z
 ## API spec titles (automated, inferred from spec file scope)
 
 - [[API-PARTS-002]] — create part
-- [[API-PARTS-052]] — POST /api/part/ with empty payload returns 400
 - [[API-PARTS-053]] — POST /api/part/ with name only actually succeeds
 - [[API-PARTS-BOM-001]] — create assembly part
 - [[API-PARTS-BOM-002]] — create component part

@@ -4,7 +4,7 @@ method: POST
 path: "/api/part/{id}/bom-copy/"
 paired: api-only
 tags: [qa, endpoint, inventree, post, api-only]
-generated: 2026-04-14T21:13:09.837Z
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # POST /api/part/{id}/bom-copy/

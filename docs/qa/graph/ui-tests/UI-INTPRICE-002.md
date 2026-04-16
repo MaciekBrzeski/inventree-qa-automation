@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts
 case-ids: [UI-INTPRICE-002]
 endpoints-hit: 7
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-INTPRICE-002 edit internal price break via row-action-menu → PATCH /api/part/internal-price/{id}/
@@ -28,7 +28,6 @@ generated: 2026-04-14T21:13:09.844Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-PRICE-001]] — GET /api/part/internal-price/ list returns 200
 - [[API-PARTS-PRICE-003]] — GET /api/part/internal-price/{id}/ retrieves the price break
 - [[API-PARTS-PRICE-004]] — PATCH /api/part/internal-price/{id}/ updates the quantity

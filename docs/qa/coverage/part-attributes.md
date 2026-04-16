@@ -2,7 +2,7 @@
 title: "Coverage — Part attributes (boolean toggles)"
 area: part-attributes
 tags: [qa, coverage, area]
-generated: 2026-04-14T21:13:10.252Z
+generated: 2026-04-16T14:45:17.086Z
 ---
 
 # Part attributes (boolean toggles)

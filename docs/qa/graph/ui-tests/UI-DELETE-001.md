@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/y-parts-ui-delete.spec.ts
 case-ids: [UI-DELETE-001]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.845Z
+generated: 2026-04-16T14:45:16.421Z
 ---
 
 # UI-DELETE-001 delete the UI-created part via the page action menu
@@ -29,10 +29,7 @@ generated: 2026-04-14T21:13:09.845Z
 - [[API-PARTS-005]] — delete part
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-053]] — POST /api/part/ with name only actually succeeds
-- [[API-PARTS-055]] — DELETE /api/part/999999999/ returns 404
 - [[API-PARTS-BV-004]] — POST /api/part/{id}/bom-copy/ copies BOM from another assembly
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category

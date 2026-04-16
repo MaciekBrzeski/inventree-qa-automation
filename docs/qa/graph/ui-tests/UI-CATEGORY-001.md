@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/a-parts-category-create.spec.ts
 case-ids: [UI-CATEGORY-001]
 endpoints-hit: 1
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.841Z
+generated: 2026-04-16T14:45:16.418Z
 ---
 
 # UI-CATEGORY-001 navigate to the subcategories panel

@@ -2,7 +2,7 @@
 title: "Coverage — Part list, filter, search, pagination"
 area: part-query
 tags: [qa, coverage, area]
-generated: 2026-04-14T21:13:10.252Z
+generated: 2026-04-16T14:45:17.086Z
 ---
 
 # Part list, filter, search, pagination
@@ -12,10 +12,10 @@ generated: 2026-04-14T21:13:10.252Z
 ## Headline
 
 - Endpoints in scope: **68**
-- Endpoints hit by at least one automated test: **1**
-- Coverage ratio: **1.5%**
+- Endpoints hit by at least one automated test: **0**
+- Coverage ratio: **0.0%**
 - Automated UI tests in this area: **0**
-- Automated API tests in this area: **7**
+- Automated API tests in this area: **1**
 - Manual UI test cases matched: **5**
 - Manual API test cases matched: **19**
 - Bugs filed in this area: **0**
@@ -24,13 +24,7 @@ generated: 2026-04-14T21:13:10.252Z
 
 ### API
 
-- **API-PARTS-006 list with limit** `API-PARTS-006` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-007 list with offset** `API-PARTS-007` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-008 filter by category** `API-PARTS-008` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-009 filter by assembly=true returns the seeded assembly** `API-PARTS-009` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-010 search by name substring** `API-PARTS-010` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-011 ordering by name asc** `API-PARTS-011` — `parts-query.spec.ts` → `GET /api/part/`
-- **API-PARTS-012 filter by active=false returns the seeded inactive part** `API-PARTS-012` — `parts-query.spec.ts` → `GET /api/part/`
+- **${c.id} ${c.title}** — `parts-query.spec.ts`
 
 ## Endpoints in scope
 
@@ -45,7 +39,7 @@ generated: 2026-04-14T21:13:10.252Z
 | `DELETE /api/part/stocktake/{id}/` | ❌ missing |
 | `DELETE /api/part/test-template/{id}/` | ❌ missing |
 | `DELETE /api/part/{id}/` | ❌ missing |
-| `GET /api/part/` | ✅ covered |
+| `GET /api/part/` | ❌ missing |
 | `GET /api/part/category/` | ❌ missing |
 | `GET /api/part/category/parameters/` | ❌ missing |
 | `GET /api/part/category/parameters/{id}/` | ❌ missing |

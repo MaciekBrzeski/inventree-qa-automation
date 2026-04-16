@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-category.spec.ts
 case-ids: [API-PARTS-023]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.847Z
+generated: 2026-04-16T14:45:16.422Z
 ---
 
 # API-PARTS-023 tree endpoint contains the child category

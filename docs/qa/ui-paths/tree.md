@@ -1,7 +1,7 @@
 ---
 title: "UI path tree — all automated UI tests"
 tags: [qa, ui-paths, tree, coverage]
-generated: 2026-04-14T21:13:10.054Z
+generated: 2026-04-16T14:45:16.748Z
 ---
 
 # UI path tree
@@ -12,16 +12,19 @@ Each node shows `step ×count → {endpoints}`. Branching points are where diffe
 
 ## Tree
 
-  - `goto /web/part/{id}/bom` → {DELETE /api/bom/, DELETE /api/bom/substitute/{id}/, GET /api/bom/, GET /api/bom/{id}/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/, PATCH /api/bom/{id}/validate/, POST /api/bom/substitute/} ×9
-    - `click label:row-action-menu-0` → {DELETE /api/bom/substitute/{id}/, GET /api/bom/, GET /api/bom/{id}/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/, PATCH /api/bom/{id}/validate/, POST /api/bom/substitute/} ×4
+  - `goto /web/part/{id}/bom` → {DELETE /api/bom/, DELETE /api/bom/substitute/{id}/, DELETE /api/bom/{id}/, GET /api/bom/, GET /api/bom/{id}/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/, PATCH /api/bom/{id}/validate/, POST /api/bom/, POST /api/bom/substitute/} ×10
+    - `click label:row-action-menu-0` → {DELETE /api/bom/substitute/{id}/, DELETE /api/bom/{id}/, GET /api/bom/, GET /api/bom/{id}/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/, PATCH /api/bom/{id}/validate/, POST /api/bom/substitute/} ×5
       - `click role:menuitem:"Edit Substitutes"` → {DELETE /api/bom/substitute/{id}/, GET /api/bom/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, POST /api/bom/substitute/} ×2
         - `click role:button:"Add Substitute"` → {GET /api/bom/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, POST /api/bom/substitute/} ×1
       - `click role:menuitem:"Edit"` → {GET /api/bom/, GET /api/bom/{id}/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/} ×1
       - `click role:menuitem:"Validate BOM Line"` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/validate/} ×1
         - `click role:button:"Submit"` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/validate/} ×1
           - `click role:button:"OK"` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, PATCH /api/bom/{id}/validate/} ×1
-    - `click label:action-menu-add-bom-items` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
-      - `click label:action-menu-add-bom-items-add-bom-item` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
+      - `click role:menuitem:"Delete"` → {DELETE /api/bom/{id}/, GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
+        - `click role:button:"Submit"` → {DELETE /api/bom/{id}/, GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
+          - `click role:button:"Delete"` → {DELETE /api/bom/{id}/, GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
+    - `click label:action-menu-add-bom-items` → {GET /api/bom/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, POST /api/bom/} ×1
+      - `click label:action-menu-add-bom-items-add-bom-item` → {GET /api/bom/, GET /api/part/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/, POST /api/bom/} ×1
     - `click label:action-button-validate-bom` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
       - `click role:button:"Submit"` → {GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1
     - `click role:button:"Submit"` → {DELETE /api/bom/, GET /api/bom/, GET /api/part/{id}/, GET /api/part/{id}/bom-validate/, GET /api/part/{id}/requirements/, GET /api/part/{id}/serial-numbers/} ×1

@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/j-parts-related-ui.spec.ts
 case-ids: [UI-REL-003]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-REL-003 edit the related-parts note via row-action-menu Edit → PATCH /api/part/related/{id}/
@@ -27,7 +27,6 @@ generated: 2026-04-14T21:13:09.844Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part
 - [[API-PARTS-PUT-003]] — PUT /api/part/related/{id}/ replaces a related link
 - [[API-PARTS-READS-001]] — GET /api/part/{id}/requirements/ returns 200

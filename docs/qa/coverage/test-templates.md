@@ -2,7 +2,7 @@
 title: "Coverage — Test templates"
 area: test-templates
 tags: [qa, coverage, area]
-generated: 2026-04-14T21:13:10.253Z
+generated: 2026-04-16T14:45:17.087Z
 ---
 
 # Test templates

@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-003]
 endpoints-hit: 5
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.843Z
+generated: 2026-04-16T14:45:16.419Z
 ---
 
 # UI-BOM-003 trigger Validate BOM via UI → /api/part/{id}/bom-validate/ or /api/bom/{id}/validate/
@@ -26,7 +26,6 @@ generated: 2026-04-14T21:13:09.843Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-BOM-004]] — list BOM lines
 - [[API-PARTS-BV-001]] — GET /api/part/{id}/bom-validate/ returns 200 for assembly
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part

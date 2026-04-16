@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/{id}/serial-numbers/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T21:13:09.838Z
+generated: 2026-04-16T14:45:16.417Z
 ---
 
 # GET /api/part/{id}/serial-numbers/
@@ -15,7 +15,7 @@ generated: 2026-04-14T21:13:09.838Z
 
 ## UI test cases
 
-[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-INTPRICE-001]], [[UI-INTPRICE-002]], [[UI-INTPRICE-003]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRECALC-001]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-SUBSTITUTE-001]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
+[[PARTS-CROSS-FULL-002]], [[PARTS-CROSS-FULL-003]], [[UI-ATTR-001]], [[UI-ATTR-002]], [[UI-ATTR-003]], [[UI-ATTR-004]], [[UI-ATTR-005]], [[UI-ATTR-006]], [[UI-ATTR-007]], [[UI-ATTR-008]], [[UI-BOM-001]], [[UI-BOM-002]], [[UI-BOM-003]], [[UI-BOM-004]], [[UI-BOM-005]], [[UI-BOM-006]], [[UI-BOM-007]], [[UI-BOM-DEL-001]], [[UI-DELETE-001]], [[UI-EXTRA-001]], [[UI-EXTRA-004]], [[UI-EXTRA-005]], [[UI-INTPRICE-001]], [[UI-INTPRICE-002]], [[UI-INTPRICE-003]], [[UI-PART-004]], [[UI-PARTS-CROSS-001]], [[UI-PARTS-CROSS-002]], [[UI-PARTS-DETAIL-001]], [[UI-PARTS-DETAIL-002]], [[UI-PARTS-DETAIL-003]], [[UI-PARTS-DETAIL-004]], [[UI-PARTS-DETAIL-005]], [[UI-PRECALC-001]], [[UI-PRICE-001]], [[UI-PRICE-002]], [[UI-PRICE-003]], [[UI-RECIPE-003]], [[UI-RECIPE-004]], [[UI-RECIPE-007]], [[UI-REL-001]], [[UI-REL-002]], [[UI-REL-003]], [[UI-SMOKE-003]], [[UI-SUBSTITUTE-001]], [[UI-TAB-001]], [[UI-TAB-002]], [[UI-TAB-003]], [[UI-TAB-004]], [[UI-TAB-005]], [[UI-TAB-006]], [[UI-TAB-007]], [[UI-TAB-008]], [[UI-TAB-009]], [[UI-TAB-010]], [[UI-TT-001]], [[UI-TT-002]], [[UI-TT-003]], [[UI-TT-004]]
 
 ## API test cases
 
@@ -43,6 +43,7 @@ generated: 2026-04-14T21:13:09.838Z
 - [[UI-BOM-005]] — edit a BOM row via row-action-menu Edit → PATCH /api/bom/{id}/
 - [[UI-BOM-006]] — click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
 - [[UI-BOM-007]] — add a BOM substitute via row-action-menu Edit Substitutes → POST /api/bom/substitute/
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/
 - [[UI-DELETE-001]] — delete the UI-created part via the page action menu
 - [[UI-EXTRA-001]] — navigate to Part Pricing tab → GET /api/part/{id}/pricing/
 - [[UI-EXTRA-004]] — navigate to Part BOM tab → GET /api/bom/ via SPA

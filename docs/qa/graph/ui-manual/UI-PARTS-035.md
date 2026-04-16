@@ -4,7 +4,7 @@ id: UI-PARTS-035
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T21:13:09.850Z
+generated: 2026-04-16T14:45:16.424Z
 ---
 
 # UI-PARTS-035 — Set supplier part unit to another compatible unit

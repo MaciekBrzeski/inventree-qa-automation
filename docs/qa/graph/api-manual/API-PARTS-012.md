@@ -4,7 +4,7 @@ id: API-PARTS-012
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.852Z
+generated: 2026-04-16T14:45:16.425Z
 ---
 
 # API-PARTS-012 — List parts by category and component status
@@ -27,8 +27,8 @@ query, filter, category
 
 ## Automated by
 
-- [`submission/automation/api/tests/parts-query.spec.ts`](https://github.com/MaciekBrzeski/inventree-qa-automation/blob/main/automation/api/tests/parts-query.spec.ts) — API-PARTS-012 filter by active=false returns the seeded inactive part
+_(not automated)_
 
 ## Endpoints touched via the automated sibling(s)
 
-- [[get-api-part|GET /api/part/]]
+_(none traced — case may not yet be automated or automation does not hit /api/part|/api/bom)_

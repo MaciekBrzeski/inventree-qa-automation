@@ -2,20 +2,20 @@
 title: "DELETE /api/bom/{id}/"
 method: DELETE
 path: "/api/bom/{id}/"
-paired: api-only
-tags: [qa, endpoint, inventree, delete, api-only]
-generated: 2026-04-14T21:13:09.836Z
+paired: paired
+tags: [qa, endpoint, inventree, delete, paired]
+generated: 2026-04-16T14:45:16.416Z
 ---
 
 # DELETE /api/bom/{id}/
 
 
 
-**Coverage status**: `api-only`
+**Coverage status**: `paired`
 
 ## UI test cases
 
-_(none)_
+[[UI-BOM-DEL-001]]
 
 ## API test cases
 
@@ -23,7 +23,7 @@ _(none)_
 
 ## UI spec titles (automated, captured via `page.on("request")`)
 
-_(none)_
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/
 
 ## API spec titles (automated, inferred from spec file scope)
 

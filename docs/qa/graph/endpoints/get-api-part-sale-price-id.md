@@ -4,7 +4,7 @@ method: GET
 path: "/api/part/sale-price/{id}/"
 paired: paired
 tags: [qa, endpoint, inventree, get, paired]
-generated: 2026-04-14T21:13:09.840Z
+generated: 2026-04-16T14:45:16.418Z
 ---
 
 # GET /api/part/sale-price/{id}/

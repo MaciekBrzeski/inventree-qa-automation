@@ -4,7 +4,7 @@ id: API-PARTS-037
 side: api
 priority: P1
 tags: [qa, test, manual, api]
-generated: 2026-04-14T21:13:09.853Z
+generated: 2026-04-16T14:45:16.426Z
 ---
 
 # API-PARTS-037 — Create a new BOM line for an assembly part

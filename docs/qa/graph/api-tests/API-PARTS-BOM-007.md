@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom.spec.ts
 case-ids: [API-PARTS-BOM-007]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.846Z
+generated: 2026-04-16T14:45:16.422Z
 ---
 
 # API-PARTS-BOM-007 delete BOM line
@@ -21,4 +21,4 @@ generated: 2026-04-14T21:13:09.846Z
 
 ## Paired tests on the other side
 
-_(no paired test on the other side)_
+- [[UI-BOM-DEL-001]] — delete a single BOM row via row-action-menu → DELETE /api/bom/{id}/

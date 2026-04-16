@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/h-parts-bom-ui.spec.ts
 case-ids: [UI-BOM-006]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.843Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-BOM-006 click Validate BOM Line row action → PATCH /api/bom/{id}/validate/ or /api/part/{id}/bom-validate/
@@ -27,7 +27,6 @@ generated: 2026-04-14T21:13:09.843Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-BOM-004]] — list BOM lines
 - [[API-PARTS-BV-001]] — GET /api/part/{id}/bom-validate/ returns 200 for assembly
 - [[API-PARTS-BV-003]] — PATCH /api/bom/{id}/validate/ marks the row as validated

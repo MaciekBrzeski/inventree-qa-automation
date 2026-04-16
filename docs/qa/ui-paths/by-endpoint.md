@@ -1,7 +1,7 @@
 ---
 title: "UI paths by endpoint"
 tags: [qa, ui-paths, endpoint-recipes]
-generated: 2026-04-14T21:13:10.054Z
+generated: 2026-04-16T14:45:16.749Z
 ---
 
 # UI paths by endpoint
@@ -28,6 +28,19 @@ Reached by 1 UI test(s):
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
+  ```
+
+## [[../graph/endpoints/delete-api-bom-id|DELETE /api/bom/{id}/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
   ```
 
 ## [[../graph/endpoints/delete-api-part-category-parameters-id|DELETE /api/part/category/parameters/{id}/]]
@@ -121,7 +134,7 @@ Reached by 2 UI test(s):
 
 ## [[../graph/endpoints/get-api-bom|GET /api/bom/]]
 
-Reached by 11 UI test(s):
+Reached by 12 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
@@ -178,6 +191,14 @@ Reached by 11 UI test(s):
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
   ```
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
 
 ## [[../graph/endpoints/get-api-bom-id|GET /api/bom/{id}/]]
 
@@ -192,7 +213,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part|GET /api/part/]]
 
-Reached by 8 UI test(s):
+Reached by 9 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-006 parts list at QA-ROOT|BASELINE-006 parts list at QA-ROOT]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-PART-001|UI-PART-001]] (`submission/automation/ui/tests/b-parts-create.spec.ts`)
@@ -206,6 +227,12 @@ Reached by 8 UI test(s):
   click role:button:"Submit"
   ```
 - [[../graph/ui-tests/UI-RECIPE-002|UI-RECIPE-002]] (`submission/automation/ui/tests/g-parts-recipes.spec.ts`)
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:action-menu-add-bom-items
+  click label:action-menu-add-bom-items-add-bom-item
+  ```
 - [[../graph/ui-tests/UI-BOM-007|UI-BOM-007]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
   ```
   goto /web/part/{var}/bom
@@ -527,7 +554,7 @@ Reached by 1 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id|GET /api/part/{id}/]]
 
-Reached by 63 UI test(s):
+Reached by 64 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -709,6 +736,14 @@ Reached by 63 UI test(s):
   click role:button:"Submit"
   click role:button:"Delete"
   ```
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
 - [[../graph/ui-tests/UI-PARTS-DETAIL-001|UI-PARTS-DETAIL-001]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-002|UI-PARTS-DETAIL-002]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
 - [[../graph/ui-tests/UI-PARTS-DETAIL-003|UI-PARTS-DETAIL-003]] (`submission/automation/ui/tests/parts-detail-actions.spec.ts`)
@@ -734,7 +769,7 @@ Reached by 63 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id-bom-validate|GET /api/part/{id}/bom-validate/]]
 
-Reached by 11 UI test(s):
+Reached by 12 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/UI-EXTRA-004|UI-EXTRA-004]] (`submission/automation/ui/tests/d-parts-extra-ui.spec.ts`)
@@ -790,6 +825,14 @@ Reached by 11 UI test(s):
   goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Edit Substitutes"
+  ```
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
   ```
 
 ## [[../graph/endpoints/get-api-part-id-pricing|GET /api/part/{id}/pricing/]]
@@ -846,7 +889,7 @@ Reached by 10 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id-requirements|GET /api/part/{id}/requirements/]]
 
-Reached by 63 UI test(s):
+Reached by 64 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -1023,6 +1066,14 @@ Reached by 63 UI test(s):
   ```
 - [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
   ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Delete"
   click role:button:"Submit"
@@ -1053,7 +1104,7 @@ Reached by 63 UI test(s):
 
 ## [[../graph/endpoints/get-api-part-id-serial-numbers|GET /api/part/{id}/serial-numbers/]]
 
-Reached by 63 UI test(s):
+Reached by 64 UI test(s):
 
 - [[../graph/ui-tests/BASELINE-001 part detail header + tab bar|BASELINE-001 part detail header + tab bar]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
 - [[../graph/ui-tests/BASELINE-002 BOM panel with one populated row|BASELINE-002 BOM panel with one populated row]] (`submission/automation/ui/tests/0-baseline-seeded.spec.ts`)
@@ -1230,6 +1281,14 @@ Reached by 63 UI test(s):
   ```
 - [[../graph/ui-tests/UI-INTPRICE-003|UI-INTPRICE-003]] (`submission/automation/ui/tests/n-parts-internal-pricing-ui.spec.ts`)
   ```
+  click label:row-action-menu-0
+  click role:menuitem:"Delete"
+  click role:button:"Submit"
+  click role:button:"Delete"
+  ```
+- [[../graph/ui-tests/UI-BOM-DEL-001|UI-BOM-DEL-001]] (`submission/automation/ui/tests/o-parts-bom-row-delete-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
   click label:row-action-menu-0
   click role:menuitem:"Delete"
   click role:button:"Submit"
@@ -1381,6 +1440,17 @@ Reached by 1 UI test(s):
   click label:action-menu-pricing-actions-refresh
   click role:button:"Submit"
   click role:button:"OK"
+  ```
+
+## [[../graph/endpoints/post-api-bom|POST /api/bom/]]
+
+Reached by 1 UI test(s):
+
+- [[../graph/ui-tests/UI-BOM-002|UI-BOM-002]] (`submission/automation/ui/tests/h-parts-bom-ui.spec.ts`)
+  ```
+  goto /web/part/{var}/bom
+  click label:action-menu-add-bom-items
+  click label:action-menu-add-bom-items-add-bom-item
   ```
 
 ## [[../graph/endpoints/post-api-bom-substitute|POST /api/bom/substitute/]]

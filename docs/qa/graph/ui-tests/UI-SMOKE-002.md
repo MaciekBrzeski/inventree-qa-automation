@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/smoke.spec.ts
 case-ids: [UI-SMOKE-002]
 endpoints-hit: 0
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.845Z
+generated: 2026-04-16T14:45:16.421Z
 ---
 
 # UI-SMOKE-002 parts list page loads with expected title

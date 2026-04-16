@@ -6,7 +6,7 @@ file: submission/automation/api/tests/parts-bom-validate.spec.ts
 case-ids: [API-PARTS-BV-003]
 endpoints-hit: 1
 tags: [qa, test, automated, api]
-generated: 2026-04-14T21:13:09.846Z
+generated: 2026-04-16T14:45:16.422Z
 ---
 
 # API-PARTS-BV-003 PATCH /api/bom/{id}/validate/ marks the row as validated

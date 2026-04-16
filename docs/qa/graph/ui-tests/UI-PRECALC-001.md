@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/m-parts-pricing-recalc-ui.spec.ts
 case-ids: [UI-PRECALC-001]
 endpoints-hit: 6
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-PRECALC-001 click Refresh in pricing-actions menu → PATCH /api/part/{id}/pricing/
@@ -27,7 +27,6 @@ generated: 2026-04-14T21:13:09.844Z
 ## Paired tests on the other side
 
 - [[API-PARTS-003]] — retrieve part
-- [[API-PARTS-050]] — GET /api/part/999999999/ returns 404
 - [[API-PARTS-PRICE-006]] — GET /api/part/sale-price/ list returns 200
 - [[API-PARTS-PRICE-011]] — PATCH /api/part/{id}/pricing/ triggers pricing recalc
 - [[API-PARTS-PUT-001]] — PUT /api/part/{id}/ replaces the part

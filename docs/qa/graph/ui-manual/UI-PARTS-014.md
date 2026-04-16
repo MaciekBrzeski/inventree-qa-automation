@@ -4,7 +4,7 @@ id: UI-PARTS-014
 side: ui
 priority: P1
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T21:13:09.850Z
+generated: 2026-04-16T14:45:16.424Z
 ---
 
 # UI-PARTS-014 — Verify parts in sub-categories are visible in parent category

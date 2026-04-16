@@ -4,7 +4,7 @@ id: UI-PARTS-040
 side: ui
 priority: P2
 tags: [qa, test, manual, ui]
-generated: 2026-04-14T21:13:09.851Z
+generated: 2026-04-16T14:45:16.424Z
 ---
 
 # UI-PARTS-040 — Remove a parameter from a part from the Parts list

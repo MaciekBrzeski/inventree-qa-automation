@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts
 case-ids: [UI-CPAR-002]
 endpoints-hit: 4
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-CPAR-002 edit a category parameter via row-action-menu Edit → PATCH /api/part/category/parameters/{id}/
@@ -26,7 +26,6 @@ generated: 2026-04-14T21:13:09.844Z
 
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-CP-001]] — GET /api/part/category/parameters/ lists templates
 - [[API-PARTS-CP-003]] — GET /api/part/category/parameters/{id}/ retrieves it
 - [[API-PARTS-CP-004]] — PATCH /api/part/category/parameters/{id}/ updates default_value

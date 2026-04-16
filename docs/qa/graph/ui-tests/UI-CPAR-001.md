@@ -6,7 +6,7 @@ file: submission/automation/ui/tests/l-parts-category-parameters-ui.spec.ts
 case-ids: [UI-CPAR-001]
 endpoints-hit: 3
 tags: [qa, test, automated, ui]
-generated: 2026-04-14T21:13:09.844Z
+generated: 2026-04-16T14:45:16.420Z
 ---
 
 # UI-CPAR-001 add a category parameter via UI → POST /api/part/category/parameters/
@@ -25,7 +25,6 @@ generated: 2026-04-14T21:13:09.844Z
 
 - [[API-PARTS-020]] — retrieve a category
 - [[API-PARTS-025]] — DELETE /api/part/category/{id}/ removes the child category
-- [[API-PARTS-051]] — GET /api/part/category/999999999/ returns 404
 - [[API-PARTS-CP-001]] — GET /api/part/category/parameters/ lists templates
 - [[API-PARTS-CP-002]] — POST /api/part/category/parameters/ creates a category parameter
 - [[API-PARTS-PUT-002]] — PUT /api/part/category/{id}/ replaces the category
